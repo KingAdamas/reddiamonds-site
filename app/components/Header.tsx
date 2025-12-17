@@ -11,12 +11,9 @@ export default function Header() {
               2) Then uncomment the Image below and delete the "RD" circle
           */}
 
-          {/* <Image src="/logo.png" alt="Red Diamonds International" width={36} height={36} /> */}
+          <Image src="/logo.png" alt="Red Diamonds International" width={36} height={36} />
 
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-black text-sm font-semibold text-white">
-            RD
-          </div>
-
+          
           <span className="font-semibold">Red Diamonds International</span>
         </Link>
 
