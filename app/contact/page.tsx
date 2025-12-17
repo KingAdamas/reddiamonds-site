@@ -4,17 +4,15 @@ export default function ContactPage() {
       <div className="mx-auto max-w-2xl">
         <h1 className="text-3xl font-semibold">Contact</h1>
         <p className="mt-4 text-gray-700">
-          Contact options coming next. For now, use email.
+          Contact options are coming next. For now, use email.
         </p>
 
         <div className="mt-6 rounded-2xl border border-gray-200 p-6">
           <p className="font-medium">Email:</p>
-          <p className="mt-2 text-gray-700">info@reddiamondsinternational.com (placeholder)</p>
+          <p className="mt-2 text-gray-700">info@reddiamondsinternational.com</p>
         </div>
 
-        <a href="/" className="mt-8 inline-block text-sm underline">
-          Back to Home
-        </a>
+        <a href="/" className="mt-8 inline-block text-sm underline">Back to Home</a>
       </div>
     </main>
   );

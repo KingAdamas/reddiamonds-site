@@ -14,17 +14,10 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <a
-            href="/apply"
-            className="rounded-xl bg-black px-5 py-3 text-white"
-          >
+          <a href="/apply" className="rounded-xl bg-black px-5 py-3 text-white">
             Apply to the Agency
           </a>
-
-          <a
-            href="/contact"
-            className="rounded-xl border border-gray-300 px-5 py-3"
-          >
+          <a href="/contact" className="rounded-xl border border-gray-300 px-5 py-3">
             Contact Us
           </a>
         </div>
@@ -34,7 +27,7 @@ export default function Home() {
           <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700">
             <li>Live performance coaching and content strategy</li>
             <li>Monetization planning (diamonds/beans/gifting growth)</li>
-            <li>Recruiting, onboarding, and support for creators</li>
+            <li>Recruiting, onboarding, and creator support</li>
             <li>Resource library (coming soon)</li>
           </ul>
         </div>
