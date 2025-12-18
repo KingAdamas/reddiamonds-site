@@ -36,7 +36,6 @@ export default function Home() {
         </div>
 
         {/* OFFER */}
-
         {/* OFFER */}
         <div className="mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
           <h2 className="text-xl font-bold text-[#ecc970]">What We Offer</h2>
@@ -44,25 +43,27 @@ export default function Home() {
           <ul className="mt-4 space-y-4 text-white/85">
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              <span>Strategic Growth: Tailored performance coaching to increase reach and retention.</span>
+              <span><span className="font-semibold">Strategic Growth:</span> Tailored performance coaching to increase reach and retention.</span>
             </li>
+
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              <span>Revenue Acceleration: Expert planning to scale gifting and diamond growth.</span>
+              <span><span className="font-semibold">Monetization Mastery:</span> Expert planning to scale gifting and diamond growth.</span>
             </li>
+
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              <span>Full-Scale Support: Seamless recruiting, onboarding, and dedicated creator care.</span>
+              <span><span className="font-semibold">Full-Scale Support:</span> Seamless recruiting, onboarding, and dedicated creator care.</span>
             </li>
+
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              <span>Exclusive Resources: Coming soon: The RDI digital resource library.</span>
+              <span><span className="font-semibold">Exclusive Resources:</span> Coming soon: The RDI digital resource library.</span>
             </li>
           </ul>
         </div>
 
-
-        </div>
+</div>
     </main>
   );
 }
