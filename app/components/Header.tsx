@@ -24,13 +24,13 @@ export default function Header() {
             Home
           </Link>
           <Link href="/contact" className="px-3 py-2 text-gray-200 hover:text-[#edc970]">
-            Contact
+            Connect
           </Link>
           <Link
             href="/apply"
             className="rounded-xl bg-[#d13027] px-4 py-2 font-semibold text-white hover:bg-[#97261f]"
           >
-            Apply
+            Join
           </Link>
         </nav>
       </div>
