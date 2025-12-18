@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "rd-black": "#1f0e0f",
+        "rd-black": "#000000",
         "rd-gray": "#241d20",
         "rd-red": "#d13027",
         "rd-red-dark": "#97261f",

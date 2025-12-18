@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="border-b border-[#241d20] bg-[#1f0e0f]">
+    <header className="border-b border-[#241d20] bg-[#000000]">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
           <Image
