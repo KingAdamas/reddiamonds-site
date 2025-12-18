@@ -6,9 +6,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
         <div className="rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
-          <p className="text-center text-sm tracking-widest text-[#ecc970]/90 uppercase font-bold">
-            Red Diamonds International
-          </p>
+          <p className="text-center text-xl font-bold text-[#ecc970]">Red Diamonds International</p>
 
           <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
             Stop streaming. Start dominating.
