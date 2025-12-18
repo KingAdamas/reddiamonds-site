@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
         <div className="rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
-          <p className="text-center text-sm tracking-widest text-[#ecc970]/90 uppercase">
+          <p className="text-center text-sm tracking-widest text-[#ecc970]/90 uppercase font-bold">
             Red Diamonds International
           </p>
 
@@ -38,29 +38,33 @@ export default function Home() {
         </div>
 
         {/* OFFER */}
-        <div className="mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
-          <h2 className="text-xl font-bold text-[#ecc970]">What we offer</h2>
 
-          <ul className="mt-4 space-y-3 text-white/85">
+        {/* OFFER */}
+        <div className="mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
+          <h2 className="text-xl font-bold text-[#ecc970]">What We Offer</h2>
+
+          <ul className="mt-4 space-y-4 text-white/85">
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              Live performance coaching and content strategy
+              <span>Strategic Growth: Tailored performance coaching to increase reach and retention.</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              Monetization planning (diamonds/beans/gifting growth)
+              <span>Revenue Acceleration: Expert planning to scale gifting and diamond growth.</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              Recruiting, onboarding, and creator support
+              <span>Full-Scale Support: Seamless recruiting, onboarding, and dedicated creator care.</span>
             </li>
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              Resource library (coming soon)
+              <span>Exclusive Resources: Coming soon: The RDI digital resource library.</span>
             </li>
           </ul>
         </div>
-      </div>
+
+
+        </div>
     </main>
   );
 }
