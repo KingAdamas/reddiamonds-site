@@ -6,27 +6,33 @@ export default function Home() {
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
         <div className="rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
-          <p className="text-sm tracking-widest text-[#ecc970]/90 uppercase">
+          <p className="text-center text-sm tracking-widest text-[#ecc970]/90 uppercase">
             Red Diamonds International
           </p>
 
-          <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">Stop streaming. Start dominating.</h1>
+          <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
+            Stop streaming. Start dominating.
+          </h1>
 
-          <p className="mt-4 max-w-none text-white/80">Red Diamonds International delivers elite strategy and high-level management to turn your content into a global powerhouse. Scale your brand, maximize your earnings, and compete with the top 1%.</p>
+          <p className="mt-4 text-center text-lg text-white/80">
+            Red Diamonds International delivers elite strategy and high-level
+            management to turn your content into a global powerhouse. Scale your
+            brand, maximize your earnings, and compete with the top 1%.
+          </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="/apply"
-              className="rounded-xl bg-[#d13027] px-5 py-3 font-semibold text-white hover:bg-[#97261f]"
+              className="rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
             >
-              Apply to the Agency
+              Join the Squad
             </Link>
 
             <Link
               href="/contact"
-              className="rounded-xl border border-[#241d20] bg-transparent px-5 py-3 font-semibold text-[#ecc970] hover:border-[#ecc970]/60"
+              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
             >
-              Contact Us
+              Let&apos;s Connect
             </Link>
           </div>
         </div>
@@ -37,19 +43,19 @@ export default function Home() {
 
           <ul className="mt-4 space-y-3 text-white/85">
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-[#ecc970]" />
+              <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
               Live performance coaching and content strategy
             </li>
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-[#ecc970]" />
+              <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
               Monetization planning (diamonds/beans/gifting growth)
             </li>
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-[#ecc970]" />
+              <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
               Recruiting, onboarding, and creator support
             </li>
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-[#ecc970]" />
+              <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
               Resource library (coming soon)
             </li>
           </ul>
