@@ -10,17 +10,9 @@ export default function Home() {
             Red Diamonds International
           </p>
 
-          <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">
-            Grow your live streaming income with{" "}
-            <span className="text-[#ecc970]">structure</span>,{" "}
-            <span className="text-[#ecc970]">strategy</span>, and{" "}
-            <span className="text-[#ecc970]">support</span>.
-          </h1>
+          <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">Stop streaming. Start dominating.</h1>
 
-          <p className="mt-4 max-w-2xl text-white/80">
-            We help creators turn their platform into a business through
-            training, monetization strategy, and agency support.
-          </p>
+          <p className="mt-4 max-w-none text-white/80">Red Diamonds International delivers elite strategy and high-level management to turn your content into a global powerhouse. Scale your brand, maximize your earnings, and compete with the top 1%.</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
