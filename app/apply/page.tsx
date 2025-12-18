@@ -15,7 +15,7 @@ export default function ApplyPage() {
           </p>
         </div>
 
-        <a href="/" className="mt-8 inline-block text-sm underline">Back to Home</a>
+        <a href="https://forms.gle/REPLACE_ME" className="mt-8 inline-block text-sm underline" target="_blank" rel="noreferrer noopener">Back to Home</a>
       </div>
     </main>
   );

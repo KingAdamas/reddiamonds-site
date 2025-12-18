@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen px-6 py-16">
@@ -12,7 +14,7 @@ export default function ContactPage() {
           <p className="mt-2 text-gray-700">info@reddiamondsinternational.com</p>
         </div>
 
-        <a href="/" className="mt-8 inline-block text-sm underline">Back to Home</a>
+        <Link href="/" className="mt-8 inline-block text-sm underline">Back to Home</Link>
       </div>
     </main>
   );
