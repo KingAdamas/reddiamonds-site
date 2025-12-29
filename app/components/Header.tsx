@@ -15,14 +15,14 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Red Diamonds International"
-            width={52}
-            height={52}
+            width={56}
+            height={56}
             className="rounded"
             priority
           />
           <span className="font-semibold text-[#ecc970]">
-            <span className="hidden sm:inline text-lg">Red Diamonds International</span>
-            <span className="sm:hidden text-base">Red Diamonds</span>
+            <span className="hidden sm:inline text-lg"></span>
+            <span className="sm:hidden text-base"></span>
           </span>
         </Link>
 

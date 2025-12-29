@@ -16,7 +16,7 @@ export default function ApplyPage() {
 
           <p className="text-sm font-semibold text-[#ecc970]">Join the Squad</p>
 
-          <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">
+          <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
             Stop streaming. Start dominating.
           </h1>
 

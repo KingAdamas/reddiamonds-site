@@ -8,7 +8,7 @@ export default function LearnMorePage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">
-            Elite strategy. Real management. Global results.
+            Elite strategy. Global results.
           </h1>
 
           <p className="mt-4 text-white/80 text-lg leading-relaxed max-w-3xl">
@@ -34,12 +34,11 @@ export default function LearnMorePage() {
               Email Us
             </a>
             <a
-              href="https://www.tiktok.com/@_reddiamondsintl"
               target="_blank"
               rel="noreferrer noopener"
               className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
             >
-              Visit TikTok
+       
             </a>
           </div>
         </div>
