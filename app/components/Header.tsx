@@ -9,9 +9,9 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Red Diamonds International"
-            width={40}
-            height={40}
-            className="rounded"
+            width={48}
+            height={48}
+            className="rounded object-contain"
             priority
           />
           <span className="font-semibold tracking-wide text-[#edc970]">
