@@ -92,12 +92,13 @@ export default function ContactPage() {
               </div>
 
               <div className="rounded-2xl border border-[#241d20] bg-[#000000]/30 p-5">
-                <p className="font-semibold">WhatsApp (optional)</p>
+                <p className="font-semibold">WhatsApp </p>
                 <p className="mt-1 text-sm text-white/70">
                   Best for international creators who prefer messaging.
                 </p>
                 <span className="mt-3 inline-block font-semibold text-[#ecc970]/70">
-                  Message on WhatsApp (add link later)
+                  <a href="https://wa.me/17707505844?text=Hi%20Red%20Diamonds%20International%20%E2%80%94%20I%E2%80%99m%20an%20international%20creator%20and%20I%20want%20to%20connect." target="_blank" rel="noreferrer noopener" className="text-[#ecc970] 
+hover:underline">Message on WhatsApp</a>
                 </span>
               </div>
             </div>
