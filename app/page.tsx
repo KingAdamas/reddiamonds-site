@@ -33,6 +33,13 @@ export default function Home() {
             >
               Let&apos;s Connect
             </Link>
+
+            <Link
+              href="/learn-more"
+              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
 
