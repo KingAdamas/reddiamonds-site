@@ -10,33 +10,42 @@ export default function Header() {
   return (
     <header className="border-b border-[#241d20] bg-black">
       <div className="mx-auto flex h-[72px] max-w-5xl items-center justify-between px-6">
-        {/* Left: Logo + Name */}
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        {/* Logo only */}
+        <Link
+          href="/"
+          className="flex items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/logo.png"
-            alt="Red Diamonds International"
-            width={56}
-            height={56}
+            alt="RDI"
+            width={44}
+            height={44}
             className="rounded"
             priority
           />
-          <span className="font-semibold text-[#ecc970]">
-            <span className="hidden sm:inline text-lg"></span>
-            <span className="sm:hidden text-base"></span>
-          </span>
         </Link>
 
-        {/* Desktop nav (NO Join here) */}
+        {/* Desktop nav (ALL white links) */}
         <nav className="hidden items-center gap-6 md:flex">
           <Link href="/" className="text-white/80 hover:text-white">
             Home
           </Link>
+
           <Link href="/contact" className="text-white/80 hover:text-white">
             Connect
           </Link>
+
+          <Link href="/apply" className="text-white/80 hover:text-white">
+            Join
+          </Link>
+
+          <Link href="/learn-more" className="text-white/80 hover:text-white">
+            Learn More
+          </Link>
         </nav>
 
-        {/* Mobile nav: hamburger only */}
+        {/* Mobile nav */}
         <div className="flex items-center md:hidden">
           <button
             type="button"
@@ -53,9 +62,16 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div id="mobile-nav" className="md:hidden border-t border-[#241d20] bg-black">
-          <div className="mx-auto max-w-5xl px-6 py-4 flex flex-col gap-3">
-            <Link href="/" className="text-white/80 hover:text-white" onClick={() => setOpen(false)}>
+        <div
+          id="mobile-nav"
+          className="border-t border-[#241d20] bg-black md:hidden"
+        >
+          <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-5">
+            <Link
+              href="/"
+              className="text-white/80 hover:text-white"
+              onClick={() => setOpen(false)}
+            >
               Home
             </Link>
 
@@ -69,10 +85,18 @@ export default function Header() {
 
             <Link
               href="/apply"
-              className="mt-1 inline-flex w-fit rounded-xl bg-[#d13027] px-4 py-2 font-semibold text-white hover:bg-[#97261f]"
+              className="text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
               Join
+            </Link>
+
+            <Link
+              href="/learn-more"
+              className="text-white/80 hover:text-white"
+              onClick={() => setOpen(false)}
+            >
+              Learn More
             </Link>
           </div>
         </div>
@@ -80,3 +104,5 @@ export default function Header() {
     </header>
   );
 }
+
+
