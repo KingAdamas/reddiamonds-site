@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-[calc(100vh-72px)] bg-[#000000] text-white">
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
-        <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
+        <div className="rdi-card rdi-reveal relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
          <div className="rdi-hero-glow" />
  <p className="text-center text-xl font-bold text-[#ecc970]">Red Diamonds International</p>
 
@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* OFFER */}
         {/* OFFER */}
-        <div className="mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
+        <div className="rdi-card rdi-reveal rdi-delay-150 mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
           <h2 className="text-xl font-bold text-[#ecc970]">What We Offer</h2>
 
           <ul className="mt-4 space-y-4 text-white/85">

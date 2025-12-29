@@ -291,3 +291,99 @@ body {
   }
 }
 
+
+/* ---------------------------
+   RDI Motion (Reveal + Hover)
+---------------------------- */
+.rdi-card {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+.rdi-card:hover {
+  transform: translateY(-4px);
+}
+
+.rdi-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: rdiReveal 700ms ease forwards;
+}
+
+.rdi-delay-150 { animation-delay: 150ms; }
+.rdi-delay-300 { animation-delay: 300ms; }
+
+@keyframes rdiReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slow drifting glow behind hero */
+.rdi-hero-glow {
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(209,48,39,0.28), transparent 55%),
+    radial-gradient(circle at 70% 40%, rgba(236,201,112,0.20), transparent 55%),
+    radial-gradient(circle at 50% 70%, rgba(151,38,31,0.22), transparent 60%);
+  filter: blur(30px);
+  animation: rdiGlowDrift 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes rdiGlowDrift {
+  0% { transform: translate3d(-2%, -1%, 0) scale(1.02); }
+  100% { transform: translate3d(2%, 1%, 0) scale(1.06); }
+}
+
+/* Respect Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  .rdi-reveal, .rdi-hero-glow { animation: none !important; }
+  .rdi-card { transition: none !important; }
+  .rdi-card:hover { transform: none !important; }
+}
+
+/* ---------------------------
+   RDI Motion (Reveal + Hover)
+---------------------------- */
+.rdi-card {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+.rdi-card:hover {
+  transform: translateY(-4px);
+}
+
+.rdi-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: rdiReveal 700ms ease forwards;
+}
+
+.rdi-delay-150 { animation-delay: 150ms; }
+.rdi-delay-300 { animation-delay: 300ms; }
+
+@keyframes rdiReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slow drifting glow behind hero */
+.rdi-hero-glow {
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(209,48,39,0.28), transparent 55%),
+    radial-gradient(circle at 70% 40%, rgba(236,201,112,0.20), transparent 55%),
+    radial-gradient(circle at 50% 70%, rgba(151,38,31,0.22), transparent 60%);
+  filter: blur(30px);
+  animation: rdiGlowDrift 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes rdiGlowDrift {
+  0% { transform: translate3d(-2%, -1%, 0) scale(1.02); }
+  100% { transform: translate3d(2%, 1%, 0) scale(1.06); }
+}
+
+/* Respect Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  .rdi-reveal, .rdi-hero-glow { animation: none !important; }
+  .rdi-card { transition: none !important; }
+  .rdi-card:hover { transform: none !important; }
+}
