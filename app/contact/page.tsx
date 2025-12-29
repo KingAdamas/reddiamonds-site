@@ -109,8 +109,9 @@ export default function ContactPage() {
 
               <a
                 className="rdi-btn-shine mt-5 inline-block rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-                
-href="mailto:reddiamondfamilyus@gmail.com?subject=RDI%20-%20Creator%20Inquiry&body=Creator%20Name%3A%0APlatform%3A%0ARegion%2FTime%20Zone%3A%0ALive%20Hours%2FWeek%3A%0AGoal%3A%0A%0ALinks%20(to%20your%20profile%2Fclips)%3A%0A"
+                href="mailto:reddiamondfamilyus@gmail.com?subject=Existing%20RDI%20Content%20Creator&body=Your%20Content%20Creator%20Name%20%2B%20Platform%20%28TikTok%2C%20BIGO%2C%20etc.%29%3A%20%0ACountry%20of%20Residence%3A%20%0ACurrent%20Agency%20Manager%20%28if%20unassigned%2C%20leave%20blank%29%3A%20%0APrimary%20Reason%20for%20Contacting%20%28Referral%2C%20Ban%2FRestriction%2C%20etc.%29%3A%20%0AReferral%20Info%20%28Content%20Creator%20Name%20%2B%20Platform%2C%20Has%20he%2Fshe%20applied%3F%29%3A%20"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 Send a Message
               </a>
