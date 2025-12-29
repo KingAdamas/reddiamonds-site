@@ -23,7 +23,7 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               className="rdi-btn-shine rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-              href="mailto:reddiamondfamilyus@gmail.com?subject=RDI%20-%20Let%E2%80%99s%20Connect"
+              href="mailto:reddiamondfamilyus@gmail.com?subject=Existing%20RDI%20Content%20Creator&body=Your%20Content%20Creator%20Name%20%2B%20Platform%20%28TikTok%2C%20BIGO%2C%20etc.%29%3A%20%0ACountry%20of%20Residence%3A%20%0ACurrent%20Agency%20Manager%20%28if%20unassigned%2C%20leave%20blank%29%3A%20%0APrimary%20Reason%20for%20Contacting%20%28Referral%2C%20Ban/Restriction%2C%20etc.%29%3A%20%0AReferral%20Info%20%28Creator%20Name%20%2B%20Platform%2C%20has%20he/she%20applied%3F%29%3A%20"
             >
               Email Us
             </a>
@@ -91,7 +91,7 @@ export default function ContactPage() {
 
           {/* RIGHT: QUICK MESSAGE */}
           <div className="rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
-            <h2 className="text-xl font-bold text-[#ecc970]">Quick message</h2>
+            <h2 className="text-xl font-bold text-[#ecc970]">Existing RDI Content Creator</h2>
             <p className="mt-3 text-white/80">
               No portal yet—so here’s the simplest setup that still feels professional:
               send an email with a few details.
@@ -100,11 +100,12 @@ export default function ContactPage() {
             <div className="mt-5 rounded-2xl border border-[#241d20] bg-black/40 p-5 text-white/85">
               <p className="font-semibold">Include this info:</p>
               <ul className="mt-3 space-y-2 text-sm text-white/75">
-                <li>• Your creator name + platform (TikTok/BIGO/etc.)</li>
-                <li>• Country/time zone</li>
-                <li>• Average live hours per week</li>
-                <li>• Your current goal (followers/diamonds/beans)</li>
-              </ul>
+<li className="leading-relaxed">• Your Content Creator Name + Platform (TikTok, BIGO, etc.)</li>
+<li className="leading-relaxed">• Country of Residence</li>
+<li className="leading-relaxed">• Current Agency Manager (if unassigned, leave blank)</li>
+<li className="leading-relaxed">• Primary Reason for Contacting (Referral, Ban/Restriction, etc.)</li>
+<li className="leading-relaxed">• Referral Info: Content Creator Name + Platform, Has he/she applied?</li>
+</ul>
 
               <a
                 className="rdi-btn-shine mt-5 inline-block rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
