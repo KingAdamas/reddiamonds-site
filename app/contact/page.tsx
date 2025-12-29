@@ -64,7 +64,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   className="mt-3 inline-block font-semibold text-[#ecc970] hover:underline"
-                  href="https://example.com"
+                  href="https://www.tiktok.com/"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
