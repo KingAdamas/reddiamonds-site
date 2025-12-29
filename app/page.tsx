@@ -49,7 +49,7 @@ export default function Home() {
 
             <li className="flex gap-3">
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
-              <span><span className="font-semibold">Monetization Mastery:</span> Expert planning to scale gifting and diamond growth.</span>
+              <span><span className="font-semibold">Monetization Mastery:</span> Expert planning to scale gifting and reward growth.</span>
             </li>
 
             <li className="flex gap-3">
