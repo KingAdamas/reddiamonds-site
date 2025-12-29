@@ -68,7 +68,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  https://www.tiktok.com/@_reddiamondsintl
+                  tiktok.com/@_reddiamondsintl
                 </a>
               </div>
 
@@ -108,7 +108,8 @@ export default function ContactPage() {
 
               <a
                 className="rdi-btn-shine mt-5 inline-block rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-                href="mailto:REPLACE_ME@yourdomain.com?subject=RDI%20-%20Creator%20Inquiry&body=Creator%20Name%3A%0APlatform%3A%0ARegion%2FTime%20Zone%3A%0ALive%20Hours%2FWeek%3A%0AGoal%3A%0A%0ALinks%20(to%20your%20profile%2Fclips)%3A%0A"
+                
+href="mailto:reddiamondfamilyus@gmail.com?subject=RDI%20-%20Creator%20Inquiry&body=Creator%20Name%3A%0APlatform%3A%0ARegion%2FTime%20Zone%3A%0ALive%20Hours%2FWeek%3A%0AGoal%3A%0A%0ALinks%20(to%20your%20profile%2Fclips)%3A%0A"
               >
                 Send a Message
               </a>
