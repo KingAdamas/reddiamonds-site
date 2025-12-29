@@ -5,8 +5,9 @@ export default function Home() {
     <main className="min-h-[calc(100vh-72px)] bg-[#000000] text-white">
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
-        <div className="rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
-          <p className="text-center text-xl font-bold text-[#ecc970]">Red Diamonds International</p>
+        <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
+         <div className="rdi-hero-glow" />
+ <p className="text-center text-xl font-bold text-[#ecc970]">Red Diamonds International</p>
 
           <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
             Stop streaming. Start dominating.
@@ -21,7 +22,7 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="/apply"
-              className="rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
+              className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
             >
               Join the Squad
             </Link>
