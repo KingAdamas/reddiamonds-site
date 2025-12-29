@@ -73,6 +73,34 @@ export default function ApplyPage() {
         <p className="mt-10 text-xs text-white/50">
           By applying, you confirm your information is accurate and that you meet our eligibility requirements.
         </p>
+{/* BIGO SIGN-UP */}
+<div className="mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/20 p-8">
+  <h2 className="text-xl font-bold text-[#ecc970]">Sign up for BIGO LIVE</h2>
+
+  <p className="mt-2 text-white/80">
+    Earn Bonus in BIGO LIVE! New users who sign up using our invitation code will get more surprises.
+  </p>
+
+  <div className="mt-6 flex flex-wrap items-center gap-3">
+    <a
+      href="https://slink.bigovideo.tv/JKjF38"
+      target="_blank"
+      rel="noreferrer noopener"
+      className="rdi-btn-shine inline-flex items-center justify-center rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
+    >
+      Sign up on BIGO
+    </a>
+
+    <div className="rounded-xl border border-[#241d20] bg-[#000000]/30 px-5 py-3 text-sm text-white/80">
+      Invitation code: <span className="font-semibold text-[#ecc970]">4180657608</span>
+    </div>
+  </div>
+
+  <p className="mt-3 text-xs text-white/60">
+    Tip: After you create your account, enter the invitation code during setup to claim the bonus.
+  </p>
+</div>
+
       </div>
     </main>
   );
