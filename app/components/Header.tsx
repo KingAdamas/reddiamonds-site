@@ -37,7 +37,7 @@ export default function Header() {
           </Link>
 
           <Link href="/apply" className="text-white/80 hover:text-white">
-            Join
+            Apply for Consideration
           </Link>
 
           <Link href="/learn-more" className="text-white/80 hover:text-white">
