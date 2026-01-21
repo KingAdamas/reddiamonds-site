@@ -68,10 +68,11 @@ export default function Home() {
               <span className="mt-2 h-2 w-2 rounded-full bg-[#ecc970]" />
               <span><span className="font-semibold">Exclusive Resources:</span> Coming soon: The RDI digital resource library.</span>
             </li>
-          </ul>
+                   </ul>
         </div>
 
-</div>
+        </div>
+      </div>
     </main>
   );
 }
