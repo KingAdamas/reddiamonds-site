@@ -13,8 +13,8 @@ export default function Home() {
             Stop streaming. Start dominating.
           </h1>
 
-          <p className="mt-4 text-white/80 text-left text-lg leading-relaxed max-w-none">
-            Red Diamonds International delivers elite strategy and high-level
+          <p className="text-gray-300 mt-4 text-center max-w-md mx-auto">
+             Red Diamonds International delivers elite strategy and high-level
             management to turn your content into a global powerhouse. Scale your
             brand, maximize your earnings, and compete with the top 1%.
           </p>
