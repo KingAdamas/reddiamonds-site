@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.reddiamondsinternational.com"),
   title: "Red Diamonds International",
@@ -27,4 +33,16 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
 };
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" className="bg-[#000000]">
+      <body className="bg-[#000000] text-white antialiased">
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
 
