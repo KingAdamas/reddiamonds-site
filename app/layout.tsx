@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Red Diamonds International",
   description:
     "Red Diamonds International is a creator-support and talent management brand helping content creators with strategy, structure, and agency coordination.",
+  metadataBase: new URL("https://www.reddiamondsinternational.com"),
 };
 
 export default function RootLayout({
