@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Process() {
   return (
     <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
-      {/* Container matches Overview: 64px header clearance + 16px (pt-4) gap */}
+      {/* 64px clears the header + pt-4 (16px) creates the elite gap */}
       <div className="mx-auto max-w-5xl px-6 pt-4 pb-20">
         
         {/* PAGE HEADER */}
@@ -22,7 +22,7 @@ export default function Process() {
         {/* THE THREE PHASES */}
         <div className="mt-16 space-y-20">
           
-          {/* Phase 1 */}
+          {/* Phase 1: Identification */}
           <div className="grid gap-8 md:grid-cols-12">
             <div className="md:col-span-4">
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 01</span>
@@ -30,12 +30,12 @@ export default function Process() {
             </div>
             <div className="md:col-span-8">
               <p className="text-sm leading-relaxed text-gray-400">
-                We analyze raw engagement data to find creators demonstrating consistent momentum. Entry into the ecosystem isn&apos;t about clout—it&apos;s about identifying creators ready to operate with discipline and professional conduct.
+                We analyze engagement data to find creators demonstrating consistent momentum. Entry into the ecosystem isn&apos;t about clout—it&apos;s about identifying creators ready to operate with discipline and professional conduct.
               </p>
             </div>
           </div>
 
-          {/* Phase 2 */}
+          {/* Phase 2: Validation */}
           <div className="grid gap-8 md:grid-cols-12">
             <div className="md:col-span-4">
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 02</span>
@@ -43,12 +43,12 @@ export default function Process() {
             </div>
             <div className="md:col-span-8">
               <p className="text-sm leading-relaxed text-gray-400">
-                Creators are placed into our infrastructure, where they are tested for consistency and professionalism. This phase includes operational support and financial structures, such as our creator-focused savings groups, ensuring long-term sustainability.
+                Creators are placed into our infrastructure, where they are tested for consistency and professionalism. This phase includes operational support and encouraging the creator to set weekly and monthly financial goals, ensuring long-term sustainability.
               </p>
             </div>
           </div>
 
-          {/* Phase 3 */}
+          {/* Phase 3: Optimization */}
           <div className="grid gap-8 md:grid-cols-12">
             <div className="md:col-span-4">
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 03</span>
@@ -81,4 +81,3 @@ export default function Process() {
     </main>
   );
 }
-
