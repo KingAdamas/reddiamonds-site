@@ -10,15 +10,16 @@ export default function Header() {
   return (
     <header className="border-b border-[#241d20] bg-black">
       <div className="mx-auto flex h-[72px] max-w-5xl items-center justify-between px-6">
-        {/* Logo only */}
+        {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-3"
           onClick={() => setOpen(false)}
+          aria-label="Go to overview"
         >
           <Image
             src="/logo.png"
-            alt="RDI"
+            alt="Red Diamonds International"
             width={44}
             height={44}
             className="rounded"
@@ -26,26 +27,26 @@ export default function Header() {
           />
         </Link>
 
-        {/* Desktop nav (ALL white links) */}
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-6 md:flex">
+          <Link href="/" className="text-white/80 hover:text-white">
+            Overview
+          </Link>
 
-<nav className="hidden items-center gap-6 md:flex">
-  <Link href="/" className="text-white/80 hover:text-white">
-    Overview
-  </Link>
+          <Link href="/the-process" className="text-white/80 hover:text-white">
+            The Process
+          </Link>
 
-  <Link href="/the-process" className="text-white/80 hover:text-white">
-    The Process
-  </Link>
+          <Link href="/apply" className="text-white/80 hover:text-white">
+            Apply for Consideration
+          </Link>
 
-  <Link href="/apply" className="text-white/80 hover:text-white">
-    Apply for Consideration
-  </Link>
-</nav>
+          <Link href="/contact" className="text-white/80 hover:text-white">
+            Let&apos;s Connect
+          </Link>
+        </nav>
 
-
-
-
-        {/* Mobile nav */}
+        {/* Mobile toggle */}
         <div className="flex items-center md:hidden">
           <button
             type="button"
@@ -60,27 +61,27 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Mobile menu */}
       {open && (
         <div
           id="mobile-nav"
-          className="border-t border-[#241d20] bg-black md:hidden"
+          className="md:hidden border-t border-[#241d20] bg-black"
         >
-          <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-5">
+          <nav className="flex flex-col gap-6 px-6 py-8">
             <Link
               href="/"
               className="text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
-              Home
+              Overview
             </Link>
 
             <Link
-              href="/contact"
+              href="/the-process"
               className="text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
-              Connect
+              The Process
             </Link>
 
             <Link
@@ -88,21 +89,20 @@ export default function Header() {
               className="text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
-              Join
+              Apply for Consideration
             </Link>
 
             <Link
-              href="/learn-more"
+              href="/contact"
               className="text-white/80 hover:text-white"
               onClick={() => setOpen(false)}
             >
-              Learn More
+              Let&apos;s Connect
             </Link>
-          </div>
+          </nav>
         </div>
       )}
     </header>
   );
 }
-
 
