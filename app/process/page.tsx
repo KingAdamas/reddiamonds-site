@@ -1,160 +1,81 @@
-// app/process/page.tsx
 import Link from "next/link";
 
 export default function ProcessPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-        {/* HERO */}
-        <section className="rounded-2xl border border-white/10 bg-rd-gray/30 p-6 shadow-sm sm:p-8">
-          <h1 className="text-2xl font-semibold tracking-tight text-rd-gold sm:text-3xl">
+    <main className="min-h-screen pt-[92px] bg-[#000000] text-white">
+      <div className="mx-auto max-w-5xl px-6 py-14">
+        
+        {/* HERO SECTION */}
+        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
+          <div className="rdi-hero-glow" />
+          <p className="text-center text-xs font-semibold tracking-[0.3em] uppercase text-[#ecc970]">
+            The Pathway to Refinement
+          </p>
+          <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
             The Process
           </h1>
-
-          <p className="mt-4 max-w-3xl text-white/90">
-            This is a structured evaluation pathway. We observe, score, and
-            refine creators based on performance, discipline, alignment, and
-            readiness.
+          <p className="mx-auto mt-4 max-w-md text-center text-gray-300">
+            This is a structured evaluation pathway. We observe, score, and refine creators 
+            based on performance, discipline, alignment, and readiness.
           </p>
+        </div>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
-            >
-              Begin Consideration
-            </Link>
-
-            {/* Mobile only */}
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white md:hidden"
-            >
-              Back to Home
-            </Link>
+        {/* 4 STEP PATHWAY */}
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {/* STEP 1 */}
+          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
+            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 1</span>
+            <h3 className="mt-2 text-xl font-bold">Submit for consideration</h3>
+            <p className="mt-3 text-white/70">You apply and enter review. This confirms interest and starts evaluation, not placement.</p>
           </div>
-        </section>
 
-        {/* 4 STEP PROCESS */}
-        <section className="mt-8 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-            The 4 step pathway
-          </h2>
-
-          <div className="mt-5 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-rd-gold">Step 1</div>
-              <h3 className="mt-1 text-lg font-semibold">Submit for consideration</h3>
-              <p className="mt-2 text-white/90">
-                You apply and enter review. This confirms interest and starts
-                evaluation, not placement.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-rd-gold">Step 2</div>
-              <h3 className="mt-1 text-lg font-semibold">Observation</h3>
-              <p className="mt-2 text-white/90">
-                We watch your content and live behavior over time. Consistency
-                and signal quality matter.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-rd-gold">Step 3</div>
-              <h3 className="mt-1 text-lg font-semibold">Evaluation</h3>
-              <p className="mt-2 text-white/90">
-                We assess performance, discipline, alignment, and readiness. The
-                standard is refinement, not hype.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-rd-gold">Step 4</div>
-              <h3 className="mt-1 text-lg font-semibold">Advancement</h3>
-              <p className="mt-2 text-white/90">
-                When you meet the standard, you can be invited into active
-                development and monetization pathways.
-              </p>
-            </div>
+          {/* STEP 2 */}
+          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
+            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 2</span>
+            <h3 className="mt-2 text-xl font-bold">Observation</h3>
+            <p className="mt-3 text-white/70">We watch your content and live behavior over time. Consistency and signal quality matter.</p>
           </div>
-        </section>
 
-        {/* WHAT WE EVALUATE */}
-        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-            What we evaluate
-          </h2>
+          {/* STEP 3 */}
+          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-450 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
+            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 3</span>
+            <h3 className="mt-2 text-xl font-bold">Evaluation</h3>
+            <p className="mt-3 text-white/70">We assess performance, discipline, alignment, and readiness. The standard is refinement, not hype.</p>
+          </div>
 
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
-            <li>Consistency and momentum</li>
-            <li>Live performance and audience control</li>
-            <li>Communication, presence, and professionalism</li>
-            <li>Discipline and follow through</li>
-            <li>Brand alignment and long term potential</li>
+          {/* STEP 4 */}
+          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
+            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 4</span>
+            <h3 className="mt-2 text-xl font-bold">Advancement</h3>
+            <p className="mt-3 text-white/70">When you meet the standard, you can be invited into active development and monetization pathways.</p>
+          </div>
+        </div>
+
+        {/* EVALUATION CRITERIA */}
+        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-700 mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
+          <h2 className="text-xl font-bold text-[#ecc970] uppercase tracking-widest">What we evaluate</h2>
+          <ul className="mt-5 grid gap-4 md:grid-cols-2 text-white/85">
+            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Consistency and momentum</li>
+            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Live performance & control</li>
+            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Communication & professionalism</li>
+            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Discipline and follow through</li>
           </ul>
-        </section>
+        </div>
 
-        {/* WHAT ACCEPTANCE MEANS */}
-        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-            What acceptance means
-          </h2>
+        {/* FINAL CALL TO ACTION */}
+        <div className="mt-14 text-center">
+          <Link
+            href="/apply"
+            className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-10 py-4 font-bold text-white hover:bg-[#97261f] transition-all shadow-xl"
+          >
+            Begin Consideration
+          </Link>
+          <p className="mt-4 text-sm text-white/50 tracking-wide">
+            Development is earned, not assigned.
+          </p>
+        </div>
 
-          <div className="mt-4 space-y-3 text-white/90">
-            <p>
-              Acceptance means entry into the Red Diamonds talent pool: a group
-              of creators under observation, evaluation, and ongoing
-              consideration for refinement and advancement.
-            </p>
-            <p className="font-semibold text-white">Development is earned, not assigned.</p>
-          </div>
-        </section>
-
-        {/* TIMELINE */}
-        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
-          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-            Timing expectations
-          </h2>
-
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
-            <li>Consideration is ongoing and performance based</li>
-            <li>Some creators advance quickly, others need more time and structure</li>
-            <li>Consistency beats intensity</li>
-          </ul>
-        </section>
-
-        {/* BOTTOM CTA AREA */}
-        <section className="mt-10 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
-          {/* Desktop only: ONLY Begin Consideration */}
-          <div className="hidden md:flex">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-rd-red-dark hover:shadow-md"
-            >
-              Begin Consideration
-            </Link>
-          </div>
-
-          {/* Mobile only: Begin Consideration + Back to Home */}
-          <div className="flex flex-col gap-3 md:hidden">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
-            >
-              Begin Consideration
-            </Link>
-
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </section>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
-
