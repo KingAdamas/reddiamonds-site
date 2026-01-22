@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#241d20] bg-black/80 backdrop-blur-md">   
-       <div className="mx-auto flex h-[72px] max-w-5xl items-center justify-between px-6">
+       <div className="mx-auto flex h-[56px] max-w-5xl items-center justify-between px-6">
         {/* Logo */}
         <Link
           href="/"
@@ -65,7 +65,7 @@ export default function Header() {
       {/* Mobile nav */}
       {open && (
         <div id="mobile-nav" className="border-t border-[#241d20] bg-black md:hidden">
-          <div className="mx-auto max-w-5xl px-6 py-4">
+          <div className="mx-auto max-w-5xl px-6 py-2">
             <nav className="flex flex-col gap-4">
               {NAV.map((item) => (
                 <Link
