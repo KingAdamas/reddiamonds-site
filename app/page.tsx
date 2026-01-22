@@ -21,30 +21,31 @@ export default function Home() {
             with control, not chaos. We refine potential into power, scale brands
             with precision, and compete where the top 1% actually operate.
           </p>
-
+          
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/apply"
-              className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-            >
-              Apply for Consideration
-            </Link>
+  <Link
+    href="/process"
+    className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
+  >
+    Understand the Process
+  </Link>
 
-            <Link
-              href="/learn-more"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
-            >
-              Understand the Process
-            </Link>
+  <Link
+    href="/apply"
+    className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
+  >
+    Apply for Consideration
+  </Link>
 
-            <Link
-              href="/contact"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
-            >
-              Let&apos;s Connect
-            </Link>
-          </div>
-
+  <Link
+    href="/contact"
+    className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white/80 hover:text-white"
+  >
+    Let&apos;s Connect
+  </Link>
+</div>
+          
+       
           <p className="mt-3 text-center text-sm text-white/60">
             Selection is intentional. Submission does not guarantee acceptance.
           </p>

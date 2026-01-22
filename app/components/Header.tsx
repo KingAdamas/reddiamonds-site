@@ -27,23 +27,23 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav (ALL white links) */}
-        <nav className="hidden items-center gap-6 md:flex">
-          <Link href="/" className="text-white/80 hover:text-white">
-            Home
-          </Link>
 
-          <Link href="/contact" className="text-white/80 hover:text-white">
-            Connect
-          </Link>
+<nav className="hidden items-center gap-6 md:flex">
+  <Link href="/" className="text-white/80 hover:text-white">
+    Overview
+  </Link>
 
-          <Link href="/apply" className="text-white/80 hover:text-white">
-            Apply for Consideration
-          </Link>
+  <Link href="/process" className="text-white/80 hover:text-white">
+    The Process
+  </Link>
 
-          <Link href="/learn-more" className="text-white/80 hover:text-white">
-            Learn More
-          </Link>
-        </nav>
+  <Link href="/apply" className="text-white/80 hover:text-white">
+    Apply for Consideration
+  </Link>
+</nav>
+
+
+
 
         {/* Mobile nav */}
         <div className="flex items-center md:hidden">
