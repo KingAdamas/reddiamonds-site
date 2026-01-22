@@ -1,108 +1,106 @@
+// app/apply/page.tsx
 import Link from "next/link";
 
 export default function ApplyPage() {
   return (
-    <main className="min-h-[calc(100vh-72px)] bg-[#000000] text-white">
-      <div className="mx-auto max-w-3xl px-6 py-14">
-        <div className="rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/50 to-transparent p-10 shadow-lg">
-          <p className="text-sm font-semibold tracking-wide text-[#ecc970]">
-            Apply for Consideration
+    <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+      {/* HERO */}
+      <section className="rounded-2xl border border-white/10 bg-rd-gray/30 p-6 shadow-sm sm:p-8">
+        <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          Apply for Consideration
+        </h1>
+
+        {/* Removed: "This is not an open signup" */}
+
+        <div className="mt-5 space-y-4 text-white/90">
+          {/* Keep only the second paragraph (condensed for mobile readability) */}
+          <p>
+            Acceptance means entry into the Red Diamonds talent pool: a group of
+            creators under observation, evaluation, and ongoing consideration for
+            refinement and advancement.
           </p>
-
-          <h1 className="mt-3 text-3xl font-extrabold leading-tight md:text-4xl">
-            Where creators are refined, not recruited.
-          </h1>
-
-          <p className="mt-4 text-white/85">
-            This is not an open signup. Red Diamonds International exists to refine rare
-            creator potential into dominance through structure, discipline, and high-level management.
-          </p>
-
-          <p className="mt-4 text-white/85">
-            If you are looking for quick exposure, shortcuts, or guaranteed outcomes, this is not for you.
-            If you are ready to operate with control, not chaos, continue.
-          </p>
-
-          <div className="mt-8 rounded-2xl border border-[#241d20] bg-black/30 p-6">
-            <h2 className="text-lg font-bold text-[#ecc970]">
-              What acceptance actually means
-            </h2>
-
-            <p className="mt-3 text-white/85">
-              Joining Red Diamonds International does not automatically place you into active development
-              or monetization pipelines.
-            </p>
-
-            <p className="mt-3 text-white/85">
-              Acceptance means entry into the <span className="font-semibold text-white">Red Diamonds talent pool</span>:
-              a group of creators under observation, evaluation, and ongoing consideration for refinement and advancement.
-              Development is <span className="font-semibold text-white">earned</span>, not assigned.
-            </p>
-
-            <p className="mt-3 text-white/85">
-              Application grants consideration, not placement. Entry into development pipelines is earned through
-              performance, discipline, alignment, and readiness.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            <div className="rounded-2xl border border-[#241d20] bg-[#241d20]/25 p-6">
-              <h3 className="font-bold text-white">Who this is for</h3>
-              <ul className="mt-3 space-y-2 text-white/85">
-                <li>Creators with momentum who need structure.</li>
-                <li>Live, content, or hybrid creators ready to be refined.</li>
-                <li>People who welcome coaching, critique, and accountability.</li>
-                <li>Creators focused on leverage, longevity, and control.</li>
-              </ul>
-            </div>
-
-            <div className="rounded-2xl border border-[#241d20] bg-[#241d20]/25 p-6">
-              <h3 className="font-bold text-white">What this is not</h3>
-              <ul className="mt-3 space-y-2 text-white/85">
-                <li>A guaranteed brand deal program.</li>
-                <li>A viral lottery or follow-for-follow group.</li>
-                <li>An open roster with automatic progression.</li>
-                <li>A place to test commitment without discipline.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 rounded-2xl border border-[#241d20] bg-black/30 p-6">
-            <h2 className="text-lg font-bold text-[#ecc970]">The refinement standard</h2>
-            <p className="mt-3 text-white/85">
-              RDI is performance-first. We build systems, not noise. We protect the standard.
-              Not everyone advances, and that distinction is intentional.
-            </p>
-          </div>
-
-          <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Link
-              href="https://forms.gle/R5m8rUGn3NDz6mS8A"
-              className="rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-            >
-              Begin Consideration
-            </Link>
-
-            <Link
-              href="/learn-more"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
-            >
-              Understand the Process
-            </Link>
-
-            <Link
-              href="/"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
-            >
-              Back to Home
-            </Link>
-          </div>
-
-          <p className="mt-3 text-sm text-white/60">
-            Selection is intentional. Submission does not guarantee acceptance.
-          </p>
+          <p className="font-semibold text-white">Development is earned, not assigned.</p>
         </div>
-      </div>
+
+        {/* TOP CTA (Optional, keeps flow strong) */}
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+          >
+            Begin Consideration
+          </Link>
+
+          {/* Optional: keep a quiet secondary link on larger screens near the top */}
+          <Link
+            href="/"
+            className="hidden items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white md:inline-flex"
+          >
+            Back to Home
+          </Link>
+        </div>
+      </section>
+
+      {/* WHO THIS IS FOR */}
+      <section className="mt-8 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
+        <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+          Who this is for
+        </h2>
+
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
+          <li>Creators with momentum who need structure</li>
+          <li>Live, content, or hybrid creators ready to be refined</li>
+          <li>People who welcome coaching, critique, and accountability</li>
+          <li>Creators focused on leverage, longevity, and control</li>
+        </ul>
+      </section>
+
+      {/* WHAT THIS IS NOT */}
+      <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
+        <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+          What this is not
+        </h2>
+
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
+          <li>A guaranteed brand deal program</li>
+          <li>A viral lottery or follow-for-follow group</li>
+          <li>An open roster with automatic progression</li>
+          <li>A place to test commitment without discipline</li>
+        </ul>
+      </section>
+
+      {/* BOTTOM CTA AREA */}
+      <section className="mt-10 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
+        {/* Desktop only: keep only Begin Consideration */}
+        <div className="hidden md:flex md:items-center md:justify-start">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+          >
+            Begin Consideration
+          </Link>
+        </div>
+
+        {/* Mobile only: Begin Consideration + Back to Home */}
+        <div className="flex flex-col gap-3 md:hidden">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+          >
+            Begin Consideration
+          </Link>
+
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white"
+          >
+            Back to Home
+          </Link>
+        </div>
+
+        {/* Removed on mobile: Understand the Process */}
+        {/* Removed entirely: "Selection is intentional. Submission does not guarantee acceptance." */}
+      </section>
     </main>
   );
 }
