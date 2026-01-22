@@ -77,7 +77,7 @@ export default function ApplyPage() {
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
-              href="/contact"
+              href="https://forms.gle/R5m8rUGn3NDz6mS8A"
               className="rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
             >
               Begin Consideration
