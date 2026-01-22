@@ -1,168 +1,160 @@
-export default function TheProcessPage() {
+// app/process/page.tsx
+import Link from "next/link";
+
+export default function ProcessPage() {
   return (
-    <main className="min-h-[calc(100vh-72px)] bg-black text-white">
-      <div className="mx-auto max-w-3xl px-6 py-16">
+    <div className="min-h-screen bg-black text-white">
+      <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+        {/* HERO */}
+        <section className="rounded-2xl border border-white/10 bg-rd-gray/30 p-6 shadow-sm sm:p-8">
+          <h1 className="text-2xl font-semibold tracking-tight text-rd-gold sm:text-3xl">
+            The Process
+          </h1>
 
-        <h1 className="text-4xl font-extrabold text-center">
-          The Process
-        </h1>
+          <p className="mt-4 max-w-3xl text-white/90">
+            This is a structured evaluation pathway. We observe, score, and
+            refine creators based on performance, discipline, alignment, and
+            readiness.
+          </p>
 
-        <p className="mt-10 text-white/85">
-          The modern creator economy rewards visibility faster than it rewards readiness.
-          Creators are given access to platforms, audiences, and monetization tools long before
-          they are given structure, discipline, or long-term strategy.
-        </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+            >
+              Begin Consideration
+            </Link>
 
-        <p className="mt-4 text-white/85">
-          Most agencies respond to this by recruiting talent and managing activity. That model
-          provides representation, but it rarely produces sustained growth, operational maturity,
-          or competitive advantage.
-        </p>
+            {/* Mobile only */}
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white md:hidden"
+            >
+              Back to Home
+            </Link>
+          </div>
+        </section>
 
-        <p className="mt-4 text-white/85">
-          Red Diamonds International exists to address what traditional agency structures do not:
-          intentional development. The purpose of RDI is not to collect creators, but to refine performance.
-        </p>
+        {/* 4 STEP PROCESS */}
+        <section className="mt-8 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+            The 4 step pathway
+          </h2>
 
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          Recruitment Is Not Refinement
-        </h2>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
+              <div className="text-sm font-semibold text-rd-gold">Step 1</div>
+              <h3 className="mt-1 text-lg font-semibold">Submit for consideration</h3>
+              <p className="mt-2 text-white/90">
+                You apply and enter review. This confirms interest and starts
+                evaluation, not placement.
+              </p>
+            </div>
 
-        <p className="mt-4 text-white/85">
-          Recruitment focuses on entry. Refinement focuses on advancement.
-        </p>
+            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
+              <div className="text-sm font-semibold text-rd-gold">Step 2</div>
+              <h3 className="mt-1 text-lg font-semibold">Observation</h3>
+              <p className="mt-2 text-white/90">
+                We watch your content and live behavior over time. Consistency
+                and signal quality matter.
+              </p>
+            </div>
 
-        <p className="mt-4 text-white/85">
-          Many agencies are built to sign creators, facilitate access, and manage day-to-day activity.
-          While this model provides support, it often plateaus talent by treating all creators the same
-          regardless of discipline, consistency, or readiness.
-        </p>
+            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
+              <div className="text-sm font-semibold text-rd-gold">Step 3</div>
+              <h3 className="mt-1 text-lg font-semibold">Evaluation</h3>
+              <p className="mt-2 text-white/90">
+                We assess performance, discipline, alignment, and readiness. The
+                standard is refinement, not hype.
+              </p>
+            </div>
 
-        <p className="mt-4 text-white/85">
-          RDI operates differently.
-        </p>
+            <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
+              <div className="text-sm font-semibold text-rd-gold">Step 4</div>
+              <h3 className="mt-1 text-lg font-semibold">Advancement</h3>
+              <p className="mt-2 text-white/90">
+                When you meet the standard, you can be invited into active
+                development and monetization pathways.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <p className="mt-4 text-white/85">
-          Creators may enter a shared environment of structure and support, but advancement is not automatic.
-          Presence within the system does not equal progression through it.
-        </p>
+        {/* WHAT WE EVALUATE */}
+        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+            What we evaluate
+          </h2>
 
-        <p className="mt-4 text-white/85">
-          Entry creates opportunity for observation. Progression is earned through behavior.
-        </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
+            <li>Consistency and momentum</li>
+            <li>Live performance and audience control</li>
+            <li>Communication, presence, and professionalism</li>
+            <li>Discipline and follow through</li>
+            <li>Brand alignment and long term potential</li>
+          </ul>
+        </section>
 
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          The RDI Operating Model
-        </h2>
+        {/* WHAT ACCEPTANCE MEANS */}
+        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+            What acceptance means
+          </h2>
 
-        <p className="mt-4 text-white/85">
-          Red Diamonds International operates as a performance refinement system.
-        </p>
+          <div className="mt-4 space-y-3 text-white/90">
+            <p>
+              Acceptance means entry into the Red Diamonds talent pool: a group
+              of creators under observation, evaluation, and ongoing
+              consideration for refinement and advancement.
+            </p>
+            <p className="font-semibold text-white">Development is earned, not assigned.</p>
+          </div>
+        </section>
 
-        <p className="mt-4 text-white/85">
-          Creators enter a structured environment where activity, discipline, and execution are observed
-          over time. Support is provided broadly, while deeper strategic investment is applied intentionally.
-        </p>
+        {/* TIMELINE */}
+        <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
+          <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
+            Timing expectations
+          </h2>
 
-        <p className="mt-4 text-white/85">
-          The model is designed to identify consistency under pressure, responsiveness to structure,
-          and capacity for growth beyond raw visibility.
-        </p>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
+            <li>Consideration is ongoing and performance based</li>
+            <li>Some creators advance quickly, others need more time and structure</li>
+            <li>Consistency beats intensity</li>
+          </ul>
+        </section>
 
-        <p className="mt-4 text-white/85">
-          Refinement is not applied evenly. Resources are focused where effort compounds.
-        </p>
+        {/* BOTTOM CTA AREA */}
+        <section className="mt-10 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
+          {/* Desktop only: ONLY Begin Consideration */}
+          <div className="hidden md:flex">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-rd-red-dark hover:shadow-md"
+            >
+              Begin Consideration
+            </Link>
+          </div>
 
-        <p className="mt-4 text-white/85">
-          There are no guaranteed timelines, placements, or outcomes. Development follows demonstrated
-          readiness, not stated ambition.
-        </p>
+          {/* Mobile only: Begin Consideration + Back to Home */}
+          <div className="flex flex-col gap-3 md:hidden">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+            >
+              Begin Consideration
+            </Link>
 
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          Platforms as Operating Arenas
-        </h2>
-
-        <p className="mt-4 text-white/85">
-          RDI currently operates within live and short-form ecosystems, including BIGO Live and TikTok Live.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          Platforms are treated as arenas for performance evaluation, not destinations. Placement on a
-          platform does not imply readiness, and access alone does not signal advancement.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          The emphasis remains on execution, adaptability, and sustained performance within structured environments.
-        </p>
-
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          Support Versus Advancement
-        </h2>
-
-        <p className="mt-4 text-white/85">
-          Red Diamonds International provides tangible support across its ecosystem. However, support
-          and advancement are not the same.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          All creators are not developed at the same depth at the same time. Intensive refinement is
-          reserved for those who demonstrate discipline, consistency, and capacity to operate at a higher level.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          RDI does not remove creators for being early in their development. It also does not carry
-          creators forward without evidence of readiness.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          Resources follow behavior.
-        </p>
-
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          Why This Model Exists
-        </h2>
-
-        <p className="mt-4 text-white/85">
-          This structure protects all participants in the system.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          Creators benefit from clarity, structure, and realistic pathways for growth. Brands and partners
-          engage with prepared, reliable talent. Long-term value is built through systems, not volume.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          RDI is designed to operate as infrastructure, not a promotional layer.
-        </p>
-
-        <h2 className="mt-12 text-2xl font-bold text-[#ecc970]">
-          The Decision Point
-        </h2>
-
-        <p className="mt-4 text-white/85">
-          Understanding the process is a prerequisite to consideration.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          Application does not guarantee advancement. Acceptance into development is earned over time.
-        </p>
-
-        <p className="mt-4 text-white/85">
-          Those who proceed do so with a clear understanding of how refinement operates within
-          Red Diamonds International.
-        </p>
-
-        <div className="mt-12 flex justify-center">
-          <a
-            href="/apply"
-            className="rounded-xl bg-[#d13027] px-8 py-4 font-semibold text-white hover:bg-[#97261f]"
-          >
-            Apply for Consideration
-          </a>
-        </div>
-
-      </div>
-    </main>
+            <Link
+              href="/"
+              className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white"
+            >
+              Back to Home
+            </Link>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
 
