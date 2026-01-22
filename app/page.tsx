@@ -8,7 +8,7 @@ export default function Home() {
         <div className="rdi-card rdi-reveal relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
           <div className="rdi-hero-glow" />
 
-          <p className="text-center text-sm font-semibold tracking-wide text-[#ecc970]">
+          <p className="text-center text-sm font-semibold tracking-[0.3em] uppercase text-[#ecc970]">
             Where creators are refined, not recruited.
           </p>
 
