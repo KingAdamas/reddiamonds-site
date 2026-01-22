@@ -47,7 +47,7 @@ export default function Home() {
           
        
           <p className="mt-3 text-center text-sm text-white/60">
-            Selection is intentional. Submission does not guarantee acceptance.
+           
           </p>
         </div>
 
