@@ -7,7 +7,7 @@ export default function ProcessPage() {
       <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
         {/* HERO */}
         <section className="rounded-2xl border border-white/10 bg-rd-gray/30 p-6 shadow-sm sm:p-8">
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <h1 className="text-2xl font-semibold tracking-tight text-rd-gold sm:text-3xl">
             The Process
           </h1>
 
@@ -43,7 +43,7 @@ export default function ProcessPage() {
 
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-white/80">Step 1</div>
+              <div className="text-sm font-semibold text-rd-gold">Step 1</div>
               <h3 className="mt-1 text-lg font-semibold">Submit for consideration</h3>
               <p className="mt-2 text-white/90">
                 You apply and enter review. This confirms interest and starts
@@ -52,7 +52,7 @@ export default function ProcessPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-white/80">Step 2</div>
+              <div className="text-sm font-semibold text-rd-gold">Step 2</div>
               <h3 className="mt-1 text-lg font-semibold">Observation</h3>
               <p className="mt-2 text-white/90">
                 We watch your content and live behavior over time. Consistency
@@ -61,7 +61,7 @@ export default function ProcessPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-white/80">Step 3</div>
+              <div className="text-sm font-semibold text-rd-gold">Step 3</div>
               <h3 className="mt-1 text-lg font-semibold">Evaluation</h3>
               <p className="mt-2 text-white/90">
                 We assess performance, discipline, alignment, and readiness. The
@@ -70,7 +70,7 @@ export default function ProcessPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-rd-gray/30 p-5">
-              <div className="text-sm font-semibold text-white/80">Step 4</div>
+              <div className="text-sm font-semibold text-rd-gold">Step 4</div>
               <h3 className="mt-1 text-lg font-semibold">Advancement</h3>
               <p className="mt-2 text-white/90">
                 When you meet the standard, you can be invited into active
@@ -130,7 +130,7 @@ export default function ProcessPage() {
           <div className="hidden md:flex">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
+              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-rd-red-dark hover:shadow-md"
             >
               Begin Consideration
             </Link>
