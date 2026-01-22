@@ -24,7 +24,7 @@ export default function Home() {
           
           <div className="mt-8 flex flex-wrap justify-center gap-3">
   <Link
-    href="/process"
+    href="/the-process"
     className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
   >
     Understand the Process

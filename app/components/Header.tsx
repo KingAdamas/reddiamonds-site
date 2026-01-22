@@ -33,7 +33,7 @@ export default function Header() {
     Overview
   </Link>
 
-  <Link href="/process" className="text-white/80 hover:text-white">
+  <Link href="/the-process" className="text-white/80 hover:text-white">
     The Process
   </Link>
 
