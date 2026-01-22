@@ -1,106 +1,77 @@
-// app/apply/page.tsx
 import Link from "next/link";
 
 export default function ApplyPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <main className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-        {/* HERO */}
-        <section className="rounded-2xl border border-white/10 bg-rd-gray/30 p-6 shadow-sm sm:p-8">
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+    <main className="min-h-screen pt-[92px] bg-[#000000] text-white">
+      <div className="mx-auto max-w-3xl px-6 py-14">
+        
+        {/* HEADER SECTION */}
+        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg mb-10 text-center">
+          <div className="rdi-hero-glow" />
+          <p className="text-xs font-semibold tracking-[0.3em] uppercase text-[#ecc970]">
+            Candidate Intake
+          </p>
+          <h1 className="mt-3 text-4xl font-extrabold leading-tight md:text-5xl">
             Apply for Consideration
           </h1>
+          <p className="mx-auto mt-4 max-w-md text-gray-300">
+            Submit your profile for evaluation. We review creators based on consistency, 
+            momentum, and brand alignment.
+          </p>
+        </div>
 
-          <div className="mt-5 space-y-4 text-white/90">
-            <p>
-              Acceptance means entry into the Red Diamonds talent pool: a group of
-              creators under observation, evaluation, and ongoing consideration
-              for refinement and advancement.
-            </p>
-            <p className="font-semibold text-white">
-              Development is earned, not assigned.
-            </p>
-          </div>
+        {/* APPLICATION FORM */}
+        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 md:p-12 shadow-2xl">
+          <form className="space-y-6">
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#ecc970] mb-2">Legal Name</label>
+                <input type="text" placeholder="Full Name" className="w-full bg-black/50 border border-[#241d20] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#d13027] transition-colors" />
+              </div>
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-widest text-[#ecc970] mb-2">Creator Alias</label>
+                <input type="text" placeholder="@username" className="w-full bg-black/50 border border-[#241d20] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#d13027] transition-colors" />
+              </div>
+            </div>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
-            >
-              Begin Consideration
-            </Link>
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-widest text-[#ecc970] mb-2">Primary Platform (TikTok / Bigo Live)</label>
+              <input type="text" placeholder="Where do you operate?" className="w-full bg-black/50 border border-[#241d20] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#d13027] transition-colors" />
+            </div>
 
-            {/* Mobile only */}
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white md:hidden"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </section>
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-widest text-[#ecc970] mb-2">Email Address</label>
+              <input type="email" placeholder="email@example.com" className="w-full bg-black/50 border border-[#241d20] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#d13027] transition-colors" />
+            </div>
 
-      {/* WHO THIS IS FOR */}
-      <section className="mt-8 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
-        <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-          Who this is for
-        </h2>
+            <div>
+              <label className="block text-xs font-bold uppercase tracking-widest text-[#ecc970] mb-2">Professional Summary</label>
+              <textarea rows={4} placeholder="Briefly describe your goals and current momentum..." className="w-full bg-black/50 border border-[#241d20] rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#d13027] transition-colors 
+resize-none"></textarea>
+            </div>
 
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
-          <li>Creators with momentum who need structure</li>
-          <li>Live, content, or hybrid creators ready to be refined</li>
-          <li>People who welcome coaching, critique, and accountability</li>
-          <li>Creators focused on leverage, longevity, and control</li>
-        </ul>
-      </section>
+            <div className="pt-4">
+              <button 
+                type="button"
+                className="rdi-btn-shine rdi-btn-pulse w-full rounded-xl bg-[#d13027] py-4 font-bold text-white hover:bg-[#97261f] transition-all uppercase tracking-widest"
+              >
+                Submit Application
+              </button>
+            </div>
+          </form>
+        </div>
 
-      {/* WHAT THIS IS NOT */}
-      <section className="mt-6 rounded-2xl border border-white/10 bg-rd-gray/20 p-6 sm:p-8">
-        <h2 className="text-xl font-semibold text-rd-gold sm:text-2xl">
-          What this is not
-        </h2>
-
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/90">
-          <li>A guaranteed brand deal program</li>
-          <li>A viral lottery or follow-for-follow group</li>
-          <li>An open roster with automatic progression</li>
-          <li>A place to test commitment without discipline</li>
-        </ul>
-      </section>
-
-      {/* BOTTOM CTA AREA */}
-      <section className="mt-10 rounded-2xl border border-white/10 bg-rd-gray/30 p-6 sm:p-8">
-        {/* Desktop only: keep only Begin Consideration */}
-        <div className="hidden md:flex md:items-center md:justify-start">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
-          >
-            Begin Consideration
+        {/* FOOTER NOTE */}
+        <div className="mt-10 text-center">
+          <p className="text-sm text-white/40 italic">
+            Submission of this form does not guarantee representation. All candidates undergo a multi-step observation period.
+          </p>
+          <Link href="/process" className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ecc970] hover:text-white transition-colors">
+            Review the process again
           </Link>
         </div>
 
-        {/* Mobile only: Begin Consideration + Back to Home */}
-        <div className="flex flex-col gap-3 md:hidden">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-xl bg-rd-red px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-rd-red-dark"
-          >
-            Begin Consideration
-          </Link>
-
-          <Link
-            href="/"
-            className="inline-flex items-center justify-center rounded-xl border border-white/15 px-5 py-3 text-sm font-semibold text-white/90 hover:border-white/25 hover:text-white md:hidden"
-          >
-            Back to Home
-          </Link>
-        </div>
-
-        {/* Removed on mobile: Understand the Process */}
-        {/* Removed entirely: "Selection is intentional. Submission does not guarantee acceptance." */}
-      </section>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
