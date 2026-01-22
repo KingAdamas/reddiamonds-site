@@ -80,7 +80,7 @@ export default function ApplyPage() {
               href="/contact"
               className="rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
             >
-              Start Your Application
+              Begin Consideration
             </Link>
 
             <Link
