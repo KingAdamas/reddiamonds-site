@@ -14,21 +14,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#241d20] bg-[#000000]">
-      <div className="mx-auto flex h-[80px] max-w-7xl items-center justify-between px-8">
+      <div className="mx-auto flex h-[64px] max-w-7xl items-center justify-between px-8">
         
-        {/* Logo on the Left - Larger with Red Glow */}
-        <Link href="/" className="flex items-center">
+        {/* Logo Left - Establish Brand Authority */}
+        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
             src="/logo.png"
             alt="Red Diamonds International"
-            width={58} 
-            height={58}
-            className="rounded shadow-[0_0_20px_rgba(209,48,39,0.25)]" 
+            width={48} 
+            height={48}
+            className="rounded shadow-[0_0_15px_rgba(209,48,39,0.2)]" 
             priority
           />
         </Link>
 
-        {/* Desktop Navigation on the Right */}
+        {/* Navigation Right - Refined Uppercase Style */}
         <nav className="hidden items-center gap-8 md:flex">
           {NAV.map((item) => (
             <Link
@@ -42,19 +42,33 @@ export default function Header() {
         </nav>
 
         {/* Mobile Toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-white text-2xl">
-          ☰
-        </button>
+        <div className="flex items-center md:hidden">
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            className="text-white/80 hover:text-white text-2xl"
+            aria-label="Toggle menu"
+          >
+            {open ? "✕" : "☰"}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Nav - Matches Solid Black Aesthetic */}
       {open && (
-        <div className="bg-[#000000] border-t border-[#241d20] md:hidden px-8 py-6 space-y-4">
-          {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="block text-[10px] font-bold uppercase tracking-widest text-white/70">
-              {item.label}
-            </Link>
-          ))}
+        <div className="border-t border-[#241d20] bg-[#000000] md:hidden">
+          <div className="px-8 py-6 flex flex-col gap-5">
+            {NAV.map((item) => (
+              <Link 
+                key={item.href} 
+                href={item.href} 
+                onClick={() => setOpen(false)}
+                className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/70 hover:text-[#ecc970]"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </header>
