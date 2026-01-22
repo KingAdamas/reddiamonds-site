@@ -1,81 +1,84 @@
 import Link from "next/link";
 
-export default function ProcessPage() {
+export default function Process() {
   return (
-    <main className="min-h-screen pt-[92px] bg-[#000000] text-white">
-      <div className="mx-auto max-w-5xl px-6 py-14">
+    <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
+      {/* Container matches Overview: 64px header clearance + 16px (pt-4) gap */}
+      <div className="mx-auto max-w-5xl px-6 pt-4 pb-20">
         
-        {/* HERO SECTION */}
-        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
-          <div className="rdi-hero-glow" />
-          <p className="text-center text-xs font-semibold tracking-[0.3em] uppercase text-[#ecc970]">
-            The Pathway to Refinement
+        {/* PAGE HEADER */}
+        <div className="border-b border-[#241d20] pb-12">
+          <p className="text-[10px] font-bold tracking-[0.4em] uppercase text-[#ecc970]">
+            The Pipeline
           </p>
-          <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
-            The Process
+          <h1 className="mt-4 text-4xl font-extrabold leading-tight md:text-6xl">
+            Refinement is <br /> a System.
           </h1>
-          <p className="mx-auto mt-4 max-w-md text-center text-gray-300">
-            This is a structured evaluation pathway. We observe, score, and refine creators 
-            based on performance, discipline, alignment, and readiness.
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-gray-400">
+            Red Diamonds International (RDI) operates a repeatable pipeline designed to identify high-potential creators and provide the validation infrastructure necessary for professional scale.
           </p>
         </div>
 
-        {/* 4 STEP PATHWAY */}
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {/* STEP 1 */}
-          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
-            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 1</span>
-            <h3 className="mt-2 text-xl font-bold">Submit for consideration</h3>
-            <p className="mt-3 text-white/70">You apply and enter review. This confirms interest and starts evaluation, not placement.</p>
+        {/* THE THREE PHASES */}
+        <div className="mt-16 space-y-20">
+          
+          {/* Phase 1 */}
+          <div className="grid gap-8 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 01</span>
+              <h2 className="mt-2 text-xl font-bold uppercase tracking-widest text-white">Identification</h2>
+            </div>
+            <div className="md:col-span-8">
+              <p className="text-sm leading-relaxed text-gray-400">
+                We analyze raw engagement data to find creators demonstrating consistent momentum. Entry into the ecosystem isn&apos;t about clout—it&apos;s about identifying creators ready to operate with discipline and professional conduct.
+              </p>
+            </div>
           </div>
 
-          {/* STEP 2 */}
-          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
-            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 2</span>
-            <h3 className="mt-2 text-xl font-bold">Observation</h3>
-            <p className="mt-3 text-white/70">We watch your content and live behavior over time. Consistency and signal quality matter.</p>
+          {/* Phase 2 */}
+          <div className="grid gap-8 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 02</span>
+              <h2 className="mt-2 text-xl font-bold uppercase tracking-widest text-white">Validation</h2>
+            </div>
+            <div className="md:col-span-8">
+              <p className="text-sm leading-relaxed text-gray-400">
+                Creators are placed into our infrastructure, where they are tested for consistency and professionalism. This phase includes operational support and financial structures, such as our creator-focused savings groups, ensuring long-term sustainability.
+              </p>
+            </div>
           </div>
 
-          {/* STEP 3 */}
-          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-450 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
-            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 3</span>
-            <h3 className="mt-2 text-xl font-bold">Evaluation</h3>
-            <p className="mt-3 text-white/70">We assess performance, discipline, alignment, and readiness. The standard is refinement, not hype.</p>
+          {/* Phase 3 */}
+          <div className="grid gap-8 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Phase 03</span>
+              <h2 className="mt-2 text-xl font-bold uppercase tracking-widest text-white">Optimization</h2>
+            </div>
+            <div className="md:col-span-8">
+              <p className="text-sm leading-relaxed text-gray-400">
+                Through performance engineering and monetization leverage, we maximize earning power. We replace chaos with structure, allowing creators to compete where the top 1% actually operate.
+              </p>
+            </div>
           </div>
 
-          {/* STEP 4 */}
-          <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8 hover:border-[#d13027]/50 transition-colors">
-            <span className="text-[#ecc970] text-xs font-bold uppercase tracking-[0.3em]">Step 4</span>
-            <h3 className="mt-2 text-xl font-bold">Advancement</h3>
-            <p className="mt-3 text-white/70">When you meet the standard, you can be invited into active development and monetization pathways.</p>
-          </div>
         </div>
 
-        {/* EVALUATION CRITERIA */}
-        <div className="rdi-card animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-700 mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-8">
-          <h2 className="text-xl font-bold text-[#ecc970] uppercase tracking-widest">What we evaluate</h2>
-          <ul className="mt-5 grid gap-4 md:grid-cols-2 text-white/85">
-            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Consistency and momentum</li>
-            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Live performance & control</li>
-            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Communication & professionalism</li>
-            <li className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[#ecc970]" /> Discipline and follow through</li>
-          </ul>
-        </div>
-
-        {/* FINAL CALL TO ACTION */}
-        <div className="mt-14 text-center">
-          <Link
-            href="/apply"
-            className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-10 py-4 font-bold text-white hover:bg-[#97261f] transition-all shadow-xl"
-          >
-            Begin Consideration
-          </Link>
-          <p className="mt-4 text-sm text-white/50 tracking-wide">
-            Development is earned, not assigned.
-          </p>
+        {/* CALL TO ACTION */}
+        <div className="mt-24 rounded-3xl border border-[#241d20] bg-gradient-to-r from-[#241d20]/30 to-transparent p-12 text-center">
+          <h3 className="text-2xl font-bold text-white">Ready for the pipeline?</h3>
+          <p className="mt-3 text-sm text-gray-400">Development is earned, not assigned.</p>
+          <div className="mt-10">
+            <Link 
+              href="/apply" 
+              className="rounded-full bg-[#d13027] px-12 py-4 text-[10px] font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_20px_rgba(209,48,39,0.3)]"
+            >
+              Apply for Consideration
+            </Link>
+          </div>
         </div>
 
       </div>
     </main>
   );
 }
+
