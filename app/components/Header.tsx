@@ -15,8 +15,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b border-[#241d20] bg-black">
-      <div className="mx-auto flex h-[72px] max-w-5xl items-center justify-between px-6">
+    <header className="sticky top-0 z-50 border-b border-[#241d20] bg-black/80 backdrop-blur-md">   
+       <div className="mx-auto flex h-[72px] max-w-5xl items-center justify-between px-6">
         {/* Logo */}
         <Link
           href="/"
