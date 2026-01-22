@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-[calc(100vh-72px)] bg-[#000000] text-white">
+    <main className="min-h-screen pt-[72px] bg-[#000000] text-white"> 
       <div className="mx-auto max-w-5xl px-6 py-14">
         {/* HERO */}
         <div className="rdi-card rdi-reveal relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-10 shadow-lg">
