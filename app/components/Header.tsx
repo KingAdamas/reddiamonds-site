@@ -4,6 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+const NAV = [
+  { label: "Overview", href: "/" },
+  { label: "The Process", href: "/process" },
+  { label: "Apply for Consideration", href: "/apply" },
+  { label: "Let’s Connect", href: "/contact" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
 
@@ -15,7 +22,7 @@ export default function Header() {
           href="/"
           className="flex items-center gap-3"
           onClick={() => setOpen(false)}
-          aria-label="Go to overview"
+          aria-label="Go to homepage"
         >
           <Image
             src="/logo.png"
@@ -29,21 +36,15 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 md:flex">
-          <Link href="/" className="text-white/80 hover:text-white">
-            Overview
-          </Link>
-
-          <Link href="/the-process" className="text-white/80 hover:text-white">
-            The Process
-          </Link>
-
-          <Link href="/apply" className="text-white/80 hover:text-white">
-            Apply for Consideration
-          </Link>
-
-          <Link href="/contact" className="text-white/80 hover:text-white">
-            Let&apos;s Connect
-          </Link>
+          {NAV.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-white/80 hover:text-white"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile toggle */}
@@ -61,45 +62,23 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile nav */}
       {open && (
-        <div
-          id="mobile-nav"
-          className="md:hidden border-t border-[#241d20] bg-black"
-        >
-          <nav className="flex flex-col gap-6 px-6 py-8">
-            <Link
-              href="/"
-              className="text-white/80 hover:text-white"
-              onClick={() => setOpen(false)}
-            >
-              Overview
-            </Link>
-
-            <Link
-              href="/the-process"
-              className="text-white/80 hover:text-white"
-              onClick={() => setOpen(false)}
-            >
-              The Process
-            </Link>
-
-            <Link
-              href="/apply"
-              className="text-white/80 hover:text-white"
-              onClick={() => setOpen(false)}
-            >
-              Apply for Consideration
-            </Link>
-
-            <Link
-              href="/contact"
-              className="text-white/80 hover:text-white"
-              onClick={() => setOpen(false)}
-            >
-              Let&apos;s Connect
-            </Link>
-          </nav>
+        <div id="mobile-nav" className="border-t border-[#241d20] bg-black md:hidden">
+          <div className="mx-auto max-w-5xl px-6 py-4">
+            <nav className="flex flex-col gap-4">
+              {NAV.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-white/80 hover:text-white"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </div>
       )}
     </header>
