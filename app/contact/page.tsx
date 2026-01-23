@@ -1,14 +1,32 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const response = await fetch("https://formspree.io/f/mwvlvgwz", {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      setStatus("SUBMITTED");
+      form.reset();
+    }
+  };
 
   return (
     <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
       <div className="mx-auto max-w-5xl px-6 pt-8 pb-20">
-        
+
         <div className="border-b border-[#241d20] pb-12 text-center">
           <p className="text-sm font-bold tracking-[0.4em] uppercase text-[#ecc970]">Inquiries</p>
           <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">Let&apos;s Connect.</h1>
@@ -39,16 +57,17 @@ export default function Contact() {
           </div>
 
           <div className="rounded-3xl border border-[#241d20] bg-[#0a0a0a]/50 p-10">
-            {submitted ? (
+            {status === "SUBMITTED" ? (
               <div className="text-center py-12">
                 <h3 className="text-xl font-bold text-[#ecc970] uppercase tracking-widest">Message Sent</h3>
                 <p className="mt-4 text-base text-gray-400">Your inquiry has been logged in our system.</p>
+                <button onClick={() => setStatus("")} className="mt-8 text-sm font-bold uppercase tracking-widest text-white/40 hover:text-white">Send Another</button>
               </div>
             ) : (
-              <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-6">
-                <input required type="text" placeholder="NAME" className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none" />
-                <input required type="email" placeholder="EMAIL ADDRESS" className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none" />
-                <textarea required placeholder="MESSAGE" rows={4} className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none resize-none"></textarea>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <input required name="Name" type="text" placeholder="NAME" className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none" />
+                <input required name="Email" type="email" placeholder="EMAIL ADDRESS" className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none" />
+                <textarea required name="Message" placeholder="MESSAGE" rows={4} className="w-full bg-black border border-[#241d20] rounded-xl px-5 py-5 text-base focus:border-[#ecc970] outline-none resize-none"></textarea>
                 <button type="submit" className="w-full rounded-full bg-[#d13027] py-6 text-sm font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821]">
                   Send Message
                 </button>
