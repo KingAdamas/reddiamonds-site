@@ -1,89 +1,39 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
-      {/* 64px header clearance + pt-8 (32px) gap for original-style layout */}
-      <div className="mx-auto max-w-5xl px-6 pt-8 pb-20">
-        
-        {/* HERO SECTION: Fully Centered Content */}
-        <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-12 shadow-2xl flex flex-col items-center">
-          <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-[#d13027]/10 blur-[100px]" />
-
-          {/* Gold Label: text-center and sm size for authority */}
-          <p className="text-center text-sm font-bold tracking-[0.4em] uppercase text-[#ecc970]">
-            Where creators are refined, not recruited.
+    <main className="min-h-screen bg-black text-white selection:bg-[#d13027]">
+      <div className="mx-auto max-w-4xl px-6 pt-32 pb-40 text-center md:pt-48">
+        <h1 className="text-4xl font-extrabold uppercase tracking-tighter md:text-6xl italic leading-tight">
+          Stop Posting.<br />
+          <span className="text-[#d13027]">Start Dominating.</span>
+        </h1>
+        <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-gray-400">
+          Elite strategy and high-level management for creators ready to operate 
+          with control, not chaos. We identify potential, engineer performance, 
+          and scale brands where the top 1% actually operate.
+        </p>
+        <div className="mt-12 flex items-center justify-center gap-4">
+          <div className="h-[1px] w-8 bg-[#241d20]"></div>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#ecc970]/50">
+            Operating across US, Canada, UK, MENA, and Africa
           </p>
-
-          {/* Heading: Centered text with high-impact scaling */}
-          <h1 className="mt-8 text-center text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
-            Stop posting. <br className="hidden md:block" /> Start dominating.
-          </h1>
-
-          {/* Description: mx-auto centers the width-restricted container, text-center centers the prose */}
-          <p className="mx-auto mt-8 max-w-2xl text-center text-lg leading-relaxed text-gray-300">
-            Elite strategy and high-level management for creators ready to operate 
-            with control, not chaos. We identify potential, turn it into measurable performance, 
-            and scale brands where the top 1% actually operate.
-          </p>
-
-          {/* Buttons Container: Centered stacking on mobile, centered row on desktop */}
-          <div className="mt-12 flex flex-col items-center justify-center gap-4 w-full md:flex-row">
-            <Link 
-              href="/process" 
-              className="inline-flex items-center justify-center text-center rounded-full bg-[#d13027] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] w-full md:w-auto hover:shadow-[0_0_20px_rgba(209,48,39,0.4)]"
-            >
-              Understand the Process
-            </Link>
-            <Link 
-              href="/apply" 
-              className="inline-flex items-center justify-center text-center rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10 w-full md:w-auto"
-            >
-              Apply for Consideration
-            </Link>
-          </div>
+          <div className="h-[1px] w-8 bg-[#241d20]"></div>
         </div>
-
-        {/* CORE PILLARS SECTION */}
-        <div className="mt-16 rounded-3xl border border-[#241d20] bg-[#0a0a0a]/50 p-12">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between border-b border-[#241d20] pb-10">
-            <div>
-              <h2 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest">What We Offer</h2>
-              <p className="mt-2 text-lg text-gray-500 italic">Refinement isn&apos;t a service. It&apos;s a system.</p>
-            </div>
-            <p className="mt-4 md:mt-0 text-sm font-bold uppercase tracking-[0.2em] text-white/40">
-              Not everyone qualifies. That&apos;s the point.
-            </p>
-          </div>
-          
-          <div className="mt-12 grid gap-12 md:grid-cols-2">
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Performance Engineering</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-400">
-                We identify what actually moves your audience, eliminate wasted effort, and build systems that increase retention and authority.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Monetization Leverage</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-400">
-                We structure income around leverage, not volume, optimizing monetization mechanics and long-term sustainability.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Operational Control</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-400">
-                From onboarding to execution, we enforce structure and support creators ready to operate at a professional standard.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Validation Infrastructure</h3>
-              <p className="mt-4 text-base leading-relaxed text-gray-400">
-                Access to proprietary training and frameworks reserved for creators inside the RDI pipeline.
-              </p>
-            </div>
-          </div>
+        <div className="mt-16 flex flex-col items-center justify-center gap-6 md:flex-row">
+          <Link 
+            href="/process" 
+            className="w-full rounded-full bg-[#d13027] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] md:w-auto shadow-[0_10px_20px_rgba(209,48,39,0.2)]"
+          >
+            Understand the Process
+          </Link>
+          <Link 
+            href="/apply" 
+            className="w-full rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10 md:w-auto"
+          >
+            Begin Consideration
+          </Link>
         </div>
-
       </div>
     </main>
   );
