@@ -3,14 +3,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
-      {/* Container: 64px header clearance + pt-8 (32px) for a breathable original-style gap */}
+      {/* Container: 64px header clearance + pt-8 (32px) gap */}
       <div className="mx-auto max-w-5xl px-6 pt-8 pb-20">
         
         {/* HERO SECTION */}
         <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-12 shadow-2xl">
           <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-[#d13027]/10 blur-[100px]" />
 
-          {/* Restored Label Size: text-sm (14px) */}
           <p className="text-center text-sm font-bold tracking-[0.4em] uppercase text-[#ecc970]">
             Where creators are refined, not recruited.
           </p>
@@ -19,23 +18,23 @@ export default function Home() {
             Stop posting. <br className="hidden md:block" /> Start dominating.
           </h1>
 
-          {/* Restored Body Size: text-lg (18px) for maximum impact */}
           <p className="mx-auto mt-8 max-w-2xl text-center text-lg leading-relaxed text-gray-300">
             Elite strategy and high-level management for creators ready to operate 
             with control, not chaos. We identify potential, turn it into measurable performance, 
             and scale brands where the top 1% actually operate.
           </p>
 
+          {/* UPDATED BUTTONS: Added inline-flex items-center justify-center */}
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <Link 
               href="/process" 
-              className="rounded-full bg-[#d13027] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_20px_rgba(209,48,39,0.4)]"
+              className="inline-flex items-center justify-center rounded-full bg-[#d13027] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_20px_rgba(209,48,39,0.4)]"
             >
               Understand the Process
             </Link>
             <Link 
               href="/apply" 
-              className="rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10"
             >
               Apply for Consideration
             </Link>
