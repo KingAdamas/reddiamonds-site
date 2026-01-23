@@ -13,9 +13,9 @@ export default function Home() {
 
           <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1]">
             Stop posting.<br />
-            Start dominating.
+            Start <span className="text-[#d13027]">dominating.</span>
           </h1>
-          
+                
           <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-gray-400">
             Elite strategy and high-level management for creators ready to operate with control, 
             not chaos. We identify potential, turn it into measurable performance, and scale 
