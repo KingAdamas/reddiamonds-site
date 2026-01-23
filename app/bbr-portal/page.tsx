@@ -31,35 +31,83 @@ export default function BBRPortal() {
         
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#d13027]/20 bg-[#0a0a0a] p-8 md:p-20 shadow-2xl">
           
-          {/* MASSIVE HEADER SECTION */}
-          <div className="border-b border-[#1a1a1a] pb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-[#d13027]">Internal Operational Track</p>
+          {/* HEADER SECTION - REMOVED INTERNAL LABEL */}
+          <div className="border-b border-[#1a1a1a] pb-16">
             
-            {/* 3X SIZE TITLE */}
-            <h1 className="mt-8 text-6xl font-[900] uppercase tracking-tighter md:text-[10rem] italic leading-[0.85] text-white">
+            {/* 50% SMALLER TITLE */}
+            <h1 className="text-4xl font-[900] uppercase tracking-tighter md:text-[5rem] italic leading-[0.85] text-white">
               Bigo Bean <span className="text-[#d13027]">Rush.</span>
             </h1>
 
-            {/* REPLACED PERFORMANCE METRICS WITH FORMAL DEFINITION */}
-            <p className="mt-12 max-w-4xl text-lg md:text-2xl leading-relaxed text-gray-400 font-medium">
+            <p className="mt-10 max-w-4xl text-lg md:text-xl leading-relaxed text-gray-400 font-medium">
               The BIGO Bean Rush (BBR) program is a specialized performance track that runs parallel to, 
               but completely separate from, your standard <span className="text-white font-bold">Agency account</span>. 
               It is designed for creators who want to focus on high-volume weekly goals rather than monthly time requirements.
             </p>
           </div>
 
-          {/* CALCULATOR & TABLE (Kept for functionality) */}
-          <div className="mt-16 grid gap-12">
-             {/* ... existing calculator and table code remains here ... */}
+          {/* CALCULATOR SECTION */}
+          <div className="mt-16 p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-[#ecc970] mb-8 italic">Payout Estimator</h2>
+            <div className="grid gap-12 md:grid-cols-2 items-center">
+              <div>
+                <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-4">Weekly Bean Count</label>
+                <input 
+                  type="number" 
+                  value={currentBeans} 
+                  onChange={(e) => setCurrentBeans(e.target.value === "" ? "" : Number(e.target.value))}
+                  placeholder="0"
+                  className="w-full bg-black border border-[#241d20] rounded-xl px-6 py-5 text-3xl font-bold text-white focus:border-[#d13027] outline-none transition-all"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-4 rounded-xl bg-black border border-[#1a1a1a]">
+                  <p className="text-[10px] font-bold uppercase text-gray-500">Wallet (USD)</p>
+                  <p className="text-xl font-bold text-white">${results.usd.toLocaleString()}</p>
+                </div>
+                <div className="p-4 rounded-xl bg-black border border-[#1a1a1a]">
+                  <p className="text-[10px] font-bold uppercase text-[#d13027]">BBR Reward</p>
+                  <p className="text-xl font-bold text-[#ecc970]">${results.reward.toLocaleString()}</p>
+                </div>
+                <div className="col-span-2 p-6 rounded-xl bg-[#d13027]/10 border border-[#d13027]/30">
+                  <p className="text-[10px] font-bold uppercase text-[#d13027]">Est. Weekly Payout</p>
+                  <p className="text-4xl font-bold text-white">${results.total.toLocaleString()}</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-[#1a1a1a] text-center">
+          {/* TABLE SECTION */}
+          <div className="mt-20">
+            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-white italic">Weekly Reward Chart</h2>
+            <div className="mt-8 overflow-hidden rounded-xl border border-[#1a1a1a]">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-white/5 uppercase text-[10px] tracking-widest text-gray-500">
+                  <tr>
+                    <th className="px-6 py-5">Level</th>
+                    <th className="px-6 py-5">Bean Goal</th>
+                    <th className="px-6 py-5 text-right">Agency Reward</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#1a1a1a]">
+                  {tiers.map((tier, i) => (
+                    <tr key={i} className="hover:bg-white/5 transition-colors">
+                      <td className="px-6 py-5 font-bold text-white">Lvl {tier.lvl}</td>
+                      <td className="px-6 py-5 text-gray-400">{tier.goal.toLocaleString()}</td>
+                      <td className="px-6 py-5 text-right font-bold text-[#ecc970]">${tier.reward.toLocaleString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mt-16 pt-8 border-t border-[#1a1a1a] text-center">
             <p className="text-[10px] uppercase tracking-[0.4em] text-gray-700">
-              Red Diamonds International Proprietary Infrastructure • Est. 2026
+              Red Diamonds International • Strategic Infrastructure • 2026
             </p>
           </div>
         </div>
-
       </div>
     </main>
   );
