@@ -5,7 +5,7 @@ export default function Process() {
     { 
       title: "Identification", 
       label: "Phase 01",
-      desc: "We analyze engagement data to find creators demonstrating consistent momentum across global markets. Entry into the ecosystem isn't about clout—it's about identifying creators ready to operate with discipline and professional conduct." 
+      desc: "We analyze engagement data to find creators demonstrating consistent momentum across global markets. Entry into the ecosystem isn't about clout, it's about identifying creators ready to operate with discipline and professional conduct." 
     },
     { 
       title: "Validation", 
