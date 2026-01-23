@@ -1,152 +1,90 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
-const EMAIL = "reddiamondfamilyus@gmail.com";
-// Update this later if you want a live link:
-const TIKTOK_URL = ""; // e.g. "https://www.tiktok.com/@reddiamondsinternational"
+export default function Contact() {
+  const [submitted, setSubmitted] = useState(false);
 
-export default function ContactPage() {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
   return (
-    <main className="min-h-[calc(100vh-72px)] bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-14">
-        {/* HERO */}
-        <div className="rdi-card rdi-reveal relative overflow-hidden rounded-3xl border border-[#241d20] bg-[#241d20]/30 p-10 shadow-lg">
-          <p className="text-center text-xl font-bold text-[#ecc970]">
-            Contact and Inquiries
+    <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
+      {/* 64px header clearance + 16px (pt-4) elite gap for perfect alignment */}
+      <div className="mx-auto max-w-5xl px-6 pt-4 pb-20">
+        
+        {/* PAGE HEADER */}
+        <div className="border-b border-[#241d20] pb-12 text-center">
+          <p className="text-[10px] font-bold tracking-[0.4em] uppercase text-[#ecc970]">
+            Inquiries
           </p>
-
-          <h1 className="mt-3 text-center text-4xl font-extrabold leading-tight md:text-5xl">
-            Route your inquiry correctly.
+          <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+            Let&apos;s Connect.
           </h1>
-
-          <p className="mt-4 mx-auto max-w-2xl text-center text-white/80">
-            This page routes professional inquiries related to partnerships, media, investors, and
-            existing Red Diamonds International creators. If you are a creator seeking formal
-            consideration, use the Apply pathway to enter the correct evaluation pipeline.
-          </p>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href={`mailto:${EMAIL}`}
-              className="rdi-btn-shine rdi-btn-pulse rounded-xl bg-[#d13027] px-6 py-3 font-semibold text-white hover:bg-[#97261f]"
-            >
-              Email the Team
-            </a>
-
-            <Link
-              href="/apply"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white hover:border-[#ecc970]/60 hover:text-[#ecc970]"
-            >
-              Apply for Consideration
-            </Link>
-
-            <Link
-              href="/the-process"
-              className="rounded-xl border border-[#241d20] bg-transparent px-6 py-3 font-semibold text-white/80 hover:text-white"
-            >
-              Review The Process
-            </Link>
-          </div>
-
-          <p className="mt-6 text-center text-sm text-white/60">
-            Inquiries are reviewed and routed internally. Submission does not guarantee a response.
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-gray-400">
+            Red Diamonds International operates with high-level precision. We respond to inquiries that align with our operational standards and professional conduct.
           </p>
         </div>
 
-        {/* ROUTING SECTIONS */}
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {/* Brands / Press / Investors */}
-          <div className="rdi-card rdi-reveal rdi-delay-150 rounded-3xl border border-[#241d20] bg-[#241d20]/20 p-8">
-            <h2 className="text-lg font-bold text-[#ecc970]">
-              Brands, Press, Investors
-            </h2>
-
-            <p className="mt-3 text-white/80">
-              Use email for partnership inquiries, media requests, sponsorship discussions, and
-              investor or platform coordination.
-            </p>
-
-            <p className="mt-5 text-sm text-white/70">
-              Email:{" "}
-              <a className="underline hover:text-white" href={`mailto:${EMAIL}`}>
-                {EMAIL}
-              </a>
-            </p>
-          </div>
-
-          {/* Existing RDI creators */}
-          <div className="rdi-card rdi-reveal rdi-delay-150 rounded-3xl border border-[#241d20] bg-[#241d20]/20 p-8">
-            <h2 className="text-lg font-bold text-[#ecc970]">
-              Existing RDI Creators
-            </h2>
-
-            <p className="mt-3 text-white/80">
-              For active creator support, account issues, internal matters, and routed requests,
-              use email with clear context so your inquiry can be handled efficiently.
-            </p>
-
-            <p className="mt-5 text-sm text-white/70">
-              Helpful context (when applicable): username, platform, region, and a short summary
-              of the issue.
-            </p>
-          </div>
-
-          {/* Non-RDI creators */}
-          <div className="rdi-card rdi-reveal rdi-delay-150 rounded-3xl border border-[#241d20] bg-[#241d20]/20 p-8">
-            <h2 className="text-lg font-bold text-[#ecc970]">
-              Creators Not Yet Affiliated
-            </h2>
-
-            <p className="mt-3 text-white/80">
-              Red Diamonds International is not an open-signup agency. If you are seeking
-              development, structure, or advancement within the RDI ecosystem, begin with formal
-              consideration.
-            </p>
-
-            <div className="mt-5">
-              <Link
-                href="/apply"
-                className="inline-flex rounded-xl bg-[#d13027] px-5 py-3 font-semibold text-white hover:bg-[#97261f]"
-              >
-                Apply for Consideration
-              </Link>
+        <div className="mt-16 grid gap-12 md:grid-cols-2">
+          
+          {/* LEFT COLUMN: INQUIRY CATEGORIES */}
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Creators</h2>
+              <p className="mt-2 text-sm text-white">Validation Pipeline</p>
+              <p className="mt-2 text-xs leading-relaxed text-gray-400">
+                For creators ready to move from chaos to control. We identify potential and provide the infrastructure for professional scale.
+              </p>
+              <Link href="/apply" className="mt-4 inline-block text-[10px] font-bold uppercase tracking-widest text-[#ecc970] hover:text-white transition-colors">Apply for Consideration &rarr;</Link>
             </div>
 
-            <p className="mt-4 text-sm text-white/70">
-              This ensures your information enters the correct evaluation pipeline.
-            </p>
+            <div className="pt-4">
+              <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Brands &amp; Operations</h2>
+              <p className="mt-2 text-sm text-white">Strategic Infrastructure</p>
+              <p className="mt-2 text-xs leading-relaxed text-gray-400">
+                Access a pipeline of validated talent or inquire about our asset management and operational systems.
+              </p>
+              <a href="mailto:reddiamondfamilyus@gmail.com" className="mt-4 inline-block text-[10px] font-bold uppercase tracking-widest text-[#ecc970] hover:text-white transition-colors">Direct Inquiry &rarr;</a>
+            </div>
+
+            <div className="pt-8 border-t border-[#241d20]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/40">Direct Line</p>
+              <p className="mt-2 text-sm font-bold">REDDIAMONDFAMILYUS@GMAIL.COM</p>
+              <p className="mt-1 text-[10px] text-gray-500 uppercase tracking-widest">Atlanta, GA, USA</p>
+            </div>
           </div>
+
+          {/* RIGHT COLUMN: CONTACT FORM */}
+          <div className="rounded-3xl border border-[#241d20] bg-[#0a0a0a]/50 p-8">
+            {submitted ? (
+              <div className="h-full flex flex-col items-center justify-center text-center py-12">
+                <h3 className="text-xl font-bold text-[#ecc970] uppercase tracking-widest">Message Sent</h3>
+                <p className="mt-4 text-sm text-gray-400">Your inquiry has been logged in our system.</p>
+                <button onClick={() => setSubmitted(false)} className="mt-8 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-white">Send Another</button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input required type="text" placeholder="NAME" className="w-full bg-black border border-[#241d20] rounded-xl px-4 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
+                <input required type="email" placeholder="EMAIL ADDRESS" className="w-full bg-black border border-[#241d20] rounded-xl px-4 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
+                <select required className="w-full bg-black border border-[#241d20] rounded-xl px-4 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-400">
+                  <option value="">INQUIRY TYPE</option>
+                  <option value="brand">BRAND PARTNERSHIP</option>
+                  <option value="business">BUSINESS / OPERATIONS</option>
+                  <option value="other">OTHER</option>
+                </select>
+                <textarea required placeholder="MESSAGE" rows={4} className="w-full bg-black border border-[#241d20] rounded-xl px-4 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"></textarea>
+                <button type="submit" className="w-full rounded-full bg-[#d13027] py-4 text-[10px] font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821]">
+                  Send Message
+                </button>
+              </form>
+            )}
+          </div>
+
         </div>
-
-        {/* FOLLOW (visibility only) */}
-        <div className="rdi-card rdi-reveal rdi-delay-200 mt-10 rounded-3xl border border-[#241d20] bg-[#241d20]/20 p-8">
-          <h2 className="text-lg font-bold text-[#ecc970]">Follow for Visibility</h2>
-
-          <p className="mt-3 text-white/80">
-            For public-facing updates, follow Red Diamonds International on TikTok.
-            This is not a support or contact channel.
-          </p>
-
-          {TIKTOK_URL ? (
-            <a
-              href={TIKTOK_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-5 inline-flex rounded-xl border border-[#241d20] px-5 py-3 font-semibold text-white/80 hover:border-[#ecc970]/60 hover:text-white"
-            >
-              Follow on TikTok
-            </a>
-          ) : (
-            <p className="mt-5 text-sm text-white/60">
-              TikTok link not set yet. Add your URL at the top of this file (TIKTOK_URL) when ready.
-            </p>
-          )}
-        </div>
-
-        {/* Quiet operational note */}
-        <p className="mt-10 text-center text-sm text-white/50">
-          Red Diamonds International operates with intention. Inquiries are reviewed quietly, routed deliberately,
-          and answered when aligned.
-        </p>
       </div>
     </main>
   );
