@@ -17,7 +17,7 @@ export default function BBRPortal() {
 
   const calculatePayout = () => {
     if (typeof currentBeans !== "number" || currentBeans <= 0) return { usd: 0, reward: 0, total: 0 };
-    const usdValue = Math.floor(currentBeans / 210);
+    const usdValue = Math.floor(currentBeans / 210); // Standard Bigo conversion rate
     const reachedTier = [...tiers].sort((a, b) => b.goal - a.goal).find(t => currentBeans >= t.goal);
     const reward = reachedTier ? reachedTier.reward : 0;
     return { usd: usdValue, reward, total: usdValue + reward };
@@ -31,19 +31,36 @@ export default function BBRPortal() {
         
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#d13027]/20 bg-[#0a0a0a] p-8 md:p-20 shadow-2xl">
           
-          {/* HEADER SECTION - REMOVED INTERNAL LABEL */}
+          {/* HEADER SECTION */}
           <div className="border-b border-[#1a1a1a] pb-16">
-            
-            {/* 50% SMALLER TITLE */}
             <h1 className="text-4xl font-[900] uppercase tracking-tighter md:text-[5rem] italic leading-[0.85] text-white">
               Bigo Bean <span className="text-[#d13027]">Rush.</span>
             </h1>
 
             <p className="mt-10 max-w-4xl text-lg md:text-xl leading-relaxed text-gray-400 font-medium">
-              The BIGO Bean Rush (BBR) program is a specialized performance track that runs parallel to, 
-              but completely separate from, your standard <span className="text-white font-bold">Agency account</span>. 
-              It is designed for creators who want to focus on high-volume weekly goals rather than monthly time requirements.
+              [cite_start]The **BIGO Bean Rush (BBR)** is an optional, high-performance hosting track that operates completely separate from your standard **Agency account**. [cite: 1] [cite_start]Built for high-volume creators, BBR replaces monthly contracts and 
+hour requirements with weekly "sprints" focused purely on performance. [cite: 1]
             </p>
+          </div>
+
+          {/* PROGRAM ESSENTIALS */}
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[#ecc970]">Weekly Sprints</h3>
+              [cite_start]<p className="mt-2 text-sm text-gray-400">Evaluation cycles run from Monday to Sunday, providing faster feedback and weekly bonus opportunities. [cite: 1]</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[#ecc970]">Zero Constraints</h3>
+              [cite_start]<p className="mt-2 text-sm text-gray-400">There are no agency contracts or minimum broadcasting hour requirements. [cite: 1]</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[#ecc970]">Wallet Security</h3>
+              [cite_start]<p className="mt-2 text-sm text-gray-400">While beans do not carry over to the next week for bonus credit, all earnings remain safely in your wallet with no financial penalties for low-volume weeks. [cite: 1]</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[#ecc970]">Active Status</h3>
+              [cite_start]<p className="mt-2 text-sm text-gray-400">To maintain eligibility, you must remain active; four consecutive weeks of inactivity will result in automatic removal from the BBR program. [cite: 1]</p>
+            </div>
           </div>
 
           {/* CALCULATOR SECTION */}
@@ -77,29 +94,14 @@ export default function BBRPortal() {
             </div>
           </div>
 
-          {/* TABLE SECTION */}
-          <div className="mt-20">
-            <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-white italic">Weekly Reward Chart</h2>
-            <div className="mt-8 overflow-hidden rounded-xl border border-[#1a1a1a]">
-              <table className="w-full text-left text-sm">
-                <thead className="bg-white/5 uppercase text-[10px] tracking-widest text-gray-500">
-                  <tr>
-                    <th className="px-6 py-5">Level</th>
-                    <th className="px-6 py-5">Bean Goal</th>
-                    <th className="px-6 py-5 text-right">Agency Reward</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#1a1a1a]">
-                  {tiers.map((tier, i) => (
-                    <tr key={i} className="hover:bg-white/5 transition-colors">
-                      <td className="px-6 py-5 font-bold text-white">Lvl {tier.lvl}</td>
-                      <td className="px-6 py-5 text-gray-400">{tier.goal.toLocaleString()}</td>
-                      <td className="px-6 py-5 text-right font-bold text-[#ecc970]">${tier.reward.toLocaleString()}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          {/* JOIN BBR BUTTON */}
+          <div className="mt-12 text-center">
+            <Link 
+              href="/apply" 
+              className="inline-block w-full md:w-auto rounded-full bg-[#d13027] px-16 py-6 text-sm font-black uppercase tracking-[0.5em] text-white shadow-2xl transition-all hover:bg-[#b02821] hover:scale-105"
+            >
+              Join BBR Now
+            </Link>
           </div>
 
           <div className="mt-16 pt-8 border-t border-[#1a1a1a] text-center">
