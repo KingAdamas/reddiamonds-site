@@ -1,48 +1,32 @@
-import type { Metadata } from "next";
+"use client";
+
 import type { ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.reddiamondsinternational.com"),
-  title: "Red Diamonds International",
-  description:
-    "Red Diamonds International is a creator-support and talent management brand helping content creators with strategy, structure, and agency coordination.",
-  openGraph: {
-    title: "Red Diamonds International",
-    description:
-      "Red Diamonds International is a creator-support and talent management brand helping content creators with strategy, structure, and agency coordination.",
-    url: "https://www.reddiamondsinternational.com",
-    siteName: "Red Diamonds International",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Red Diamonds International",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Red Diamonds International",
-    description:
-      "Red Diamonds International is a creator-support and talent management brand helping content creators with strategy, structure, and agency coordination.",
-    images: ["/og.png"],
-  },
-};
+// Note: Metadata cannot be exported from a Client Component. 
+// If you need SEO for the main site, keep metadata in a separate 'layout-metadata.ts' 
+// or simply use this streamlined version for the standalone look.
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  
+  // Logic to detect the standalone BBR portal
+  const isBBRPage = pathname === '/bbr-portal';
+
   return (
     <html lang="en" className="bg-[#000000]">
       <body className="bg-[#000000] text-white antialiased">
-        <Header />
+        {/* Hide Header only on the BBR Portal */}
+        {!isBBRPage && <Header />}
+        
         {children}
-        <Footer />
+        
+        {/* Hide Footer only on the BBR Portal */}
+        {!isBBRPage && <Footer />}
       </body>
     </html>
   );
 }
-
