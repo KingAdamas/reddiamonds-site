@@ -21,7 +21,7 @@ export default function Process() {
 
   return (
     <main className="min-h-screen pt-[64px] bg-black text-white selection:bg-[#d13027]">
-      <div className="mx-auto max-w-6xl px-6 pt-4 pb-20">
+      <div className="mx-auto max-w-6xl px-6 pt-4 md:pt-12 pb-20">
         
         {/* THE PROCESS HERO CARD - CENTERED HEADER */}
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 text-center shadow-2xl">
