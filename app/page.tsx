@@ -3,32 +3,32 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen pt-[64px] bg-[#000000] text-white">
-      {/* Container: 64px header clearance + pt-8 gap */}
+      {/* 64px header clearance + pt-8 (32px) gap for original-style layout */}
       <div className="mx-auto max-w-5xl px-6 pt-8 pb-20">
         
-        {/* HERO SECTION */}
-        <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-12 shadow-2xl">
+        {/* HERO SECTION: Fully Centered Content */}
+        <div className="relative overflow-hidden rounded-3xl border border-[#241d20] bg-gradient-to-b from-[#241d20]/60 to-transparent p-12 shadow-2xl flex flex-col items-center">
           <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-[#d13027]/10 blur-[100px]" />
 
-          {/* LEFT ALIGNED SLOGAN: text-left */}
-          <p className="text-left text-sm font-bold tracking-[0.4em] uppercase text-[#ecc970]">
+          {/* Gold Label: text-center and sm size for authority */}
+          <p className="text-center text-sm font-bold tracking-[0.4em] uppercase text-[#ecc970]">
             Where creators are refined, not recruited.
           </p>
 
-          {/* LEFT ALIGNED HEADLINE: text-left */}
-          <h1 className="mt-8 text-left text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
-            Stop posting. <br /> Start dominating.
+          {/* Heading: Centered text with high-impact scaling */}
+          <h1 className="mt-8 text-center text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+            Stop posting. <br className="hidden md:block" /> Start dominating.
           </h1>
 
-          {/* LEFT ALIGNED SUBTEXT: text-left and removed mx-auto */}
-          <p className="mt-8 max-w-2xl text-left text-lg leading-relaxed text-gray-300">
+          {/* Description: mx-auto centers the width-restricted container, text-center centers the prose */}
+          <p className="mx-auto mt-8 max-w-2xl text-center text-lg leading-relaxed text-gray-300">
             Elite strategy and high-level management for creators ready to operate 
             with control, not chaos. We identify potential, turn it into measurable performance, 
             and scale brands where the top 1% actually operate.
           </p>
 
-          {/* LEFT ALIGNED BUTTONS: md:justify-start */}
-          <div className="mt-12 flex flex-col gap-4 md:flex-row md:justify-start">
+          {/* Buttons Container: Centered stacking on mobile, centered row on desktop */}
+          <div className="mt-12 flex flex-col items-center justify-center gap-4 w-full md:flex-row">
             <Link 
               href="/process" 
               className="inline-flex items-center justify-center text-center rounded-full bg-[#d13027] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b02821] w-full md:w-auto hover:shadow-[0_0_20px_rgba(209,48,39,0.4)]"
