@@ -8,16 +8,15 @@ import Footer from "./components/Footer";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  
-  // Detects the standalone BBR portal
-  const isBBRPage = pathname === '/bbr-portal' || pathname === '/rush';
-  
+
+  // This logic hides the menu for /rush, /bbr-portal, and variations
+  const isBBRPage = pathname.startsWith('/bbr-portal') || pathname.startsWith('/rush');
+
   return (
     <html lang="en" className="bg-[#000000]">
       <body className="bg-[#000000] text-white antialiased">
-        {/* Hide Header/Footer only on the BBR Portal */}
         {!isBBRPage && <Header />}
-        {children}
+        <main>{children}</main>
         {!isBBRPage && <Footer />}
       </body>
     </html>
