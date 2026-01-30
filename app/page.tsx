@@ -11,7 +11,7 @@ export default function Home() {
             Where creators are refined, not recruited.
           </p>
 
-          <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1]">
+          <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1] mb-4">
             Stop posting.<br />
             Start <span className="text-[#d13027]">dominating.</span>
           </h1>

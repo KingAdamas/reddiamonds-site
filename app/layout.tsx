@@ -10,8 +10,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   
   // Detects the standalone BBR portal
-  const isBBRPage = pathname === '/bbr-portal';
-
+  const isBBRPage = pathname === '/bbr-portal' || pathname === '/rush';
+  
   return (
     <html lang="en" className="bg-[#000000]">
       <body className="bg-[#000000] text-white antialiased">
