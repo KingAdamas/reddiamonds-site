@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // We removed "output: 'export'" so App Hosting can build correctly
+  trailingSlash: true, 
+  images: { unoptimized: true },
   async redirects() {
     return [
       {
@@ -13,3 +14,4 @@ const nextConfig = {
   },
 };
 module.exports = nextConfig;
+
