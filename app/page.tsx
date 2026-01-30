@@ -16,7 +16,7 @@ export default function Home() {
             Start <span className="text-[#d13027]">dominating.</span>
           </h1>
                 
-          <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-gray-400">
+          <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-white">
             Elite strategy and high-level management for creators ready to operate with control, 
             not chaos. We identify potential, turn it into measurable performance, and scale 
             brands where the top 1% actually operate.
