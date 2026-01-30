@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true, // This creates folders for each route (e.g., /bbr-portal/index.html)
-  images: {
-    unoptimized: true,
+  trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: '/rush',
+        destination: '/bbr-portal/',
+        permanent: true,
+      },
+    ]
   },
 };
-
 module.exports = nextConfig;
