@@ -1,12 +1,13 @@
 {
   "hosting": {
     "public": "out",
+    "cleanUrls": true,
+    "trailingSlash": true,
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "redirects": [
+    "rewrites": [
       {
         "source": "/rush",
-        "destination": "/bbr-portal",
-        "type": 301
+        "destination": "/bbr-portal/index.html"
       }
     ]
   }
