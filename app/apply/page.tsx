@@ -40,7 +40,7 @@ export default function Apply() {
                 </h1>
                 <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-400">
                   The RDI pipeline is a structured environment for those ready to scale. 
-                  We do not recruit—we validate. Use this form to initiate the identification phase.
+                  We do not recruit, we validate. Use this form to initiate the identification phase.
                 </p>
               </div>
 
