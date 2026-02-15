@@ -68,7 +68,7 @@ export default function Apply() {
                 <div className="space-y-6">
                   <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">02. Performance Metrics</h2>
                   <input required type="text" placeholder="CURRENT AVG VIEWERSHIP / MONTHLY REACH" className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
-                  <textarea required placeholder="DESCRIBE YOUR CURRENT MOMENTUM" rows={3} className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"></textarea>
+                  <textarea required placeholder="DESCRIBE YOUR CURRENT LIVE STREAM EXPERIENCE." rows={3} className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"></textarea>
                 </div>
 
                 {/* SECTION 03: ALIGNMENT */}
