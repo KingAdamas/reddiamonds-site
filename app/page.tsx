@@ -46,7 +46,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:justify-between md:items-end border-b border-[#1a1a1a] pb-10">
             <div>
               <h2 className="text-4xl font-extrabold uppercase tracking-tighter italic">What We Offer</h2>
-              <p className="mt-4 text-sm font-medium italic text-gray-500">Refinement isn't a service. It's a system.</p>
+              <p className="mt-4 text-sm font-medium italic text-white">Refinement isn't a service. It's a system.</p>
             </div>
             <p className="mt-6 md:mt-0 text-[10px] font-bold uppercase tracking-[0.4em] text-[#ecc970]/50">
               Not everyone qualifies. That's the point.
@@ -56,25 +56,25 @@ export default function Home() {
           <div className="mt-16 grid gap-16 md:grid-cols-2">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-widest text-white">Performance Engineering</h3>
-              <p className="mt-4 text-gray-400 leading-relaxed">
+              <p className="mt-4 text-white leading-relaxed">
                 We identify what actually moves your audience, eliminate wasted effort, and build systems that increase retention and authority.
               </p>
             </div>
             <div>
               <h3 className="text-sm font-bold uppercase tracking-widest text-white">Monetization Leverage</h3>
-              <p className="mt-4 text-gray-400 leading-relaxed">
+              <p className="mt-4 text-white leading-relaxed">
                 We structure income around leverage, not volume, optimizing monetization mechanics and long-term sustainability.
               </p>
             </div>
             <div>
               <h3 className="text-sm font-bold uppercase tracking-widest text-white">Operational Control</h3>
-              <p className="mt-4 text-gray-400 leading-relaxed">
+              <p className="mt-4 text-white leading-relaxed">
                 From onboarding to execution, we enforce structure and support creators ready to operate at a professional standard.
               </p>
             </div>
             <div>
               <h3 className="text-sm font-bold uppercase tracking-widest text-white">Validation Infrastructure</h3>
-              <p className="mt-4 text-gray-400 leading-relaxed">
+              <p className="mt-4 text-white leading-relaxed">
                 Access to proprietary training and frameworks reserved for creators inside the RDI pipeline.
               </p>
             </div>

@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="en" className="bg-[#000000]">
-      <body className="bg-[#000000] text-white antialiased">
+      <body className="bg-[#000000] text-white antialiased font-sans">
         {!isBBRPage && <Header />}
         <main>{children}</main>
         {!isBBRPage && <Footer />}

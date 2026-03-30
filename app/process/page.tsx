@@ -33,7 +33,7 @@ export default function Process() {
             <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
               The <span className="text-[#d13027]">Process.</span>
             </h1>
-            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-gray-300">
+            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-white">
               Red Diamonds International (RDI) runs a selective creator development pipeline — built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function Process() {
                   <h2 className="mt-2 text-2xl font-bold uppercase tracking-widest text-white">{phase.title}</h2>
                 </div>
                 <div className="md:col-span-8">
-                  <p className="text-base leading-relaxed text-gray-400">
+                  <p className="text-base leading-relaxed text-white">
                     {phase.desc}
                   </p>
                 </div>

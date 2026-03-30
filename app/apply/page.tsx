@@ -22,7 +22,7 @@ export default function Apply() {
           {status === "SUBMITTED" ? (
             <div className="py-16 text-center">
               <h2 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest italic">Application Received</h2>
-              <p className="mx-auto mt-6 max-w-md text-lg text-gray-400 italic">
+              <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
                 Your data has been entered into the validation pipeline. A selection officer will review your profile.
               </p>
               <Link href="/" className="mt-12 inline-block text-xs font-bold uppercase tracking-[0.4em] text-white/40 hover:text-[#d13027] transition-colors">
@@ -38,7 +38,7 @@ export default function Apply() {
                 <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
                   Entry is <span className="text-[#d13027]">Earned.</span>
                 </h1>
-                <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-400">
+                <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white">
                   The RDI pipeline is a structured environment for those ready to scale. 
                   We do not recruit, we validate. Use this form to initiate the identification phase.
                 </p>
@@ -78,7 +78,7 @@ export default function Apply() {
                   
                   <div className="flex items-start gap-4 p-6 rounded-2xl border border-[#d13027]/20 bg-[#d13027]/5">
                     <input required type="checkbox" id="financial" className="mt-1 h-4 w-4 accent-[#d13027]" />
-                    <label htmlFor="financial" className="text-[10px] leading-relaxed text-gray-400 uppercase tracking-widest">
+                    <label htmlFor="financial" className="text-[10px] leading-relaxed text-white uppercase tracking-widest">
                       I am ready to set and track weekly and monthly financial goals to ensure long-term sustainability.
                     </label>
                   </div>

@@ -11,14 +11,14 @@ export default function LearnMorePage() {
             Elite strategy. Global results.
           </h1>
 
-          <p className="mt-4 text-white/80 text-lg leading-relaxed max-w-3xl">
+          <p className="mt-4 text-white text-lg leading-relaxed max-w-3xl">
             Red Diamonds International helps creators build repeatable growth, improve live performance,
             and scale reward earnings with structured coaching and high-level support.
           </p>
 
           <div className="mt-8 rounded-2xl border border-[#241d20] bg-black/40 p-6">
             <h2 className="text-xl font-bold text-[#ecc970]">What you’ll get</h2>
-            <ul className="mt-4 space-y-3 text-white/85">
+            <ul className="mt-4 space-y-3 text-white">
               <li>• Performance coaching tailored to your platform and region</li>
               <li>• Monetization strategy focused on repeatable reward growth</li>
               <li>• Support systems for consistency, retention, and community</li>
