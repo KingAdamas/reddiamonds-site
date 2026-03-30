@@ -33,7 +33,7 @@ export default function Contact() {
           {status === "SUBMITTED" ? (
             <div className="py-16 text-center">
               <h3 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest italic">Inquiry Logged.</h3>
-              <p className="mx-auto mt-6 max-w-md text-lg text-gray-400 italic">
+              <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
                 Your message has been entered into our secure system. An associate will reach out if your inquiry aligns with our current scaling.
               </p>
               <button onClick={() => setStatus("")} className="mt-12 text-xs font-bold uppercase tracking-[0.4em] text-white/40 hover:text-[#d13027] transition-colors">
@@ -54,13 +54,13 @@ export default function Contact() {
                 <div className="space-y-12">
                   <div>
                     <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Global Hubs</h2>
-                    <p className="mt-4 text-xl font-medium text-gray-400 leading-relaxed">
+                    <p className="mt-4 text-xl font-medium text-white leading-relaxed">
                       Atlanta • London • Dubai • Lagos
                     </p>
                   </div>
                   <div>
                     <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">Direct Channel</h2>
-                    <p className="mt-4 text-xl font-medium text-gray-400">
+                    <p className="mt-4 text-xl font-medium text-white">
                       reddiamondfamilyus@gmail.com
                     </p>
                   </div>

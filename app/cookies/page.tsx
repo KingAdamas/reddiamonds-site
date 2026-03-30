@@ -1,6 +1,6 @@
 export default function CookiesPolicy() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-14 text-white/90">
+    <main className="mx-auto max-w-5xl px-6 py-14 text-white">
       <h1 className="mb-6 text-3xl font-bold text-[#ecc970]">Cookies Policy</h1>
 
       <p className="mb-4">Last Updated: December 2025</p>

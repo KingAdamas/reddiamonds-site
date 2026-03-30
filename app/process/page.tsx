@@ -3,19 +3,19 @@ import Link from 'next/link';
 export default function Process() {
   const phases = [
     { 
-      title: "Identification", 
+      title: "Discovery", 
       label: "Phase 01",
-      desc: "We analyze engagement data to find creators demonstrating consistent momentum across global markets. Entry into the ecosystem isn't about clout, it's about identifying creators ready to operate with discipline and professional conduct." 
+      desc: "We evaluate creators based on trajectory, not just numbers. RDI looks beyond follower counts to assess consistency, content quality, and professional readiness. Entry into the pipeline is earned — not given." 
     },
     { 
-      title: "Validation", 
+      title: "Refinement", 
       label: "Phase 02",
-      desc: "Candidates undergo a rigorous testing phase to ensure total operational alignment. This phase includes operational support and goal-tracking. Note: Progression is performance-based, not time-based." 
+      desc: "Selected creators enter a structured development phase focused on elevating content performance, building operational discipline, and closing the gap between raw potential and market-ready talent. Progress is earned through output, not time." 
     },
     { 
-      title: "Scaling", 
+      title: "Opportunity Readiness", 
       label: "Phase 03",
-      desc: "Validated talent gains access to proprietary monetization and global positioning. We replace chaos with structure, allowing creators to compete where the top 1% actually operate." 
+      desc: "Refined creators are positioned for real monetization pathways, brand alignment, and expanded reach across key markets. This is where preparation meets opportunity — reserved for those who have completed the work." 
     }
   ];
 
@@ -28,13 +28,13 @@ export default function Process() {
           
           <div className="border-b border-[#1a1a1a] pb-12 flex flex-col items-center">
             <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#ecc970]">
-              The Operational Framework
+              The Development Pipeline
             </p>
             <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
               The <span className="text-[#d13027]">Process.</span>
             </h1>
-            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-gray-300">
-              Red Diamonds International (RDI) operates a repeatable pipeline designed to identify high-potential creators and provide the validation infrastructure necessary for professional scale.
+            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-white">
+              Red Diamonds International (RDI) runs a selective creator development pipeline — built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export default function Process() {
                   <h2 className="mt-2 text-2xl font-bold uppercase tracking-widest text-white">{phase.title}</h2>
                 </div>
                 <div className="md:col-span-8">
-                  <p className="text-base leading-relaxed text-gray-400">
+                  <p className="text-base leading-relaxed text-white">
                     {phase.desc}
                   </p>
                 </div>
