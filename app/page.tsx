@@ -8,13 +8,12 @@ export default function Home() {
         {/* THE HERO CARD */}
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 text-center shadow-2xl">
           <p className="text-xs font-bold uppercase tracking-[0.4em] text-[#ecc970]">
-            FROM CREATOR POTENTIAL
-            TO OPPORTUNITY READY TALENT.
+            WHERE CREATORS ARE REFINED, NOT RECRUITED.
           </p>
 
           <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1] mb-4">
-            From creator potential.<br />
-            To <span className="text-[#d13027]">opportunity ready talent.</span>
+            From creator potential<br />
+            To <span className="text-[#d13027]">opportunity ready talent</span>
           </h1>
                 
           <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-white">
