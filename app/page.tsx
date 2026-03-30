@@ -55,27 +55,27 @@ export default function Home() {
 
           <div className="mt-16 grid gap-16 md:grid-cols-2">
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Performance Engineering</h3>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Content Refinement</h3>
               <p className="mt-4 text-white leading-relaxed">
-                We identify what actually moves your audience, eliminate wasted effort, and build systems that increase retention and authority.
+                We strengthen creator positioning, improve content direction, and help turn raw potential into clearer digital value.
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Monetization Leverage</h3>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Monetization Strategy</h3>
               <p className="mt-4 text-white leading-relaxed">
-                We structure income around leverage, not volume, optimizing monetization mechanics and long-term sustainability.
+                We build more intentional monetization pathways designed for sustainability, stronger audience conversion, and long term growth.
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Operational Control</h3>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Structured Development</h3>
               <p className="mt-4 text-white leading-relaxed">
-                From onboarding to execution, we enforce structure and support creators ready to operate at a professional standard.
+                We provide a more disciplined pathway for creators ready to operate with consistency, accountability, and professional standards.
               </p>
             </div>
             <div>
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Validation Infrastructure</h3>
+              <h3 className="text-sm font-bold uppercase tracking-widest text-white">Opportunity Readiness</h3>
               <p className="mt-4 text-white leading-relaxed">
-                Access to proprietary training and frameworks reserved for creators inside the RDI pipeline.
+                Select creators gain access to development, tools, and strategic support designed to prepare them for stronger monetization and future opportunities.
               </p>
             </div>
           </div>
