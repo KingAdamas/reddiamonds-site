@@ -76,7 +76,7 @@ export default function Apply() {
                   <div className="grid gap-4 md:grid-cols-2">
                     <select
                       required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -98,7 +98,7 @@ export default function Apply() {
                   {/* Row 3: Gender full width */}
                   <select
                     required
-                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -165,7 +165,7 @@ export default function Apply() {
                   <div className="grid gap-4 md:grid-cols-2">
                     <select
                       required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -178,7 +178,7 @@ export default function Apply() {
 
                     <select
                       required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -193,7 +193,7 @@ export default function Apply() {
                   <div className="grid gap-4 md:grid-cols-2">
                     <select
                       required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -206,7 +206,7 @@ export default function Apply() {
 
                     <select
                       required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
                       defaultValue=""
                     >
                       <option value="" disabled>
