@@ -23,8 +23,8 @@ export default function Apply() {
                 Application Received
               </h2>
               <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
-                Your application has been received and entered into the RDI review process. Our team will review fit,
-                potential, and overall alignment with the pipeline.
+                Your application has been received and is now under review. Our team will assess fit, potential, and
+                alignment with the RDI pipeline.
               </p>
               <Link
                 href="/"

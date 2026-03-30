@@ -55,8 +55,8 @@ export default function Contact() {
                 </h1>
 
                 <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white">
-                  Red Diamonds International welcomes inquiries from creators, partners, and opportunity aligned contacts
-                  seeking connection, collaboration, or strategic conversation.
+                  Red Diamonds International welcomes inquiries from creators, partners, and aligned contacts seeking
+                  collaboration, connection, or strategic conversation.
                 </p>
               </div>
 
