@@ -8,7 +8,8 @@ export default function Home() {
         {/* THE HERO CARD */}
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 text-center shadow-2xl">
           <p className="text-xs font-bold uppercase tracking-[0.4em] text-[#ecc970]">
-            Where creators are refined, not recruited.
+            FROM CREATOR POTENTIAL
+            TO OPPORTUNITY READY TALENT.
           </p>
 
           <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1] mb-4">
@@ -17,14 +18,12 @@ export default function Home() {
           </h1>
                 
           <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-white">
-            Elite strategy and high-level management for creators ready to operate with control, 
-            not chaos. We identify potential, turn it into measurable performance, and scale 
-            brands where the top 1% actually operate.
+            Red Diamonds International identifies emerging creators, refines digital talent, and prepares select individuals for stronger monetization, brand readiness, and real content opportunities.
           </p>
 
           {/* GEOGRAPHIC CREDIBILITY ANCHOR */}
           <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.4em] text-[#ecc970]/50">
-            Operating across US, Canada, UK, MENA, and Africa.
+            BUILDING A TRUSTED PIPELINE OF DIGITAL TALENT ACROSS THE US, CANADA, UK, NIGERIA and SOUTH AFRICA.
           </p>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-6 md:flex-row">
@@ -38,7 +37,7 @@ export default function Home() {
               href="/apply" 
               className="w-full rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white/10 md:w-auto"
             >
-              Apply
+              Apply for Consideration.
             </Link>
           </div>
         </div>
