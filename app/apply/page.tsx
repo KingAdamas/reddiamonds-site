@@ -12,6 +12,15 @@ export default function Apply() {
     // Form logic is ready for integration with: reddiamondfamilyus@gmail.com
   };
 
+  const fieldBase =
+    "w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs outline-none transition-colors focus:border-[#ecc970] text-white placeholder:text-white/60";
+
+  // For selects: keep the “default/placeholder” option visually muted until a real value is chosen,
+  // but keep all actual selected text bright.
+  // `required` + `defaultValue=""` makes the select invalid until changed, enabling `invalid:` styling.
+  const selectBase =
+    "w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs outline-none focus:border-[#ecc970] transition-colors text-white invalid:text-white/60";
+
   return (
     <main className="min-h-screen bg-black text-white selection:bg-[#d13027]">
       <div className="mx-auto max-w-5xl px-6 pt-4 md:pt-12 pb-40 md:pt-48">
@@ -23,8 +32,8 @@ export default function Apply() {
                 Application Received
               </h2>
               <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
-                Your application has been received and is now under review. Our team will assess fit, potential, and
-                alignment with the RDI pipeline.
+                Your application has been received and entered into the RDI review process. Our team will review fit,
+                potential, and overall alignment with the pipeline.
               </p>
               <Link
                 href="/"
@@ -58,27 +67,13 @@ export default function Apply() {
 
                   {/* Row 1: Legal Name + Platform Handle */}
                   <div className="grid gap-4 md:grid-cols-2">
-                    <input
-                      required
-                      type="text"
-                      placeholder="LEGAL NAME"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
-                    <input
-                      required
-                      type="text"
-                      placeholder="PLATFORM HANDLE (@...)"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
+                    <input required type="text" placeholder="LEGAL NAME" className={fieldBase} />
+                    <input required type="text" placeholder="PLATFORM HANDLE (@...)" className={fieldBase} />
                   </div>
 
                   {/* Row 2: Primary Platform + Region / Country */}
                   <div className="grid gap-4 md:grid-cols-2">
-                    <select
-                      required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                      defaultValue=""
-                    >
+                    <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
                         PRIMARY PLATFORM
                       </option>
@@ -87,20 +82,11 @@ export default function Apply() {
                       <option value="other">OTHER</option>
                     </select>
 
-                    <input
-                      required
-                      type="text"
-                      placeholder="REGION / COUNTRY"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
+                    <input required type="text" placeholder="REGION / COUNTRY" className={fieldBase} />
                   </div>
 
                   {/* Row 3: Gender full width */}
-                  <select
-                    required
-                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                    defaultValue=""
-                  >
+                  <select required className={selectBase} defaultValue="">
                     <option value="" disabled>
                       GENDER
                     </option>
@@ -119,40 +105,20 @@ export default function Apply() {
                   </h2>
 
                   <div className="grid gap-4 md:grid-cols-2">
-                    <input
-                      required
-                      type="text"
-                      placeholder="CURRENT FOLLOWER COUNT"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
-                    <input
-                      required
-                      type="text"
-                      placeholder="AVERAGE VIEWS PER POST"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
+                    <input required type="text" placeholder="CURRENT FOLLOWER COUNT" className={fieldBase} />
+                    <input required type="text" placeholder="AVERAGE VIEWS PER POST" className={fieldBase} />
                   </div>
 
                   <div className="grid gap-4 md:grid-cols-2">
-                    <input
-                      required
-                      type="text"
-                      placeholder="POSTS PER WEEK"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
-                    <input
-                      required
-                      type="text"
-                      placeholder="LIVES PER WEEK"
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
-                    />
+                    <input required type="text" placeholder="POSTS PER WEEK" className={fieldBase} />
+                    <input required type="text" placeholder="LIVES PER WEEK" className={fieldBase} />
                   </div>
 
                   <input
                     required
                     type="text"
                     placeholder="AVERAGE VIEWERS PER LIVE (IF APPLICABLE)"
-                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    className={fieldBase}
                   />
                 </div>
 
@@ -163,11 +129,7 @@ export default function Apply() {
                   </h2>
 
                   <div className="grid gap-4 md:grid-cols-2">
-                    <select
-                      required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                      defaultValue=""
-                    >
+                    <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
                         ACTIVE & CONSISTENT?
                       </option>
@@ -176,11 +138,7 @@ export default function Apply() {
                       <option value="no">NO</option>
                     </select>
 
-                    <select
-                      required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                      defaultValue=""
-                    >
+                    <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
                         OPEN TO COACHING?
                       </option>
@@ -191,11 +149,7 @@ export default function Apply() {
                   </div>
 
                   <div className="grid gap-4 md:grid-cols-2">
-                    <select
-                      required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                      defaultValue=""
-                    >
+                    <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
                         WEEKLY COMMITMENT?
                       </option>
@@ -204,11 +158,7 @@ export default function Apply() {
                       <option value="no">NO</option>
                     </select>
 
-                    <select
-                      required
-                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-white"
-                      defaultValue=""
-                    >
+                    <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
                         FOCUSED ON LONG TERM GROWTH?
                       </option>
@@ -222,7 +172,7 @@ export default function Apply() {
                     required
                     placeholder="WHY SHOULD YOU BE SELECTED FOR THE RDI PIPELINE?"
                     rows={3}
-                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"
+                    className={`${fieldBase} resize-none`}
                   ></textarea>
                 </div>
 
