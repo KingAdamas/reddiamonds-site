@@ -15,17 +15,21 @@ export default function Apply() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-[#d13027]">
       <div className="mx-auto max-w-5xl px-6 pt-4 md:pt-12 pb-40 md:pt-48">
-        
         {/* THE APPLY HERO CARD */}
         <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 shadow-2xl">
-          
           {status === "SUBMITTED" ? (
             <div className="py-16 text-center">
-              <h2 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest italic">Application Received</h2>
+              <h2 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest italic">
+                Application Received
+              </h2>
               <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
-                Your data has been entered into the validation pipeline. A selection officer will review your profile.
+                Your application has been received and entered into the RDI review process. Our team will assess fit,
+                potential, and overall alignment with the pipeline.
               </p>
-              <Link href="/" className="mt-12 inline-block text-xs font-bold uppercase tracking-[0.4em] text-white/40 hover:text-[#d13027] transition-colors">
+              <Link
+                href="/"
+                className="mt-12 inline-block text-xs font-bold uppercase tracking-[0.4em] text-white/40 hover:text-[#d13027] transition-colors"
+              >
                 Return to Overview
               </Link>
             </div>
@@ -33,58 +37,201 @@ export default function Apply() {
             <>
               <div className="border-b border-[#1a1a1a] pb-10 text-center">
                 <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#ecc970]">
-                  The Gateway
+                  Apply for Consideration
                 </p>
                 <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
-                  Entry is <span className="text-[#d13027]">Earned.</span>
+                  Entry Into the Pipeline Is <span className="text-[#d13027]">Earned.</span>
                 </h1>
                 <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white">
-                  The RDI pipeline is a structured environment for those ready to scale. 
-                  We do not recruit, we validate. Use this form to initiate the identification phase.
+                  Red Diamonds International reviews creators for fit, potential, and long term opportunity readiness.
+                  This is not a general sign up. It is the first step into a selective pipeline built for refinement,
+                  development, and stronger monetization pathways.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="mt-16 space-y-12 text-left">
-                
-                {/* SECTION 01: IDENTITY */}
+                {/* SECTION 01: CREATOR PROFILE */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">01. Identity & Context</h2>
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                    01. Creator Profile
+                  </h2>
+
                   <div className="grid gap-4 md:grid-cols-2">
-                    <input required type="text" placeholder="LEGAL NAME" className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
-                    <input required type="text" placeholder="ALIAS / STAGE NAME" className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
+                    <input
+                      required
+                      type="text"
+                      placeholder="LEGAL NAME"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                    <input
+                      required
+                      type="text"
+                      placeholder="REGION / COUNTRY"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
                   </div>
+
                   <div className="grid gap-4 md:grid-cols-2">
-                    <select required className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500">
-                      <option value="">PRIMARY PLATFORM</option>
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        PRIMARY PLATFORM
+                      </option>
                       <option value="tiktok">TIKTOK</option>
                       <option value="bigo">BIGO LIVE</option>
                       <option value="other">OTHER</option>
                     </select>
-                    <input required type="text" placeholder="PLATFORM HANDLE (@...)" className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
+
+                    <input
+                      required
+                      type="text"
+                      placeholder="PLATFORM HANDLE (@...)"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                  </div>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        GENDER
+                      </option>
+                      <option value="female">FEMALE</option>
+                      <option value="male">MALE</option>
+                      <option value="nonbinary">NON-BINARY</option>
+                      <option value="prefer-not">PREFER NOT TO SAY</option>
+                      <option value="other">OTHER</option>
+                    </select>
+
+                    {/* Spacer to preserve the two-column rhythm without introducing a new field */}
+                    <div className="hidden md:block" />
                   </div>
                 </div>
 
-                {/* SECTION 02: PERFORMANCE */}
+                {/* SECTION 02: GROWTH */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">02. Performance Metrics</h2>
-                  <input required type="text" placeholder="CURRENT AVG VIEWERSHIP / MONTHLY REACH" className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors" />
-                  <textarea required placeholder="DESCRIBE YOUR CURRENT LIVE STREAM EXPERIENCE." rows={3} className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"></textarea>
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                    02. Growth & Traction
+                  </h2>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <input
+                      required
+                      type="text"
+                      placeholder="CURRENT FOLLOWER COUNT"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                    <input
+                      required
+                      type="text"
+                      placeholder="AVERAGE VIEWS PER POST"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                  </div>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <input
+                      required
+                      type="text"
+                      placeholder="POSTS PER WEEK"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                    <input
+                      required
+                      type="text"
+                      placeholder="LIVES PER WEEK"
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                    />
+                  </div>
+
+                  <input
+                    required
+                    type="text"
+                    placeholder="AVERAGE VIEWERS PER LIVE (IF APPLICABLE)"
+                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors"
+                  />
                 </div>
 
                 {/* SECTION 03: ALIGNMENT */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">03. Operational Alignment</h2>
-                  <textarea required placeholder="WHY RDI? (EXPLAIN YOUR READINESS FOR STRUCTURE)" rows={3} className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"></textarea>
-                  
-                  <div className="flex items-start gap-4 p-6 rounded-2xl border border-[#d13027]/20 bg-[#d13027]/5">
-                    <input required type="checkbox" id="financial" className="mt-1 h-4 w-4 accent-[#d13027]" />
-                    <label htmlFor="financial" className="text-[10px] leading-relaxed text-white uppercase tracking-widest">
-                      I am ready to set and track weekly and monthly financial goals to ensure long-term sustainability.
-                    </label>
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                    03. Operational Alignment
+                  </h2>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        ARE YOU CURRENTLY ACTIVE AND CONSISTENT ON YOUR PRIMARY PLATFORM?
+                      </option>
+                      <option value="yes">YES</option>
+                      <option value="somewhat">SOMEWHAT</option>
+                      <option value="no">NO</option>
+                    </select>
+
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        ARE YOU OPEN TO FEEDBACK, COACHING, AND STRUCTURED DEVELOPMENT?
+                      </option>
+                      <option value="yes">YES</option>
+                      <option value="somewhat">SOMEWHAT</option>
+                      <option value="no">NO</option>
+                    </select>
                   </div>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        CAN YOU COMMIT TO REGULAR POSTING OR STREAMING EACH WEEK?
+                      </option>
+                      <option value="yes">YES</option>
+                      <option value="somewhat">SOMEWHAT</option>
+                      <option value="no">NO</option>
+                    </select>
+
+                    <select
+                      required
+                      className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none text-gray-500"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        ARE YOU INTERESTED IN LONG TERM GROWTH, NOT JUST QUICK EXPOSURE?
+                      </option>
+                      <option value="yes">YES</option>
+                      <option value="somewhat">SOMEWHAT</option>
+                      <option value="no">NO</option>
+                    </select>
+                  </div>
+
+                  <textarea
+                    required
+                    placeholder="WHY DO YOU WANT TO BE CONSIDERED FOR RDI?"
+                    rows={3}
+                    className="w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs focus:border-[#ecc970] outline-none transition-colors resize-none"
+                  ></textarea>
                 </div>
 
-                <button type="submit" className="w-full rounded-full bg-[#d13027] py-6 text-sm font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_30px_rgba(209,48,39,0.3)]">
+                <button
+                  type="submit"
+                  className="w-full rounded-full bg-[#d13027] py-6 text-sm font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_30px_rgba(209,48,39,0.3)]"
+                >
                   Begin Consideration
                 </button>
               </form>
@@ -95,14 +242,16 @@ export default function Apply() {
         {/* FOOTER NOTE */}
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-600 italic">
-            Submission does not guarantee representation. All candidates undergo a multi-step observation period.
+            Submission does not guarantee acceptance into active development. All applicants enter a review process, and
+            progression within the pipeline is based on fit, consistency, and potential.
           </p>
-          <Link href="/process" className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ecc970] hover:text-white transition-colors">
+          <Link
+            href="/process"
+            className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ecc970] hover:text-white transition-colors"
+          >
             Review the process again
           </Link>
         </div>
-
       </div>
-    </main>
-  );
+    </main>;
 }
