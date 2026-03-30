@@ -13,8 +13,8 @@ export default function Home() {
           </p>
 
           <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-[1.1] mb-4">
-            Stop posting.<br />
-            Start <span className="text-[#d13027]">dominating.</span>
+            From creator potential.<br />
+            To <span className="text-[#d13027]">opportunity ready talent.</span>
           </h1>
                 
           <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-white">
