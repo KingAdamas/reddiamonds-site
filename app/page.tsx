@@ -22,7 +22,7 @@ export default function Home() {
 
           {/* GEOGRAPHIC CREDIBILITY ANCHOR */}
           <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.4em] text-[#ecc970]/50">
-            BUILDING A TRUSTED PIPELINE OF DIGITAL TALENT ACROSS THE US, CANADA, UK, NIGERIA and SOUTH AFRICA.
+            BUILDING A TRUSTED PIPELINE OF DIGITAL TALENT ACROSS THE US, CANADA, UK, NIGERIA, AND SOUTH AFRICA.
           </p>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-6 md:flex-row">
