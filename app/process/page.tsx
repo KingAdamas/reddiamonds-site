@@ -5,7 +5,7 @@ export default function Process() {
     { 
       title: "Discovery", 
       label: "Phase 01",
-      desc: "We evaluate creators based on trajectory, not just numbers. RDI looks beyond follower counts to assess consistency, content quality, and professional readiness. Entry into the pipeline is earned — not given." 
+      desc: "We evaluate creators based on trajectory, not just numbers. RDI looks beyond follower counts to assess consistency, content quality, and professional readiness. Entry into the pipeline is earned, not given." 
     },
     { 
       title: "Refinement", 
@@ -15,7 +15,7 @@ export default function Process() {
     { 
       title: "Opportunity Readiness", 
       label: "Phase 03",
-      desc: "Refined creators are positioned for real monetization pathways, brand alignment, and expanded reach across key markets. This is where preparation meets opportunity — reserved for those who have completed the work." 
+      desc: "Refined creators are positioned for real monetization pathways, brand alignment, and expanded reach across key markets. This is where preparation meets opportunity, reserved for those who have completed the work." 
     }
   ];
 
@@ -34,7 +34,7 @@ export default function Process() {
               The <span className="text-[#d13027]">Process.</span>
             </h1>
             <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-white">
-              Red Diamonds International (RDI) runs a selective creator development pipeline — built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
+              Red Diamonds International (RDI) runs a selective creator development pipeline built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
             </p>
           </div>
 
