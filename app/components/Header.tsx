@@ -1,10 +1,16 @@
-<nav>
-  {/* Existing menu items */}
-  <div className="nav-item">
-    <a href="/contact">Let's Connect</a>
-  </div>
-  <div className="nav-item">
-    <a href="/creator-hub">Creator Hub</a>
-  </div>
-  {/* Other existing menu items */}
-</nav>
+import Link from 'next/link';
+
+export default function Header() {
+  return (
+    <nav>
+      {/* Existing menu items */}
+      <div className="nav-item">
+        <Link href="/contact">Let's Connect</Link>
+      </div>
+      <div className="nav-item">
+        <Link href="/creator-hub">Creator Hub</Link>
+      </div>
+      {/* Other existing menu items */}
+    </nav>
+  );
+}
