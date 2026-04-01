@@ -105,7 +105,7 @@ export default function CreatorHubPage() {
 
                 <div className="relative aspect-[4/3] w-full">
                   <Image
-                    src="/images/language_english.jpg"
+                    src="/images/language_english.png"
                     alt="TikTok Creator Network Center screen reference"
                     fill
                     className="object-contain"
