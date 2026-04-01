@@ -13,34 +13,34 @@ export default function Header() {
           <Image 
             src="/icon.png" 
             alt="Red Diamonds International" 
-            width={40} 
-            height={40} 
-            className="rounded-md"
+            width={30} 
+            height={30} 
+            className="rounded-sm"
           />
         </Link>
 
-        {/* ORIGINAL MENU ITEMS + CREATOR HUB ON THE RIGHT */}
-        <nav className="flex items-center space-x-8">
-          <Link href="/" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-medium">
+        {/* ALL MENU ITEMS ON THE RIGHT */}
+        <nav className="flex items-center space-x-6">
+          <Link href="/" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-medium">
             Overview
           </Link>
 
-          <Link href="/process" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-medium">
+          <Link href="/process" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-medium">
             The Process
           </Link>
 
-          <Link href="/apply" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-medium">
+          <Link href="/apply" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-medium">
             Apply For Consideration
           </Link>
 
-          <Link href="/contact" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-medium">
+          <Link href="/contact" className="text-zinc-400 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-medium">
             Let's Connect
           </Link>
 
-          {/* NEW CREATOR HUB LINK - STYLED TO STAND OUT SLIGHTLY */}
+          {/* NEW CREATOR HUB LINK - SEPARATED BY A BORDER */}
           <Link 
             href="/creator-hub" 
-            className="text-white hover:text-red-500 transition-colors text-[10px] uppercase tracking-[0.2em] font-bold border-l border-zinc-800 pl-8"
+            className="text-white hover:text-red-500 transition-colors text-[10px] uppercase tracking-widest font-bold border-l border-zinc-800 pl-6"
           >
             Creator Hub
           </Link>
