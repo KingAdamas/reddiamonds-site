@@ -1,239 +1,183 @@
-import Link from "next/link";
-import Image from "next/image";
+'use client';
 
-export const metadata = { robots: "noindex, nofollow" };
+import React from 'react';
+import Link from 'next/link';
 
-const RESOURCES = [
-  { title: "Training", desc: "Structured development modules and live workflows." },
-  { title: "Payouts & Targets", desc: "Clear targets, payout timing, and performance expectations." },
-  { title: "Weekly Tips", desc: "Weekly execution notes to keep performance consistent." },
-  { title: "Support Form", desc: "Submit issues, requests, and operational questions." },
-  { title: "Policy & Expectations", desc: "Behavior, content, and platform compliance standards." },
-  { title: "Platform Resources", desc: "Platform tools, links, and reference material." },
-];
-
-const STANDARDS = [
-  "Consistency",
-  "Professionalism",
-  "Coachability",
-  "Communication",
-  "Accountability",
-];
-
-export default function CreatorHubPage() {
+export default function CreatorHub() {
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#d13027]">
-      <div className="mx-auto max-w-6xl px-6 pt-4 pb-40 md:pt-12 md:pt-48">
-        {/* HERO */}
-        <section className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 text-center shadow-2xl md:p-20">
-          <p className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">
-            INTERNAL CREATOR INFRASTRUCTURE
-          </p>
+    <div className="min-h-screen bg-black text-white font-sans selection:bg-red-500/30">
+      <main className="max-w-7xl mx-auto px-6 py-20">
+        
+        {/* --- GATEWAY HERO CARD --- */}
+        <section className="mb-24">
+          <div className="bg-zinc-950 border border-zinc-900 rounded-3xl p-10 md:p-20 text-center shadow-2xl relative overflow-hidden transition-all duration-500 hover:border-zinc-800">
+            {/* THE EXCLUSIVITY EYEBROW */}
+            <p className="text-red-600 text-[10px] md:text-[11px] uppercase tracking-[0.45em] mb-8 font-black">
+              RESTRICTED ACCESS: ACTIVE CREATORS ONLY
+            </p>
 
-          <h1 className="mt-8 text-4xl font-extrabold uppercase tracking-tighter italic leading-[1.1] md:text-7xl">
-            THE RDI CREATOR HUB
-          </h1>
+            {/* THE PLURAL AUTHORITY HEADLINE */}
+            <h1 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter text-white mb-6 leading-none">
+              THE RDI <span className="text-zinc-500 font-medium">CREATOR HUBS</span>
+            </h1>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white">
-            The infrastructure for refined talent. A dedicated ecosystem for active TikTok Live and BIGO Live hosts.
-          </p>
+            {/* THE PRIVILEGED & SUPPORTED DESCRIPTION */}
+            <p className="max-w-2xl mx-auto text-zinc-400 text-sm md:text-lg leading-relaxed mb-14 font-light">
+              The <span className="text-white font-medium italic">exclusive command center</span> for RDI Creators. 
+              <span className="text-zinc-200"> Access granted</span> to the latest trends, resources, updates, and trainings.
+            </p>
 
-          <div className="mt-12 flex flex-col items-center justify-center gap-6 md:flex-row">
-            <a
-              href="https://www.tiktok.com/t/ZTkjDy9aa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full rounded-full bg-[#ff0000] px-10 py-5 text-sm font-bold uppercase tracking-widest text-white hover:bg-[#cc0000] md:w-auto"
-            >
-              Get Your TikTok Invitation Code
-            </a>
+            {/* THE HUB ENTRY ACTIONS */}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+              {/* TIKTOK - RED */}
+              <a 
+                href="#tiktok-hub" 
+                className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white text-[11px] uppercase tracking-[0.25em] font-black py-6 px-12 rounded-full transition-all duration-300 shadow-xl shadow-red-900/30 hover:scale-105 active:scale-95 text-center"
+              >
+                RDI TIKTOK CREATORS HUB
+              </a>
+              
+              {/* BIGO - BLACK */}
+              <a 
+                href="#enrollment" 
+                className="w-full md:w-auto bg-black hover:bg-zinc-900 text-white text-[11px] uppercase tracking-[0.25em] font-black py-6 px-12 rounded-full border border-zinc-800 transition-all duration-300 hover:scale-105 active:scale-95 text-center"
+              >
+                RDI BIGO LIVE CREATORS HUB
+              </a>
 
-            <Link
-              href="#enrollment"
-              className="w-full rounded-full border border-[#241d20] bg-white/5 px-10 py-5 text-sm font-bold uppercase tracking-widest text-white hover:bg-white/10 md:w-auto"
-            >
-              Agency Enrollment
-            </Link>
+              {/* YOUTUBE - WHITE */}
+              <a 
+                href="#youtube-hub" 
+                className="w-full md:w-auto bg-white hover:bg-zinc-200 text-black text-[11px] uppercase tracking-[0.25em] font-black py-6 px-12 rounded-full transition-all duration-300 shadow-lg shadow-white/10 hover:scale-105 active:scale-95 text-center"
+              >
+                RDI YOUTUBE CREATORS HUB
+              </a>
+            </div>
           </div>
         </section>
 
-        {/* ENROLLMENT */}
-        <section
-          id="enrollment"
-          className="mt-32 rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 shadow-2xl md:p-20"
-        >
-          <div className="border-b border-[#1a1a1a] pb-10 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">
-              AGENCY ENROLLMENT
-            </p>
-            <h2 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter italic md:text-6xl">
-              Join System
-            </h2>
+        {/* --- AGENCY ENROLLMENT SECTION (TIKTOK) --- */}
+        <section id="tiktok-hub" className="mb-24 pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-zinc-900 pb-6">
+            <div>
+              <h2 className="text-zinc-500 text-[10px] uppercase tracking-[0.3em] mb-2">Agency Enrollment</h2>
+              <h3 className="text-4xl font-black italic uppercase tracking-tighter">Join System</h3>
+            </div>
           </div>
 
-          <div className="mt-16 grid gap-14 md:grid-cols-2">
-            {/* TikTok */}
-            <div className="text-center md:text-left">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* TIKTOK INSTRUCTIONS */}
+            <div className="bg-zinc-950 border border-zinc-900 p-8 rounded-2xl">
+              <h4 className="text-white text-lg font-bold mb-6 flex items-center">
+                <span className="w-2 h-2 bg-red-600 rounded-full mr-3 animate-pulse"></span>
                 TikTok Live (US Region)
-              </h3>
-
-              <div className="mt-8 flex flex-col items-center gap-4 md:items-start">
-                <a
-                  href="https://www.tiktok.com/t/ZTkjDy9aa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full rounded-full bg-[#ff0000] px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white hover:bg-[#cc0000] md:w-auto"
-                >
-                  Get Your TikTok Invitation Code
-                </a>
-
-                <p className="max-w-xl text-white/90">
-                  Manual guide: <span className="font-semibold">Settings and privacy</span> &gt;{" "}
-                  <span className="font-semibold">Creator tools</span> &gt;{" "}
-                  <span className="font-semibold">LIVE Center</span> &gt;{" "}
-                  <span className="font-semibold">Creator Network Center</span>.
-                </p>
-              </div>
-
-              <div className="mt-10 overflow-hidden rounded-2xl border border-[#1a1a1a] bg-black">
-                <div className="p-4 text-center">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/60">
-                    Reference Screen
-                  </p>
-                </div>
-
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/language_english.png"
-                    alt="TikTok Creator Network Center screen reference"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 520px"
-                    priority={false}
+              </h4>
+              <Link 
+                href="https://www.tiktok.com/t/ZTkjDy9aa/" 
+                target="_blank"
+                className="inline-block w-full bg-red-600 text-white text-center py-4 rounded-lg font-bold uppercase tracking-widest text-xs mb-8 hover:bg-red-700 transition-colors"
+              >
+                Get Your TikTok Invitation Code
+              </Link>
+              <div className="space-y-4 text-zinc-400 text-sm leading-relaxed">
+                <p><strong className="text-zinc-200">Manual guide:</strong> Settings and privacy &gt; Creator tools &gt; LIVE Center &gt; Creator Network Center.</p>
+                <div className="mt-8 rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950">
+                  <img 
+                    src="/images/language_english.png" 
+                    alt="TikTok Creator Network Center guide" 
+                    className="w-full h-auto"
                   />
+                  <div className="p-4 text-center text-zinc-500 text-xs italic">
+                    Reference: TikTok Creator Network Enrollment Flow
+                  </div>
                 </div>
-
-                <div className="border-t border-[#1a1a1a] p-6 text-center">
-                  <ol className="mx-auto max-w-xl space-y-3 text-sm text-white/90">
-                    <li>Open the Creator Network Center.</li>
-                    <li>Locate your invitation code on screen.</li>
-                    <li>Copy the invitation code and share it with the Creator Network Manager.</li>
-                  </ol>
-                </div>
+                <ol className="list-decimal list-inside space-y-3 mt-6">
+                  <li>Open the Creator Network Center.</li>
+                  <li>Locate your invitation code on screen.</li>
+                  <li>Copy the invitation code and share it with the Creator Network Manager.</li>
+                </ol>
               </div>
             </div>
 
-            {/* BIGO */}
-            <div className="text-center md:text-left">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-white">
-                BIGO Live (Regional)
-              </h3>
-
-              <div className="mt-8 flex flex-col items-center gap-4 md:items-start">
-                <a
-                  href="/contact"
-                  className="w-full rounded-full bg-[#ff0000] px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white hover:bg-[#cc0000] md:w-auto"
+            {/* BIGO INSTRUCTIONS */}
+            <div id="enrollment" className="bg-zinc-950 border border-zinc-900 p-8 rounded-2xl">
+              <h4 className="text-white text-lg font-bold mb-6 flex items-center">
+                <span className="w-2 h-2 bg-zinc-500 rounded-full mr-3"></span>
+                Bigo Live (Regional)
+              </h4>
+              <div className="space-y-4">
+                <Link 
+                  href="/contact" 
+                  className="inline-block w-full bg-red-600 text-white text-center py-4 rounded-lg font-bold uppercase tracking-widest text-xs hover:bg-red-700 transition-colors"
                 >
                   Join Bigo Agency (US/Canada)
-                </a>
-
-                <a
-                  href="/contact"
-                  className="w-full rounded-full border border-[#241d20] bg-white/5 px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white hover:bg-white/10 md:w-auto"
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="inline-block w-full bg-zinc-800 text-white text-center py-4 rounded-lg font-bold uppercase tracking-widest text-xs hover:bg-zinc-700 transition-colors"
                 >
                   Join Bigo Agency (UK/Ireland)
-                </a>
-
-                <p className="max-w-xl text-white/90">
-                  If you are unsure which region applies, use the contact form and select the closest match.
-                </p>
+                </Link>
               </div>
-
-              {/* Downloads row */}
-              <div className="mt-12 rounded-2xl border border-[#1a1a1a] bg-black p-6">
-                <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/60 text-center md:text-left">
-                  Downloads
-                </p>
-
-                <div className="mt-5 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-start">
-                  <a
-                    href="https://www.bigo.tv/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/70 hover:text-white transition-colors"
-                  >
-                    Download Bigo Live
-                  </a>
-
-                  <span className="hidden md:block text-white/20">•</span>
-
-                  <a
-                    href="https://www.tiktok.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/70 hover:text-white transition-colors"
-                  >
-                    Download TikTok
-                  </a>
+              <p className="mt-8 text-zinc-500 text-sm italic">
+                If you are unsure which region applies, use the contact form and select the closest match.
+              </p>
+              
+              <div className="mt-12 pt-8 border-t border-zinc-900">
+                <h5 className="text-[10px] uppercase tracking-widest text-zinc-500 mb-4">Downloads</h5>
+                <div className="flex gap-4">
+                  <Link href="https://www.bigo.tv/" target="_blank" className="text-xs text-zinc-400 hover:text-white transition-colors underline decoration-zinc-800 underline-offset-4">Download Bigo Live</Link>
+                  <span className="text-zinc-800">•</span>
+                  <Link href="https://www.tiktok.com/" target="_blank" className="text-xs text-zinc-400 hover:text-white transition-colors underline decoration-zinc-800 underline-offset-4">Download TikTok</Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* RESOURCE GRID */}
-        <section className="mt-32 rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 shadow-2xl md:p-20">
-          <div className="border-b border-[#1a1a1a] pb-10 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">
-              RESOURCES
-            </p>
-            <h2 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter italic md:text-6xl">
-              Grid
-            </h2>
+        {/* --- RESOURCES GRID --- */}
+        <section id="resources" className="mb-24 pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-zinc-900 pb-6">
+            <div>
+              <h2 className="text-zinc-500 text-[10px] uppercase tracking-[0.3em] mb-2">Resources</h2>
+              <h3 className="text-4xl font-black italic uppercase tracking-tighter">Growth Matrix</h3>
+            </div>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {RESOURCES.map((card) => (
-              <div
-                key={card.title}
-                className="rounded-2xl border border-[#1a1a1a] bg-[#111111] p-8 text-center sm:text-left"
-              >
-                <h3 className="text-sm font-bold uppercase tracking-widest text-white">
-                  {card.title}
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-white/80">
-                  {card.desc}
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { title: 'Training', desc: 'Structured development modules and live workflows.' },
+              { title: 'Payouts & Targets', desc: 'Clear targets, payout timing, and performance expectations.' },
+              { title: 'Weekly Tips', desc: 'Weekly execution notes to keep performance consistent.' },
+              { title: 'Support Form', desc: 'Submit issues, requests, and operational questions.' },
+              { title: 'Policy & Expectations', desc: 'Behavior, content, and platform compliance standards.' },
+              { title: 'Platform Resources', desc: 'Platform tools, links, and reference material.' }
+            ].map((item) => (
+              <div key={item.title} className="p-8 bg-zinc-950 border border-zinc-900 rounded-2xl hover:border-red-900/50 transition-all group">
+                <h4 className="text-white font-bold mb-3 uppercase tracking-widest text-xs group-hover:text-red-500 transition-colors">{item.title}</h4>
+                <p className="text-zinc-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* STANDARDS */}
-        <section className="mt-32 rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 shadow-2xl md:p-20">
-          <div className="border-b border-[#1a1a1a] pb-10 text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.4em] text-white/60">
-              EXPECTATIONS
-            </p>
-            <h2 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter italic md:text-6xl">
-              Standards
-            </h2>
+        {/* --- STANDARDS SECTION --- */}
+        <section id="youtube-hub" className="mb-24 pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-zinc-900 pb-6">
+            <div>
+              <h2 className="text-zinc-500 text-[10px] uppercase tracking-[0.3em] mb-2">Expectations</h2>
+              <h3 className="text-4xl font-black italic uppercase tracking-tighter text-white">Standards</h3>
+            </div>
           </div>
-
-          {/* Using a simple icon bullet approach (consistent with your typography + spacing) */}
-          <ul className="mx-auto mt-14 grid max-w-3xl gap-5 text-center md:text-left">
-            {STANDARDS.map((item) => (
-              <li key={item} className="flex items-center justify-center gap-3 md:justify-start">
-                <span className="inline-flex h-2 w-2 rounded-full bg-[#d13027]" />
-                <span className="text-sm font-bold uppercase tracking-widest text-white/90">
-                  {item}
-                </span>
-              </li>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {['Consistency', 'Professionalism', 'Coachability', 'Communication', 'Accountability'].map((standard) => (
+              <div key={standard} className="py-6 border border-zinc-900 rounded-xl text-center">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500 font-bold">{standard}</span>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
