@@ -42,6 +42,7 @@ export default function Header() {
             href="/creator-hub" 
             className="text-white hover:text-red-500 transition-colors text-[10px] uppercase tracking-widest font-bold border-l border-zinc-800 pl-6"
           >
+            <Link href="/creator-hub" className="text-white font-bold text-lg uppercase tracking-widest border-t border-zinc-800 pt-4 w-full text-center"></Link>
             Creator Hub
           </Link>
         </nav>
