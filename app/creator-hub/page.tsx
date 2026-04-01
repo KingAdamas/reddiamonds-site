@@ -52,8 +52,8 @@ export default function CreatorHub() {
                 className={`w-full bg-black border ${error ? 'border-red-600' : 'border-zinc-800'} text-white text-center py-4 rounded-xl focus:outline-none focus:border-red-600 transition-all uppercase tracking-widest text-[10px]`}
                 autoFocus
               />
-              {error && <p className="text-red-600 text-[9px] uppercase font-black tracking-widest">Access Denied: Refined Talent Only</p>}
-              <button type="submit" className="w-full bg-red-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-red-700 transition-all">Unlock Hub</button>
+              {error && <p className="text-red-600 text-[9px] uppercase font-black tracking-widest mt-2">Access Denied: Refined Talent Only</p>}
+              <button type="submit" className="w-full bg-red-600 text-white py-4 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-red-700 transition-all mt-4">Unlock Hub</button>
             </form>
 
             <div className="mt-8 flex flex-col gap-4">
@@ -91,6 +91,7 @@ export default function CreatorHub() {
           <h3 className="text-4xl font-black italic uppercase tracking-tighter border-b border-zinc-900 pb-6 mb-12">JOIN SYSTEM</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             
+            {/* TIKTOK CARD */}
             <div className="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl shadow-xl">
               <h4 className="text-white text-lg font-bold mb-6 flex items-center">
                 <span className="w-2.5 h-2.5 bg-red-600 rounded-full mr-3 animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></span>
@@ -109,4 +110,57 @@ export default function CreatorHub() {
               </div>
             </div>
 
-            <div id="enrollment" className="bg-zinc-950 border border-zinc
+            {/* BIGO CARD */}
+            <div id="enrollment" className="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl shadow-xl">
+              <h4 className="text-white text-lg font-bold mb-6 flex items-center">
+                <span className="w-2.5 h-2.5 bg-red-600 rounded-full mr-3 animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></span>
+                Bigo Live (Regional)
+              </h4>
+              <div className="space-y-4 mb-14">
+                <Link href="/contact" className="block w-full bg-red-600 text-white text-center py-5 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-red-700 transition-all shadow-lg shadow-red-900/20">JOIN BIGO AGENCY (US/CANADA)</Link>
+                <Link href="/contact" className="block w-full bg-zinc-900 text-white text-center py-5 rounded-xl font-black uppercase tracking-widest text-[10px] border border-zinc-800 hover:bg-zinc-800 transition-all">JOIN BIGO AGENCY (UK/IRELAND)</Link>
+              </div>
+              
+              <div className="mt-12 pt-10 border-t border-zinc-900">
+                <h4 className="text-white text-lg font-bold mb-8 flex items-center">
+                  <span className="w-2.5 h-2.5 bg-red-600 rounded-full mr-3 animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]"></span>
+                  Downloads
+                </h4>
+                <div className="space-y-4">
+                  <Link href="https://www.bigo.tv/" target="_blank" className="block w-full bg-red-600 text-white text-center py-5 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-red-700 transition-all shadow-lg shadow-red-900/20">DOWNLOAD BIGO LIVE</Link>
+                  <Link href="https://www.tiktok.com/" target="_blank" className="block w-full bg-zinc-900 text-white text-center py-5 rounded-xl font-black uppercase tracking-widest text-[10px] border border-zinc-800 hover:bg-zinc-800 transition-all">DOWNLOAD TIKTOK</Link>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* --- GROWTH MATRIX --- */}
+        <section className="mb-24 pt-10">
+          <h3 className="text-4xl font-black italic uppercase tracking-tighter border-b border-zinc-900 pb-6 mb-12">GROWTH MATRIX</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {['Training', 'Payouts & Targets', 'Weekly Tips', 'Support Form', 'Policy & Expectations', 'Platform Resources'].map((title) => (
+              <div key={title} className="p-10 bg-zinc-950 border border-zinc-900 rounded-3xl hover:border-red-900/50 transition-all group">
+                <h4 className="text-white font-black mb-3 uppercase tracking-widest text-[10px] group-hover:text-red-500 transition-colors">{title}</h4>
+                <p className="text-zinc-500 text-xs leading-relaxed">Internal training module for RDI talent.</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* --- STANDARDS --- */}
+        <section id="youtube-hub" className="mb-24 pt-10">
+          <h3 className="text-4xl font-black italic uppercase tracking-tighter border-b border-zinc-900 pb-6 mb-12 text-white">STANDARDS</h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {['Consistency', 'Professionalism', 'Coachability', 'Communication', 'Accountability'].map((standard) => (
+              <div key={standard} className="py-8 border border-zinc-900 rounded-2xl text-center bg-zinc-950/50 hover:bg-zinc-950 transition-all">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-zinc-500 font-black">{standard}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
