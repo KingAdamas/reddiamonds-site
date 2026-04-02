@@ -8,7 +8,7 @@ export default function Overview() {
     <div className="min-h-screen bg-[#8B0000] text-white font-sans selection:bg-white selection:text-[#8B0000]">
       <main className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         
-        {/* --- HERO SECTION: UPDATED PRIMARY HEADLINE --- */}
+        {/* --- HERO SECTION --- */}
         <section className="mb-12 md:mb-20">
           <div className="bg-black/10 border border-white/10 rounded-3xl p-8 md:p-16 text-center shadow-2xl relative overflow-hidden">
             
@@ -43,10 +43,9 @@ export default function Overview() {
           </div>
         </section>
 
-        {/* --- CONTENT GRID: CENTERED FOR MOBILE --- */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
+        {/* --- GRID: WHAT WE OFFER & READY TO SCALE --- */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 mb-10 md:mb-16">
           
-          {/* WHAT WE OFFER */}
           <div className="bg-black/15 border border-white/5 p-8 md:p-12 rounded-3xl shadow-xl">
             <h3 className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter mb-8 border-b border-white/10 pb-4 text-center md:text-left">WHAT WE OFFER</h3>
             <ul className="space-y-8">
@@ -63,7 +62,6 @@ export default function Overview() {
             </ul>
           </div>
 
-          {/* CALL TO ACTION */}
           <div className="bg-white text-[#8B0000] p-8 md:p-12 rounded-3xl shadow-xl flex flex-col justify-center text-center lg:text-left">
             <h3 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-6 leading-tight text-black">READY TO <br className="hidden md:block"/>SCALE?</h3>
             <p className="text-base md:text-lg mb-8 font-bold italic leading-relaxed text-[#8B0000]">
@@ -72,6 +70,37 @@ export default function Overview() {
             <Link href="/apply" className="bg-black text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-[#8B0000] transition-all shadow-2xl">
               START ENROLLMENT
             </Link>
+          </div>
+        </section>
+
+        {/* --- RED DIAMOND COLLECTION (FOURTHWALL INTEGRATION) --- */}
+        <section className="bg-black/15 border border-white/5 rounded-3xl p-8 md:p-16 shadow-2xl overflow-hidden">
+          <div className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-white/50 mb-8 text-center md:text-left">
+            THE COMMUNITY & VISIBILITY HUB
+          </div>
+
+          <h2 className="text-3xl md:text-6xl font-black uppercase tracking-tighter italic leading-[1.1] text-white text-center md:text-left">
+            WHERE CREATORS BUILD <br />
+            AUDIENCE, INCOME, <br />
+            AND <span className="text-black/40">VISIBILITY.</span>
+          </h2>
+
+          <p className="mt-8 md:mt-10 max-w-2xl text-sm md:text-lg leading-relaxed text-white/80 font-medium italic mx-auto md:mx-0 text-center md:text-left">
+            Red Diamond Collection is the community and creator visibility hub of 
+            the RDI ecosystem. It gives creators a place to strengthen content, 
+            build supporter income, and increase visibility with both audiences and 
+            future partners.
+          </p>
+
+          <div className="mt-12 flex justify-center md:justify-start">
+            <a
+              href="https://rdi-collection-shop.fourthwall.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-auto text-center rounded-full bg-white px-10 py-5 text-[11px] font-black uppercase tracking-widest text-[#8B0000] transition-all hover:bg-zinc-200 shadow-xl"
+            >
+              EXPLORE THE COLLECTION
+            </a>
           </div>
         </section>
       </main>
