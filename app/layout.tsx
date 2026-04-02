@@ -9,14 +9,19 @@ import Footer from "./components/Footer";
 export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
-  // This logic hides the menu for /rush, /bbr-portal, and variations
+  // Keep your existing logic for restricted portal pages
   const isBBRPage = pathname.startsWith('/bbr-portal') || pathname.startsWith('/rush');
 
   return (
-    <html lang="en" className="bg-[#000000]">
-      <body className="bg-[#000000] text-white antialiased font-sans">
+    <html lang="en" className="bg-[#8B0000] scroll-smooth">
+      <body className="bg-[#8B0000] text-white antialiased font-sans selection:bg-white selection:text-[#8B0000]">
+        {/* Only show Header/Footer if not on a restricted BBR/Rush page */}
         {!isBBRPage && <Header />}
-        <main>{children}</main>
+        
+        <main className="min-h-screen">
+          {children}
+        </main>
+
         {!isBBRPage && <Footer />}
       </body>
     </html>
