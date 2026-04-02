@@ -20,34 +20,42 @@ export default function Process() {
   ];
 
   return (
-    <main className="min-h-screen pt-[64px] bg-black text-white selection:bg-[#d13027]">
+    // UPDATED: Background to RDI Crimson and text selection to Crimson
+    <main className="min-h-screen pt-[64px] bg-[#8B0000] text-black selection:bg-[#8B0000] selection:text-white">
       <div className="mx-auto max-w-6xl px-6 pt-4 md:pt-12 pb-20">
         
-        {/* THE PROCESS HERO CARD - CENTERED HEADER */}
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 text-center shadow-2xl">
+        {/* UPDATED: Card to White, border to Zinc, and shadow for depth */}
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-zinc-200 bg-white p-8 md:p-20 text-center shadow-2xl">
           
-          <div className="border-b border-[#1a1a1a] pb-12 flex flex-col items-center">
-            <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#ecc970]">
+          {/* UPDATED: Border to light gray/zinc */}
+          <div className="border-b border-zinc-100 pb-12 flex flex-col items-center">
+            {/* UPDATED: Label to brand Crimson */}
+            <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#8B0000]">
               The Development Pipeline
             </p>
-            <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
-              The <span className="text-[#d13027]">Process.</span>
+            {/* UPDATED: Main title to Black with brand Crimson highlight */}
+            <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight text-black">
+              The <span className="text-[#8B0000]">Process.</span>
             </h1>
-            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-white">
+            {/* UPDATED: Paragraph to soft black (black/80) */}
+            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-black/80 font-medium italic">
               Red Diamonds International (RDI) runs a selective creator development pipeline built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
             </p>
           </div>
 
-          {/* THE THREE PHASES GRID - MAINTAINS READABILITY */}
           <div className="mt-20 space-y-24 text-left">
             {phases.map((phase, index) => (
-              <div key={index} className="grid gap-8 md:grid-cols-12 border-t border-[#1a1a1a] pt-16 first:border-t-0 first:pt-0">
+              /* UPDATED: Inner border to very light gray */
+              <div key={index} className="grid gap-8 md:grid-cols-12 border-t border-zinc-100 pt-16 first:border-t-0 first:pt-0">
                 <div className="md:col-span-4">
-                  <span className="text-sm font-bold uppercase tracking-[0.3em] text-[#d13027]">{phase.label}</span>
-                  <h2 className="mt-2 text-2xl font-bold uppercase tracking-widest text-white">{phase.title}</h2>
+                  {/* UPDATED: Phase label to brand Crimson */}
+                  <span className="text-sm font-bold uppercase tracking-[0.3em] text-[#8B0000]">{phase.label}</span>
+                  {/* UPDATED: Phase title to Black */}
+                  <h2 className="mt-2 text-2xl font-bold uppercase tracking-widest text-black italic">{phase.title}</h2>
                 </div>
                 <div className="md:col-span-8">
-                  <p className="text-base leading-relaxed text-white">
+                  {/* UPDATED: Description text to Deep Zinc (zinc-700) */}
+                  <p className="text-base leading-relaxed text-zinc-700 font-medium italic">
                     {phase.desc}
                   </p>
                 </div>
@@ -55,11 +63,12 @@ export default function Process() {
             ))}
           </div>
 
-          {/* FIXED WIDTH CTA BUTTON */}
-          <div className="mt-24 pt-10 border-t border-[#1a1a1a]">
+          {/* UPDATED: Bottom border to very light gray */}
+          <div className="mt-24 pt-10 border-t border-zinc-100">
+            {/* UPDATED: Button to brand Crimson with standard white text */}
             <Link 
               href="/apply" 
-              className="inline-block w-full md:w-auto rounded-full bg-[#d13027] px-12 py-5 text-xs font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_20px_rgba(209,48,39,0.3)]"
+              className="inline-block w-full md:w-auto rounded-full bg-[#8B0000] px-12 py-5 text-xs font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#a00000] shadow-xl"
             >
               Apply for Consideration
             </Link>
