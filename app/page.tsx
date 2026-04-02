@@ -7,15 +7,12 @@ export default function Overview() {
   return (
     <div className="min-h-screen bg-[#8B0000] text-black font-sans selection:bg-white selection:text-[#8B0000]">
       
-      {/* Main Container with Standardized Mobile Spacing */}
-      <main className="max-w-7xl mx-auto px-6 py-12 md:py-24 space-y-6 md:space-y-12">
+      <main className="max-w-7xl mx-auto px-6 py-12 md:py-24 space-y-0">
         
-        {/* --- 1. HERO SECTION (WHITE CARD) --- */}
+        {/* --- 1. HERO SECTION (TOP OF STACK) --- */}
         <section>
-          <div className="bg-white border border-zinc-200 rounded-[2rem] p-8 md:p-16 text-center shadow-2xl relative overflow-hidden">
-            
-            {/* CRIMSON SUBHEADER */}
-            <p className="text-[#8B0000] text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] mb-8 italic leading-loose">
+          <div className="bg-white border border-zinc-200 border-b-0 rounded-t-[2.5rem] p-8 md:p-20 text-center relative overflow-hidden">
+            <p className="text-[#8B0000] text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] mb-8 italic">
               WHERE CREATORS ARE <span className="text-black underline decoration-black/20 underline-offset-8">REFINED</span>, NOT RECRUITED.
             </p>
             
@@ -45,19 +42,20 @@ export default function Overview() {
           </div>
         </section>
 
-        {/* --- 2. WHAT WE OFFER (WHITE CARD) --- */}
+        {/* --- 2. WHAT WE OFFER (MIDDLE OF STACK) --- */}
         <section>
-          <div className="bg-white border border-zinc-200 p-8 md:p-12 rounded-[2rem] shadow-xl">
-            {/* CRIMSON SECTION TITLE */}
-            <h3 className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter mb-8 border-b border-black/10 pb-4 text-center md:text-left text-[#8B0000]">WHAT WE OFFER</h3>
-            <ul className="space-y-8">
+          <div className="bg-white border-x border-zinc-200 p-8 md:p-20">
+            <h3 className="text-2xl md:text-3xl font-black italic uppercase tracking-tighter mb-12 text-[#8B0000] text-center md:text-left border-b border-black/5 pb-4">
+              WHAT WE OFFER
+            </h3>
+            <ul className="space-y-12">
               {[
                 { title: 'Global Monetization', desc: 'Direct paths to revenue on platforms like TikTok, Bigo, and YouTube.' },
                 { title: 'Brand Readiness', desc: 'Polishing your image and content strategy for high-level partnerships.' },
                 { title: 'Elite Community', desc: 'Join a network of refined talent focused on professional growth.' }
               ].map((item) => (
-                <li key={item.title} className="text-center md:text-left">
-                  <h4 className="text-black font-black uppercase tracking-[0.2em] text-[10px] mb-2">{item.title}</h4>
+                <li key={item.title} className="text-center md:text-left border-b border-black/5 pb-8 last:border-0">
+                  <h4 className="text-black font-black uppercase tracking-[0.2em] text-[10px] mb-3">{item.title}</h4>
                   <p className="text-zinc-700 text-sm md:text-base font-medium italic leading-relaxed">{item.desc}</p>
                 </li>
               ))}
@@ -65,52 +63,38 @@ export default function Overview() {
           </div>
         </section>
 
-        {/* --- 3. READY TO SCALE (WHITE CARD) --- */}
+        {/* --- 3. READY TO SCALE (BOTTOM OF STACK) --- */}
         <section>
-          <div className="bg-white border border-zinc-200 p-8 md:p-12 rounded-[2rem] shadow-xl flex flex-col justify-center text-center lg:text-left">
-            <h3 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-6 leading-tight text-black">READY TO <br className="hidden md:block"/>SCALE?</h3>
-            <p className="text-base md:text-lg mb-8 font-bold italic leading-relaxed text-[#8B0000]">
+          <div className="bg-white border border-zinc-200 border-t-0 rounded-b-[2.5rem] p-8 md:p-20 shadow-2xl text-center md:text-left">
+            <h3 className="text-3xl md:text-6xl font-black italic uppercase tracking-tighter mb-6 leading-tight text-black">
+              READY TO <br className="hidden md:block"/>SCALE?
+            </h3>
+            <p className="max-w-2xl text-base md:text-xl mb-10 font-bold italic leading-relaxed text-[#8B0000]">
               We don't take everyone. We only take the best. If you are ready to move from "Creator" to "Digital Asset," start your application today.
             </p>
-            <Link href="/apply" className="bg-black text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-zinc-800 transition-all shadow-2xl">
+            <Link href="/apply" className="inline-block bg-black text-white py-6 px-16 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-[#8B0000] transition-all shadow-xl">
               START ENROLLMENT
             </Link>
           </div>
         </section>
 
-        {/* --- 4. RED DIAMOND COLLECTION (FULL-WIDTH & CRIMSON LABEL) --- */}
+        {/* STANDALONE COLLECTION SECTION (BELOW THE STACK) */}
+        <div className="h-12 md:h-20"></div> 
         <section>
-          <div className="bg-white border border-zinc-200 rounded-[2rem] p-8 md:p-20 shadow-2xl overflow-hidden text-center">
-            
-            {/* CRIMSON SUBHEADER */}
-            <div className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-[#8B0000] mb-8">
-              THE COMMUNITY & VISIBILITY HUB
-            </div>
-
-            <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter italic leading-[1.1] text-black mb-10">
-              WHERE CREATORS BUILD <br className="hidden md:block" />
-              AUDIENCE, INCOME, <br className="hidden md:block" />
-              AND <span className="text-[#8B0000]">VISIBILITY.</span>
-            </h2>
-
-            <p className="max-w-4xl mx-auto text-sm md:text-xl leading-relaxed text-zinc-700 font-medium italic mb-12">
-              Red Diamond Collection is the community and creator visibility hub of 
-              the RDI ecosystem. It gives creators a place to strengthen content, 
-              build supporter income, and increase visibility with both audiences and 
-              future partners.
-            </p>
-
-            <div className="flex justify-center">
-              <a
-                href="https://rdi-collection-shop.fourthwall.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full md:w-auto text-center rounded-full bg-black px-14 py-6 text-[11px] font-black uppercase tracking-widest text-white transition-all hover:bg-zinc-800 shadow-xl"
-              >
-                EXPLORE THE COLLECTION
-              </a>
-            </div>
-          </div>
+           <div className="bg-white border border-zinc-200 rounded-[2.5rem] p-8 md:p-20 shadow-2xl text-center">
+             <div className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-[#8B0000] mb-8">
+               THE COMMUNITY & VISIBILITY HUB
+             </div>
+             <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter italic leading-[1.1] text-black mb-10">
+               WHERE CREATORS BUILD AUDIENCE, INCOME, AND <span className="text-[#8B0000]">VISIBILITY.</span>
+             </h2>
+             <p className="max-w-4xl mx-auto text-sm md:text-xl leading-relaxed text-zinc-700 font-medium italic mb-12">
+               Red Diamond Collection is the community and creator visibility hub of the RDI ecosystem.
+             </p>
+             <a href="https://rdi-collection-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer" className="inline-block bg-black text-white px-14 py-6 text-[11px] font-black uppercase tracking-widest rounded-full hover:bg-zinc-800 transition-all shadow-xl">
+               EXPLORE THE COLLECTION
+             </a>
+           </div>
         </section>
 
       </main>
