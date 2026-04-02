@@ -90,8 +90,9 @@ export default function Header() {
                 `}
               >
                 {link.name}
-              </Link>
-            ))}
+             </Link>
+            ); // This semicolon and closing parenthesis were the missing piece
+          })}
         </div>
       )}
     </header>
