@@ -12,46 +12,49 @@ export default function Apply() {
     // Form logic is ready for integration with: reddiamondfamilyus@gmail.com
   };
 
+  // UPDATED: Input fields now white background, dark borders, and dark text
   const fieldBase =
-    "w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs outline-none transition-colors focus:border-[#ecc970] text-white placeholder:text-white/60";
+    "w-full bg-white border border-zinc-200 rounded-xl px-5 py-4 text-xs outline-none transition-colors focus:border-[#8B0000] text-black placeholder:text-zinc-400 font-medium italic";
 
-  // For selects: keep the “default/placeholder” option visually muted until a real value is chosen,
-  // but keep all actual selected text bright.
-  // `required` + `defaultValue=""` makes the select invalid until changed, enabling `invalid:` styling.
+  // UPDATED: Select fields now white background, dark borders, and dark text
   const selectBase =
-    "w-full bg-black border border-[#1a1a1a] rounded-xl px-5 py-4 text-xs outline-none focus:border-[#ecc970] transition-colors text-white invalid:text-white/60";
+    "w-full bg-white border border-zinc-200 rounded-xl px-5 py-4 text-xs outline-none focus:border-[#8B0000] transition-colors text-black invalid:text-zinc-400 font-medium italic";
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#d13027]">
+    // UPDATED: Background to RDI Crimson
+    <main className="min-h-screen bg-[#8B0000] text-black font-sans selection:bg-[#8B0000] selection:text-white">
       <div className="mx-auto max-w-5xl px-6 pt-4 md:pt-12 pb-40 md:pt-48">
-        {/* THE APPLY HERO CARD */}
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-[#1a1a1a] bg-[#0a0a0a] p-8 md:p-20 shadow-2xl">
+        
+        {/* UPDATED: Card to Solid White with Zinc border */}
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-zinc-200 bg-white p-8 md:p-20 shadow-2xl">
           {status === "SUBMITTED" ? (
             <div className="py-16 text-center">
-              <h2 className="text-3xl font-bold text-[#ecc970] uppercase tracking-widest italic">
+              {/* UPDATED: Status text to Crimson */}
+              <h2 className="text-3xl font-bold text-[#8B0000] uppercase tracking-widest italic">
                 Application Received
               </h2>
-              <p className="mx-auto mt-6 max-w-md text-lg text-white italic">
+              <p className="mx-auto mt-6 max-w-md text-lg text-black italic font-medium">
                 Your application has been received and entered into the RDI review process. Our team will review fit,
                 potential, and overall alignment with the pipeline.
               </p>
               <Link
                 href="/"
-                className="mt-12 inline-block text-xs font-bold uppercase tracking-[0.4em] text-white/40 hover:text-[#d13027] transition-colors"
+                className="mt-12 inline-block text-xs font-bold uppercase tracking-[0.4em] text-black/40 hover:text-[#8B0000] transition-colors"
               >
                 Return to Overview
               </Link>
             </div>
           ) : (
             <>
-              <div className="border-b border-[#1a1a1a] pb-10 text-center">
-                <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#ecc970]">
+              <div className="border-b border-zinc-100 pb-10 text-center">
+                {/* UPDATED: Subheader to Crimson */}
+                <p className="text-sm font-bold uppercase tracking-[0.4em] text-[#8B0000]">
                   Apply for Consideration
                 </p>
-                <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight">
-                  Entry Into the Pipeline Is <span className="text-[#d13027]">Earned.</span>
+                <h1 className="mt-6 text-4xl font-extrabold uppercase tracking-tighter md:text-7xl italic leading-tight text-black">
+                  Entry Into the Pipeline Is <span className="text-[#8B0000]">Earned.</span>
                 </h1>
-                <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white">
+                <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-black/80 font-medium italic">
                   Red Diamonds International reviews creators for fit, potential, and long term opportunity readiness.
                   This is the first step into a selective pipeline built for refinement, development, and stronger
                   monetization pathways.
@@ -61,17 +64,16 @@ export default function Apply() {
               <form onSubmit={handleSubmit} className="mt-16 space-y-12 text-left">
                 {/* SECTION 01: CREATOR PROFILE */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                  {/* UPDATED: Section markers to Crimson */}
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
                     01. Creator Profile
                   </h2>
 
-                  {/* Row 1: Legal Name + Platform Handle */}
                   <div className="grid gap-4 md:grid-cols-2">
                     <input required type="text" placeholder="LEGAL NAME" className={fieldBase} />
                     <input required type="text" placeholder="PLATFORM HANDLE (@...)" className={fieldBase} />
                   </div>
 
-                  {/* Row 2: Primary Platform + Region / Country */}
                   <div className="grid gap-4 md:grid-cols-2">
                     <select required className={selectBase} defaultValue="">
                       <option value="" disabled>
@@ -85,7 +87,6 @@ export default function Apply() {
                     <input required type="text" placeholder="REGION / COUNTRY" className={fieldBase} />
                   </div>
 
-                  {/* Row 3: Gender full width */}
                   <select required className={selectBase} defaultValue="">
                     <option value="" disabled>
                       GENDER
@@ -100,7 +101,7 @@ export default function Apply() {
 
                 {/* SECTION 02: GROWTH */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
                     02. Growth & Traction
                   </h2>
 
@@ -124,7 +125,7 @@ export default function Apply() {
 
                 {/* SECTION 03: ALIGNMENT */}
                 <div className="space-y-6">
-                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#d13027]">
+                  <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
                     03. Operational Alignment
                   </h2>
 
@@ -176,9 +177,10 @@ export default function Apply() {
                   ></textarea>
                 </div>
 
+                {/* UPDATED: Button to brand Crimson */}
                 <button
                   type="submit"
-                  className="w-full rounded-full bg-[#d13027] py-6 text-sm font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#b02821] hover:shadow-[0_0_30px_rgba(209,48,39,0.3)]"
+                  className="w-full rounded-full bg-[#8B0000] py-6 text-sm font-bold uppercase tracking-[0.4em] text-white transition-all hover:bg-[#a00000] shadow-xl"
                 >
                   Begin Consideration
                 </button>
@@ -189,13 +191,14 @@ export default function Apply() {
 
         {/* FOOTER NOTE */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-600 italic">
+          {/* UPDATED: Text to soft white for contrast against Crimson background */}
+          <p className="text-sm text-white/60 italic font-medium">
             Submission does not guarantee acceptance into active development. All applicants enter a review process, and
             progression within the pipeline is based on fit, consistency, and potential.
           </p>
           <Link
             href="/process"
-            className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ecc970] hover:text-white transition-colors"
+            className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-white/80 hover:text-white transition-colors"
           >
             Review the process again
           </Link>
