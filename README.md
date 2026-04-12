@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Client Website Implementation – Creator Platform
 
-## Getting Started
+## Overview
+This project represents the implementation and deployment of a client-facing creator platform designed to establish a professional digital presence and support creator applications.
 
-First, run the development server:
+The goal was to deliver a functional website while structuring the work in a way that improves visibility, organization, and repeatability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Objectives
+- Develop a clean, mobile-responsive website
+- Communicate the platform’s process and positioning
+- Enable creator applications through a working contact flow
+- Establish a repeatable workflow for future improvements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Responsive homepage with structured layout
+- Creator application page
+- Contact form integration using Formspree
+- Consistent navigation and page structure
+- Mobile-optimized design
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- Next.js
+- Tailwind CSS
+- GitHub
+- Firebase App Hosting
+- Formspree
+- GitHub Copilot
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Approach
+This project was executed using an iterative approach inspired by Agile principles. Tasks were broken down into manageable units and structured to improve visibility into progress and completion.
 
-## Learn More
+## Challenges
+- Resolving initial homepage rendering issues
+- Troubleshooting development/runtime errors
+- Managing deployment configuration
+- Refining layout and styling inconsistencies
+- Reconstructing workflow after development
 
-To learn more about Next.js, take a look at the following resources:
+## Outcome
+- Successfully deployed a live, client-facing website
+- Established a structured workflow for managing tasks and improvements
+- Improved understanding of development and deployment processes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Live Site
+https://www.reddiamondsinternational.com
