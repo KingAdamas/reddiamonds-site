@@ -3,7 +3,7 @@
 ## Overview
 This project represents the implementation and deployment of a client-facing creator platform designed to establish a professional digital presence and support creator applications.
 
-The goal was to deliver a functional website while structuring the work in a way that improves visibility, organization, and repeatability.
+The goal was not only to deliver a functional website, but also to structure the work in a way that improves visibility, organization, and repeatability.
 
 ## Objectives
 - Develop a clean, mobile-responsive website
@@ -27,19 +27,27 @@ The goal was to deliver a functional website while structuring the work in a way
 - GitHub Copilot
 
 ## Approach
-This project was executed using an iterative approach inspired by Agile principles. Tasks were broken down into manageable units and structured to improve visibility into progress and completion.
+This project was executed using an iterative, Agile-inspired approach. Work was broken into manageable tasks, documented through GitHub Issues, and tracked through GitHub Projects to improve visibility into priorities, progress, and completion.
+
+## Project Management Workflow
+- Documented project scope, objectives, features, and delivery context in the README
+- Broke work into actionable GitHub Issues for features, fixes, and enhancements
+- Used GitHub Projects to track work across Todo, In Progress, and Done
+- Prioritized core functionality before shifting focus to refinements and optimization
+- Continued managing fixes and enhancements after launch rather than treating deployment as the final step
 
 ## Challenges
 - Resolving initial homepage rendering issues
-- Troubleshooting development/runtime errors
+- Troubleshooting development and runtime errors
 - Managing deployment configuration
 - Refining layout and styling inconsistencies
-- Reconstructing workflow after development
+- Reconstructing workflow after development to improve visibility and repeatability
 
 ## Outcome
 - Successfully deployed a live, client-facing website
 - Established a structured workflow for managing tasks and improvements
-- Improved understanding of development and deployment processes
+- Improved visibility into project progress and outstanding work
+- Strengthened understanding of development, deployment, and iterative project execution
 
 ## Live Site
-https://www.reddiamondsinternational.com
+[www.reddiamondsinternational.com](https://www.reddiamondsinternational.com)
