@@ -2,10 +2,8 @@
 
 ## Overview
 This project represents the implementation and deployment of a client-facing creator platform designed to establish a professional digital presence and support creator applications.
-This project was independently developed and managed as a solo implementation, including planning, development, deployment, and workflow structuring.
-The goal was not only to deliver a functional website, but also to structure the work in a way that improved visibility, organization, and repeatability.
-
-
+This project was independently developed and managed as a solo implementation, covering planning, development, deployment, and workflow design.
+The goal was not only to deliver a functional website, but also to create a structured, repeatable workflow that improved visibility, task organization, and execution.
 
 ## Objectives
 - Develop a clean, mobile-responsive website
