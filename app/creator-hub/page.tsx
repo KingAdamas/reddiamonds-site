@@ -79,7 +79,7 @@ export default function CreatorHub() {
             </h1>
             
             <p className="max-w-2xl mx-auto text-zinc-600 text-sm md:text-lg leading-relaxed mb-14 font-medium italic">
-              The exclusive command center for RDI Creators. Access granted to the latest trends, resources, and updates.
+              The operational command center for active RDI talent. Resources, systems, and updates — accessed by code, reserved for those inside the pipeline.
             </p>
             
             <div className="flex flex-col md:flex-row justify-center items-center gap-5">
@@ -133,10 +133,18 @@ export default function CreatorHub() {
         <section className="mb-24 pt-10">
           <h3 className="text-4xl font-black italic uppercase tracking-tighter border-b-2 border-white/10 pb-6 mb-12 text-center md:text-left text-white">GROWTH MATRIX</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {['Training', 'Payouts & Targets', 'Weekly Tips', 'Support Form', 'Policy & Expectations', 'Platform Resources'].map((title) => (
+            {[
+              { title: 'Training', desc: 'Platform-specific content frameworks and performance standards for active pipeline creators.' },
+              { title: 'Payouts & Targets', desc: 'Revenue benchmarks, payout schedules, and milestone targets by platform and region.' },
+              { title: 'Weekly Tips', desc: 'Current platform trends, algorithm updates, and content recommendations from the RDI team.' },
+              { title: 'Support Form', desc: 'Direct line to your RDI manager for pipeline questions, feedback, and escalations.' },
+              { title: 'Policy & Expectations', desc: 'RDI conduct standards, content guidelines, and pipeline requirements for active talent.' },
+              { title: 'Platform Resources', desc: 'Technical guides, setup documentation, and platform-specific tools for TikTok and Bigo Live.' },
+            ].map(({ title, desc }) => (
               <div key={title} className="p-10 bg-white border border-zinc-200 rounded-3xl hover:border-black transition-all group text-center md:text-left shadow-lg">
                 <h4 className="text-[#8B0000] font-black mb-3 uppercase tracking-widest text-[11px] group-hover:text-white group-hover:bg-black inline-block px-2 py-1 rounded transition-all italic">{title}</h4>
-                <p className="text-zinc-600 text-xs leading-relaxed font-bold italic">Internal training module reserved for active RDI talent.</p>
+                <p className="text-zinc-600 text-xs leading-relaxed font-bold italic mb-4">{desc}</p>
+                <p className="text-[10px] uppercase tracking-[0.25em] text-black/30 font-black">Active Talent Only</p>
               </div>
             ))}
           </div>
