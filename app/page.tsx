@@ -23,19 +23,12 @@ export default function Overview() {
               WHERE CREATORS ARE <span className="text-black underline decoration-black/20 underline-offset-8">REFINED</span>, NOT RECRUITED.
             </p>
             
-            <h1 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter text-black mb-6 md:mb-8 leading-[1.1]">
-              BUILDING A TRUSTED <br className="hidden md:block" />
-              PIPELINE OF DIGITAL CONTENT CREATORS
+            <h1 className="text-4xl md:text-7xl font-black italic tracking-tighter text-black mb-6 md:mb-8 leading-[1.1]">
+              The Pipeline Is Built for Those Who Are Ready to Be More Than a Creator.
             </h1>
             
             <p className="max-w-3xl mx-auto text-black/80 text-sm md:text-lg leading-relaxed mb-10 font-medium italic opacity-90 px-2 md:px-0">
-              Red Diamonds International (RDI) identifies emerging creators from various social media platforms and venues, refines digital talent, and prepares select individuals for stronger monetization, brand readiness, and real content opportunities.
-            </p>
-
-            <div className="w-32 h-[1px] bg-black/10 mx-auto mb-10"></div>
-
-            <p className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] mb-12 text-black/70 font-bold max-w-2xl mx-auto leading-loose">
-              ACROSS THE US, CANADA, UK, NIGERIA, AND SOUTH AFRICA.
+              Red Diamonds International identifies emerging talent across TikTok, Bigo Live, YouTube, and live performance venues — and builds them into market-ready digital assets. We operate across the US, Canada, UK, Nigeria, and South Africa. Entry is selective. Development is structured. Opportunity is earned.
             </p>
             
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
@@ -54,14 +47,14 @@ export default function Overview() {
           {/* FUSION: Flat top and bottom; essentially a white tube */}
           <div className="bg-white border-x border-zinc-200 p-8 md:p-20">
             {/* Standardized Header: Black, Italic, 5XL (closer to 7XL), Centered */}
-            <h3 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-12 text-black text-center border-b border-black/10 pb-4">
-              WHAT WE OFFER
+            <h3 className="text-3xl md:text-5xl font-black italic tracking-tighter mb-12 text-black text-center border-b border-black/10 pb-4">
+              What Entry Into the Pipeline Gets You
             </h3>
             <ul className="space-y-12 max-w-4xl mx-auto text-center">
               {[
-                { title: 'Global Monetization', desc: 'Direct paths to revenue on platforms like TikTok, Bigo, and YouTube.' },
-                { title: 'Brand Readiness', desc: 'Polishing your image and content strategy for high-level partnerships.' },
-                { title: 'Elite Community', desc: 'Join a network of refined talent focused on professional growth.' }
+                { title: 'Global Monetization', desc: 'Direct revenue pathways on TikTok, Bigo Live, and YouTube — not promises, structured access.' },
+                { title: 'Brand Readiness', desc: 'Content strategy, image alignment, and partnership preparation for creators serious about longevity.' },
+                { title: 'Operational Network', desc: 'A selective community of refined talent operating with shared standards, not just shared followers.' }
               ].map((item) => (
                 <li key={item.title} className="border-b border-black/5 pb-8 last:border-0">
                   <h4 className="text-black font-black uppercase tracking-[0.2em] text-[10px] mb-3">{item.title}</h4>
@@ -71,6 +64,22 @@ export default function Overview() {
             </ul>
           </div>
         </section>
+
+        {/* --- CREDIBILITY ROW --- */}
+        <div className="bg-white border-x border-zinc-200 px-8 md:px-20 py-10 border-t border-t-black/5">
+          <div className="flex justify-center gap-16 max-w-2xl mx-auto text-center">
+            {[
+              { stat: '5', label: 'Countries' },
+              { stat: '3', label: 'Platforms' },
+              { stat: '1', label: 'Standard' },
+            ].map((item) => (
+              <div key={item.label}>
+                <p className="text-4xl md:text-5xl font-black italic text-black tracking-tighter">{item.stat}</p>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-black/50 font-bold mt-1">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* --- 3. READY TO SCALE (BOTTOM OF FUSED PILLAR) --- */}
         <section>
@@ -82,10 +91,10 @@ export default function Overview() {
             </h3>
             {/* Corrected weight/style: Crimson, Medium, Italic for better reading */}
             <p className="max-w-2xl text-base md:text-xl mb-10 font-medium italic leading-relaxed text-[#8B0000] mx-auto">
-              We don't take everyone. We only take the best. If you are ready to move from "Creator" to "Digital Asset," start your application today.
+              RDI does not take everyone. If you have the consistency, the coachability, and the commitment to show up as a professional — this pipeline was built for you. If you are still looking for shortcuts, it was not.
             </p>
-            <Link href="/apply" className="inline-block bg-black text-white py-6 px-16 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-zinc-800 transition-all shadow-xl">
-              START ENROLLMENT
+            <Link href="/apply" className="inline-block bg-black text-white py-6 px-16 rounded-2xl font-black tracking-widest text-[11px] hover:bg-zinc-800 transition-all shadow-xl">
+              Apply for Consideration
             </Link>
           </div>
         </section>
@@ -103,12 +112,12 @@ export default function Overview() {
             </div>
 
             {/* Fused Header Style: Spans the card, Black Italic 7XL */}
-            <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter italic leading-[1.1] text-black mb-10">
-              WHERE CREATORS BUILD AUDIENCE, INCOME, AND <span className="text-[#8B0000]">VISIBILITY.</span>
+            <h2 className="text-4xl md:text-7xl font-black tracking-tighter italic leading-[1.1] text-black mb-10">
+              The Ecosystem Extends Beyond the Pipeline.
             </h2>
 
             <p className="max-w-4xl mx-auto text-sm md:text-xl leading-relaxed text-zinc-700 font-medium italic mb-12">
-              Red Diamond Collection is the community and creator visibility hub of the RDI ecosystem. It gives creators a place to strengthen content, build supporter income, and increase visibility.
+              Red Diamond Collection is where RDI creators build supporter income, strengthen their content, and expand visibility beyond the pipeline. It is the public-facing expression of what refinement produces.
             </p>
 
             <a
@@ -126,3 +135,4 @@ export default function Overview() {
     </div>
   );
 }
+
