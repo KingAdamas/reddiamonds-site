@@ -55,9 +55,7 @@ export default function Apply() {
                   Entry Into the Pipeline Is <span className="text-[#8B0000]">Earned.</span>
                 </h1>
                 <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-black/80 font-medium italic">
-                  Red Diamonds International reviews creators for fit, potential, and long term opportunity readiness.
-                  This is the first step into a selective pipeline built for refinement, development, and stronger
-                  monetization pathways.
+                  This is the first step in a selective review process. RDI evaluates every submission for fit, consistency, and long-term potential. Complete every section honestly. Incomplete or performative applications are not advanced.
                 </p>
               </div>
 
@@ -66,7 +64,7 @@ export default function Apply() {
                 <div className="space-y-6">
                   {/* UPDATED: Section markers to Crimson */}
                   <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
-                    01. Creator Profile
+                    01. Your Platform Presence
                   </h2>
 
                   <div className="grid gap-4 md:grid-cols-2">
@@ -102,7 +100,7 @@ export default function Apply() {
                 {/* SECTION 02: GROWTH */}
                 <div className="space-y-6">
                   <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
-                    02. Growth & Traction
+                    02. Your Growth & Traction
                   </h2>
 
                   <div className="grid gap-4 md:grid-cols-2">
@@ -126,7 +124,7 @@ export default function Apply() {
                 {/* SECTION 03: ALIGNMENT */}
                 <div className="space-y-6">
                   <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8B0000]">
-                    03. Operational Alignment
+                    03. Your Operational Readiness
                   </h2>
 
                   <div className="grid gap-4 md:grid-cols-2">
@@ -193,14 +191,13 @@ export default function Apply() {
         <div className="mt-12 text-center">
           {/* UPDATED: Text to soft white for contrast against Crimson background */}
           <p className="text-sm text-white/60 italic font-medium">
-            Submission does not guarantee acceptance into active development. All applicants enter a review process, and
-            progression within the pipeline is based on fit, consistency, and potential.
+            Submitting an application does not guarantee entry. Every applicant enters a review process. Progression is based on fit, consistency, and demonstrated potential — not speed of submission.
           </p>
           <Link
             href="/process"
             className="inline-block mt-4 text-xs font-bold uppercase tracking-[0.2em] text-white/80 hover:text-white transition-colors"
           >
-            Review the process again
+            Not sure yet? Review the process first.
           </Link>
         </div>
       </div>
