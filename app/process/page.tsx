@@ -5,17 +5,17 @@ export default function Process() {
     { 
       title: "Discovery", 
       label: "Phase 01",
-      desc: "We evaluate creators based on trajectory, not just numbers. RDI looks beyond follower counts to assess consistency, content quality, and professional readiness. Entry into the pipeline is earned, not given." 
+      desc: "RDI evaluates creators on trajectory, not just numbers. Follower counts tell part of the story. Consistency, content quality, and professional readiness tell the rest. Entry into the pipeline is earned, not extended." 
     },
     { 
       title: "Refinement", 
       label: "Phase 02",
-      desc: "Selected creators enter a structured development phase focused on elevating content performance, building operational discipline, and closing the gap between raw potential and market-ready talent. Progress is earned through output, not time." 
+      desc: "Selected creators enter a structured development phase built around three things: tightening content performance, building the operational habits that separate professionals from hobbyists, and closing the gap between raw potential and market-ready positioning. What gets refined is not just content — it is how a creator operates." 
     },
     { 
       title: "Opportunity Readiness", 
       label: "Phase 03",
-      desc: "Refined creators are positioned for real monetization pathways, brand alignment, and expanded reach across key markets. This is where preparation meets opportunity, reserved for those who have completed the work." 
+      desc: "Creators who complete refinement are positioned for real monetization pathways, brand alignment, and expanded reach across key markets. This phase is not given — it is reached. The work comes first. The opportunity follows." 
     }
   ];
 
@@ -39,7 +39,7 @@ export default function Process() {
             </h1>
             {/* UPDATED: Paragraph to soft black (black/80) */}
             <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-black/80 font-medium italic">
-              Red Diamonds International (RDI) runs a selective creator development pipeline built to identify raw talent, refine it with structure, and position select individuals for genuine opportunity.
+              RDI runs a three-phase creator development pipeline. It is selective at entry, structured in development, and deliberate about who reaches the other side. The process does not move on a timeline. It moves on readiness.
             </p>
           </div>
 
@@ -65,6 +65,9 @@ export default function Process() {
 
           {/* UPDATED: Bottom border to very light gray */}
           <div className="mt-24 pt-10 border-t border-zinc-100">
+            <p className="text-sm font-bold italic text-black/60 mb-8">
+              Most creators will not make it through all three phases. That is the point.
+            </p>
             {/* UPDATED: Button to brand Crimson with standard white text */}
             <Link 
               href="/apply" 
@@ -79,3 +82,4 @@ export default function Process() {
     </main>
   );
 }
+
