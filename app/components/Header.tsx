@@ -26,7 +26,7 @@ export default function Header() {
         
         {/* LOGO: Restored using your original /logo.png */}
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
-          <div className="relative w-10 h-10 overflow-hidden rounded-full border border-white/20 transition-transform group-hover:scale-110">
+          <div className="relative w-14 h-14 overflow-hidden rounded-full border border-white/20 transition-transform group-hover:scale-110">
             <Image 
               src="/logo.png" 
               alt="RDI Logo" 
@@ -34,7 +34,6 @@ export default function Header() {
               className="object-cover"
             />
           </div>
-          <span className="text-white font-black italic tracking-[0.3em] text-sm">RDI</span>
         </Link>
 
         {/* DESKTOP NAVIGATION: Pill logic for active state */}
