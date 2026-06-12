@@ -24,11 +24,11 @@ export default function Overview() {
             </p>
             
             <h1 className="text-4xl md:text-7xl font-black italic tracking-tighter text-black mb-6 md:mb-8 leading-[1.1]">
-              The Pipeline Is Built for Those Who Are Ready to Be More Than a Creator.
+              If You Show Up Consistently, You Should Be Getting Paid for It.
             </h1>
             
             <p className="max-w-3xl mx-auto text-black/80 text-sm md:text-lg leading-relaxed mb-10 font-medium italic opacity-90 px-2 md:px-0">
-              Red Diamonds International identifies emerging talent across TikTok, Bigo Live, YouTube, and live performance venues — and builds them into market-ready digital assets. We operate across the US, Canada, UK, Nigeria, and South Africa. Entry is selective. Development is structured. Opportunity is earned.
+              Red Diamonds International identifies emerging talent across TikTok Live, YouTube, and live performance venues — and builds them into market-ready digital assets. Entry is selective. Development is structured. Opportunity is earned.
             </p>
             
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
@@ -42,7 +42,30 @@ export default function Overview() {
           </div>
         </section>
 
-        {/* --- 2. WHAT WE OFFER (MIDDLE OF FUSED PILLAR) --- */}
+        {/* --- 1.5 IS THIS YOU? --- */}
+        <section>
+          <div className="bg-white border-x border-zinc-200 p-8 md:p-20 border-t border-t-black/5">
+            <h3 className="text-3xl md:text-5xl font-black italic tracking-tighter mb-8 text-black text-center border-b border-black/10 pb-4">
+              You Don&apos;t Have to Call Yourself a &quot;Creator&quot; to Belong Here.
+            </h3>
+            <p className="max-w-3xl mx-auto text-zinc-700 text-sm md:text-lg leading-relaxed mb-10 font-medium italic text-center">
+              RDI works with coaches, speakers, podcasters, comedians, musicians, beauty and fitness professionals, faith and community leaders, lifestyle creators, educators, and entrepreneurs.
+            </p>
+            <ul className="max-w-2xl mx-auto space-y-4 text-zinc-800 text-sm md:text-base font-medium italic">
+              {[
+                'You post consistently but haven\u2019t figured out how to monetize it',
+                'You\u2019re already known in your niche, online or in person',
+                'You\u2019re comfortable engaging with people in real time',
+                'You\u2019re coachable and looking for structure, not shortcuts',
+              ].map((item) => (
+                <li key={item} className="border-b border-black/5 pb-4 last:border-0 flex gap-3">
+                  <span className="text-[#8B0000] font-black">—</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
         <section>
           {/* FUSION: Flat top and bottom; essentially a white tube */}
           <div className="bg-white border-x border-zinc-200 p-8 md:p-20">
@@ -52,7 +75,7 @@ export default function Overview() {
             </h3>
             <ul className="space-y-12 max-w-4xl mx-auto text-center">
               {[
-                { title: 'Global Monetization', desc: 'Direct revenue pathways on TikTok, Bigo Live, and YouTube — not promises, structured access.' },
+                { title: 'Live Monetization', desc: 'Direct revenue pathways through TikTok Live and YouTube — not promises, structured access.' },
                 { title: 'Brand Readiness', desc: 'Content strategy, image alignment, and partnership preparation for creators serious about longevity.' },
                 { title: 'Operational Network', desc: 'A selective community of refined talent operating with shared standards, not just shared followers.' }
               ].map((item) => (
@@ -69,8 +92,7 @@ export default function Overview() {
         <div className="bg-white border-x border-zinc-200 px-8 md:px-20 py-10 border-t border-t-black/5">
           <div className="flex justify-center gap-16 max-w-2xl mx-auto text-center">
             {[
-              { stat: '5', label: 'Countries' },
-              { stat: '3', label: 'Platforms' },
+              { stat: '2', label: 'Platforms' },
               { stat: '1', label: 'Standard' },
             ].map((item) => (
               <div key={item.label}>
