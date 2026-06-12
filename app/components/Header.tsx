@@ -7,11 +7,13 @@ import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { name: 'OVERVIEW', path: '/' },
-  { name: 'THE PROCESS', path: '/process' },
-  { name: 'APPLY FOR CONSIDERATION', path: '/apply' },
-  { name: 'LET\'S CONNECT', path: '/contact' },
-  { name: 'CREATOR HUB', path: '/creator-hub' },
+  { name: 'HOME', path: '/' },
+  { name: 'APPLY TO STREAM', path: '/apply' },
+  { name: 'HOW IT WORKS', path: '/process' },
+  { name: 'CREATOR DEVELOPMENT', path: '/creator-development' },
+  { name: 'FEATURED CREATORS', path: '/creator-hub' },
+  { name: 'FAQ', path: '/faq' },
+  { name: 'CONTACT', path: '/contact' },
 ];
 
 export default function Header() {
