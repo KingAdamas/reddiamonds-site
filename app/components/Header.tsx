@@ -12,7 +12,6 @@ const navItems = [
   { name: 'HOW IT WORKS', path: '/process' },
   { name: 'CREATOR DEVELOPMENT', path: '/creator-development' },
   { name: 'FEATURED CREATORS', path: '/creator-hub' },
-  { name: 'FAQ', path: '/faq' },
   { name: 'CONTACT', path: '/contact' },
 ];
 
