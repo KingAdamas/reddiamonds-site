@@ -64,14 +64,6 @@ export default function Contact() {
                 <div className="space-y-12">
                   <div>
                     <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-[#8B0000]">
-                      Direct Channel
-                    </h2>
-                    <p className="mt-4 text-xl font-extrabold text-black">
-                      reddiamondfamilyus@gmail.com
-                    </p>
-                  </div>
-                  <div>
-                    <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-[#8B0000]">
                       Based In
                     </h2>
                     <p className="mt-4 text-xl font-extrabold text-black">
